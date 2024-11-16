@@ -1,0 +1,162 @@
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 64px;
+    position: relative;
+  }
+
+  .logo img {
+    max-width: 104px;
+    height: auto;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+
+  }
+
+  .nav-link {
+    color: #403939;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 16px 0 14px;
+  }
+
+  .nav-link-contate {
+    color: #E15C31;
+  }
+
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-actions a {
+    color: #E15C31;
+    padding: 0 12px 0 12px;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .icon-link {
+    color: #E15C31;
+    font-size: 24px;
+  }
+
+  .material-icons {
+    color: #E15C31;
+  }
+
+  /* responsividade */
+
+  @media (max-width: 1024px) {
+    header {
+        padding: 20px 20px; /* Ajustando o padding para evitar que os links saiam para fora */
+    }
+
+    .nav-container {
+        margin-right: 0; /* Removendo a margem à direita para evitar problemas de overflow */
+        display: flex; /* Certificando-se de que a nav-container seja flex */
+        justify-content: space-between; /* Garantindo que os itens fiquem bem distribuídos */
+        align-items: center; /* Centralizando verticalmente os itens */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+    }
+
+    .nav-link {
+        font-size: 14px;
+        margin: 0 8px; /* Mantendo o espaçamento dos links */
+        white-space: nowrap; /* Impedindo a quebra dos links em várias linhas */
+    }
+
+    .logo img {
+        max-width: 120px; /* Diminuindo o tamanho máximo da logo */
+        height: auto; /* Mantendo a proporção */
+    }
+
+    .user-actions {
+        display: flex; /* Mantendo o display flex para os ícones */
+        align-items: center; /* Centralizando os ícones verticalmente */
+        margin-top: 10px; /* Ajustando a margem para espaçamento */
+    }
+
+    .icon-link {
+        font-size: 20px; /* Ajustando o tamanho do ícone se necessário */
+        margin-left: 10px; /* Espaçamento entre ícones */
+    }
+}
+
+
+  @media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Mantenha a direção em linha */
+        justify-content: space-between; /* Alinhamento dos itens */
+        padding: 10px 5px;
+        align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    .logo {
+        margin: 0;
+        margin-right: 30px;
+        /* Remova a margem da logo para melhor alinhamento */
+    }
+
+    .logo img {
+        max-width: 150px; /* Diminuindo o tamanho máximo da logo */
+        height: auto; /* Mantendo a proporção */
+        padding-top: 15px;
+    }
+
+    .nav-container {
+        display: flex; /* Mantém a nav-container como flex */
+        justify-content: center; /* Centraliza os links horizontalmente */
+        flex-wrap: nowrap; /* Mantém os links na mesma linha */
+        align-items: center; /* Alinha os links e a logo no centro */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; /* Mantém os links em linha */
+        align-items: center; /* Alinha os itens no centro verticalmente */
+    }
+
+    .nav-link {
+        margin: 0 15px; /* Ajustando a margem para espaçamento */
+        font-size: 14px; /* Tamanho da fonte para melhor legibilidade */
+    }
+
+    .user-actions {
+        display: flex;
+        align-items: center;
+        margin-left: 20px; /* Espaçamento para os ícones */
+    }
+
+    .icon-link {
+        margin-left: 10px; /* Margem entre os ícones */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 100px; /* Mantendo o tamanho reduzido para telas menores */
+    }
+
+    .nav-link {
+        font-size: 12px; /* Reduzindo o tamanho da fonte */
+        margin: 6px 10px; /* Espaçamento entre links */
+    }
+
+    .icon-link {
+        font-size: 20px; /* Tamanho do ícone reduzido */
+    }
+}
+
+
+
