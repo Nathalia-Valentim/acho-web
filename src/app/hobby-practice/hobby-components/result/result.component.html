@@ -1,0 +1,26 @@
+<div class="card-container">
+    <div class="card" *ngFor="let school of schools">
+      <img [src]="school.image" alt="{{ school.title }}" class="card-image">
+      
+      <div class="card-text">
+        <h2 class="card-title">{{ school.title }}</h2>
+        <h3 class="card-category">{{ school.category }}</h3>
+        <p class="card-description">{{ school.description }}</p>
+      </div>
+      
+      <div class="card-info">
+        <span class="material-icons">location_on</span>
+        <p>{{school.schedule}}</p>
+      </div>
+      
+  
+      <div class="card-footer">
+        <div class="price">
+          <span class="price-highlight">R$ {{ school.price }}</span>
+          <span class="price-description">por semana</span>
+        </div>
+        <button class="card-button" (click)="navigateToHome()">Veja Mais</button>
+      </div>
+    </div>
+  </div>
+  

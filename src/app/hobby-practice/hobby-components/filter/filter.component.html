@@ -1,0 +1,28 @@
+<div class="filter-info">
+  <h3 class="gray-text">Encontre a escola/profissional perfeito para você e seu bolso</h3>
+  <label class="blue-text">Selecione a variação de preço</label>
+  <p class="gray-text">: arraste a barra ou digite o preço máximo.</p>
+</div>
+
+<div class="container-total">
+  <div class="filter-container">
+    <div class="input-container">
+      <label class="orange-text">MÍN</label>
+      <input type="number" value="30" disabled class="price-input" />
+      <label class="orange-text">MAX</label>
+      <input type="number" [(ngModel)]="maxPrice" class="price-input" (input)="updateMaxPrice()" />
+    </div>
+  
+    <div class="slider-container">
+      <input 
+        type="range" 
+        class="price-range" 
+        [min]="30" 
+        [max]="maxLimit" 
+        [(ngModel)]="maxPrice" 
+        (input)="updateMaxPrice()"
+      />
+    </div>
+  </div>
+</div>
+  

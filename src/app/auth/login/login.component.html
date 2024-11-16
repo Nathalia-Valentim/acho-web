@@ -1,0 +1,48 @@
+<app-navbar></app-navbar> 
+<app-login-dashboard></app-login-dashboard>
+
+<section>
+    <div class="retangulo">
+      <h1>Entre</h1>
+      <div class="div-input">
+          <div class="input-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
+              <input type="text" placeholder="abc@email.com" />
+          </div>
+          <div class="input-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                  <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+              </svg>
+              <input type="password" placeholder="senha"/>
+          </div>
+          <div>
+              <h3>Esqueceu sua senha?</h3>
+          </div>
+      </div>
+      <div class="entre">
+          <button class="cadastrese" (click)="navegarParaHome()">Entre</button>
+          <h2>ou</h2>
+          <div class="login_icon">
+              <button class="icon-button">
+                  <svg class="gf-icon" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.0001 5.79936C17.1494 5.7663 19.228 6.56685 20.7996 8.03301L25.0328 3.89449C22.3169 1.35015 18.7217 -0.0450217 15.0001 0.00110853C12.2194 0.000466143 9.49336 0.773204 7.12682 2.23291C4.76027 3.69261 2.84653 5.78172 1.59961 8.26661L6.45009 12.0317C7.04318 10.2287 8.1874 8.6573 9.72139 7.53914C11.2554 6.42099 13.1017 5.81245 15.0001 5.79936Z" fill="#E71901"/>
+                      <path d="M29.4 15.3313C29.4177 14.3004 29.3111 13.2711 29.0827 12.2656H15V17.8317H23.2673C23.1105 18.8076 22.7579 19.7417 22.2307 20.5778C21.7035 21.4139 21.0126 22.1347 20.1995 22.697L24.9332 26.3626C26.4084 24.9385 27.5686 23.221 28.3387 21.3209C29.1089 19.4208 29.4719 17.3804 29.4043 15.3313H29.4Z" fill="#3B7DED"/>
+                      <path d="M6.4678 17.963C6.13984 17.0083 5.97077 16.0063 5.96732 14.9969C5.9733 13.989 6.13632 12.9883 6.4505 12.0307L1.60001 8.26562C0.547985 10.3538 0 12.6594 0 14.9976C0 17.3357 0.547985 19.6413 1.60001 21.7295L6.4678 17.963Z" fill="#F0B501"/>
+                      <path d="M15.0004 29.9954C18.6541 30.0987 22.2087 28.7989 24.9335 26.363L20.1999 22.6975C18.6651 23.7262 16.8474 24.2504 15.0004 24.1971C13.1036 24.1859 11.2586 23.5778 9.72701 22.4591C8.19543 21.3404 7.05505 19.768 6.46767 17.9648L1.61719 21.7313C2.86074 24.2151 4.77135 26.3037 7.13505 27.7633C9.49874 29.2229 12.2222 29.9958 15.0004 29.9954Z" fill="#2BA24C"/>
+                  </svg>
+              </button>
+              <button class="icon-button">
+                  <svg class="gf-icon" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="30" height="29.9999" rx="15" fill="#1977F3"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6528 29.7652C16.7919 29.9188 15.9056 29.999 15.0006 29.999C14.1985 29.999 13.411 29.936 12.6429 29.8147V19.7774H8.57227V15.1584H12.6429V11.638C12.6429 7.63415 15.035 5.42188 18.6982 5.42188C19.9003 5.43862 21.0997 5.54298 22.2866 5.73411V9.66668H20.2639C18.2727 9.66668 17.6528 10.8983 17.6528 12.1632V15.1591H22.0989L21.3881 19.7774H17.6528V29.7652Z" fill="white"/>
+                  </svg>
+              </button>
+          </div>
+          <button class="conta" (click)="navegarParaCadastro()">
+              Não tem uma conta? Cadastre-se
+          </button>
+      </div>
+    </div>

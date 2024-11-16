@@ -1,0 +1,63 @@
+section {
+    padding-top: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-left: 70px; 
+    padding-right: 70px; 
+}
+
+img {
+    width: 84.5%;
+    padding-left: 98px;
+    height: auto;
+    max-height: 512px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto {
+    position: absolute;
+    padding-right: 50%;
+    padding-top: 4%;
+    color: #043B64;
+    text-align: left;
+    font-size: 40px;
+    left: 10%; 
+    top: 2%; 
+    font-weight: 500;
+    line-height: 1.5; 
+    width: fit-content;
+    border-radius: 8px;
+}
+
+p {
+    padding-left: 24%;
+    padding-bottom: 24px;
+}
+
+.botao {
+    padding-left: 24%;
+}
+
+button {
+    display: inline-block;
+    position: absolute; 
+    cursor: pointer;
+    border: none;
+    background-color: #043B64; 
+    color: #fff; 
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 8px 15px;
+    font-size: 18px; 
+}
+
+button:hover {
+    color: #e15c31;
+}
+
+
+/* Responsividade */

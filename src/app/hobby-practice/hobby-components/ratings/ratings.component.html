@@ -1,0 +1,64 @@
+<div class="ratings-container">
+    <h1 class="ratings-title">Avaliações:</h1>
+
+    <div class="ratings-summary">
+        <div class="container">
+            <div class="div1">
+                <div class="rating-info">
+                    <span class="number">{{ averageRating.toFixed(1) }}</span><br>
+                    <span class="star" *ngFor="let star of getStars(averageRating)" [ngClass]="star"></span><br>
+                    <span class="av">({{ reviewCount }} avaliações)</span>
+                </div>
+            </div>
+
+          
+            <div class="div2">
+                <div class="bar">
+                    <div class="bar-fill" style="width: 100%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 50%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 25%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 10%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        
+        <div class="rating-container">
+            <div class="user-profile-container">
+                <img src="images/profile.png" class="user-profile-pic">
+            </div>
+            <div class="submit-rating">
+                <input type="text" [(ngModel)]="newComment" placeholder="Avalie..." class="rating-input">
+                <input type="number" [(ngModel)]="newRating" min="0" max="5" step="1" class="number-input">
+                <button (click)="addReview()" class="submit-button material-icons">send</button>
+            </div>
+        </div>
+        
+        
+
+        <div class="user-reviews">
+            <div *ngFor="let review of reviews" class="user-review">
+                <img [src]="review.profilePic" class="user-profile-pic">
+                <div class="review-text">
+                    <span class="user-name">{{ review.username }}</span>
+                    <span class="review-date">{{ review.date }}</span>
+                    <p>{{ review.comment }}</p>
+                    <div class="user-rating">
+                        <span *ngFor="let star of getStars(review.rating)" [ngClass]="star"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.barra-horizontal {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: none;
+    padding-top: 360px;
+    padding-left: 168px;
+    padding-right: 184px;
+    gap: 12px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    cursor: pointer;
+}
+
+.barra-horizontal::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.barra-horizontal::-webkit-scrollbar-thumb {
+    background: #043B64; /* Cor do botão da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.botao {
+    border: 2px solid #043B64;
+    background-color: transparent; 
+    color: #043B64;
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #043B64;
+    color: #E15C31;
+}
+
+.botao.ativo {
+    background-color: #043B64; 
+    color: #E15C31;
+    border: 2px solid #043B64;
+}

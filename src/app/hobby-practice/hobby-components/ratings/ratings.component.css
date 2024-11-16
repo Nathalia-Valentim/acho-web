@@ -1,0 +1,172 @@
+.ratings-container { 
+    background-color: #fff;
+    padding: 22px 0 0px 168px;
+}
+
+.ratings-title {
+    font-size: 18px;
+    color: #043B64;
+}
+
+.ratings-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
+    max-width: 1340px; 
+}
+
+.div1, .div2 {
+    flex: 1;
+}
+
+.number {
+    font-size: 62px;
+    color: #043B64;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.av {
+    font-size: 14px;
+    color: #403939;
+    padding-left: 30px;
+}
+
+.bar {
+    background-color: #f5f1f1;
+    height: 16px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+
+.bar-fill {
+    background-color: #043B64; 
+    height: 100%;
+    border-radius: 30px;
+}
+
+.separator {
+    border: 1px solid #dfd2d2;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.submit-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-grow: 1;
+    border: 1px solid #043B64; 
+    border-radius: 15px;
+    padding: 20px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.rating-input {
+    width: 70%;
+    font-size: 16px;
+    padding: 5px;
+    border: none; 
+    color: #403939;
+    height: 100%;
+    resize: none;
+    outline: none;
+    background-color: transparent; 
+    border-radius: 4px; 
+}
+
+.number-input {
+    margin-right: 30px;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #043B64; 
+    height: 30px; 
+    outline: none; 
+    width: 40px; 
+    border-radius: 10px; 
+    background-color: transparent; 
+}
+
+.rating-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.user-profile-container {
+    margin-right: 10px; 
+}
+
+.user-profile-pic {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 120px;
+}
+
+.user-reviews {
+    margin-top: 2px;
+    padding-left: 20px;
+}
+
+.user-review {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-text {
+    flex-grow: 1;
+}
+
+.user-name {
+    color: #043B64;
+    font-weight: bold;
+}
+
+.review-date {
+    color: #403939;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.star {
+    font-size: 36px;
+}
+
+.star-full:before {
+    content: '★'; 
+    color: #FCAF3C; 
+}
+
+.star-half:before {
+    content: '☆'; 
+    color: #FCAF3C;
+}
+
+.star-empty:before {
+    content: '☆';
+    color: #ddd; 
+}

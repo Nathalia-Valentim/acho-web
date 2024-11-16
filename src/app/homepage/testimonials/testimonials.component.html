@@ -1,0 +1,37 @@
+<section class="testimonial-container">
+  <div class="testimonial-header">
+    <p class="title">O que nossos clientes estão dizendo</p>
+  </div>
+  
+  <div class="carousel-container">
+    <!-- Setas para navegação -->
+    <button class="arrow left-arrow" (click)="previous()">&#10094;</button>
+    
+    <!-- Cards de avaliação -->
+    <div class="carousel">
+      <div *ngFor="let comment of visibleComments" class="card">
+        <div class="profile-info">
+          <div class="commnet-container">
+            <p class="comment-text">{{ comment.text }}</p>
+          </div>
+          <div class="profile">
+            <img [src]="comment.img" class="profile-img">
+            <h4 class="profile-name">{{ comment.name }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Setas para navegação -->
+    <button class="arrow right-arrow" (click)="next()">&#10095;</button>
+  
+    <!-- Indicadores de páginas -->
+    <div class="dots">
+      <span *ngFor="let i of [].constructor(totalPages); let idx = index" 
+        [ngClass]="{'active': idx === currentPage}"
+        (click)="setPage(idx)">
+      </span>
+    </div>
+  </div>
+</section>
+  

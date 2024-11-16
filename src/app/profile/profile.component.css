@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.sidebar {
+  margin-right: 96px;
+}
+
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.navbar, .footer {
+  width: 100%;
+}
+  

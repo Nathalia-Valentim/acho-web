@@ -1,0 +1,44 @@
+<section>
+    <div class="retangulo">
+        <h1>Minha Conta</h1>
+        <div class="botoes">
+            <div class="espaco">
+                <button class="dados" [ngClass]="{'ativo': selectedButton === 'dados'}" (click)="selectButton('dados')">
+                    <a href="#" class="icone_perfil" *ngIf="selectedButton === 'dados'"><i class="material-icons">person</i></a>
+                    <h3 class="texto">Dados pessoais</h3>
+                </button>
+            </div>
+            <div class="espaco">
+                <button class="endereco" [ngClass]="{'ativo': selectedButton === 'endereco'}" (click)="selectButton('endereco')">
+                    <a href="#" class="icone_endereco" *ngIf="selectedButton === 'endereco'"><i class="material-icons">map</i></a>
+                    <h3>Meus endereços</h3>
+                </button>
+            </div>
+            <div class="espaco">
+                <button class="favoritos" [ngClass]="{'ativo': selectedButton === 'favoritos'}" (click)="selectButton('favoritos')">
+                    <a href="#" class="icone_favoritos" *ngIf="selectedButton === 'favoritos'"><i class="material-icons">bookmark</i></a>
+                    <h3>Favoritos</h3>
+                </button>
+            </div>
+            <div class="espaco">
+                <button class="autenticacao" [ngClass]="{'ativo': selectedButton === 'autenticacao'}" (click)="selectButton('autenticacao')">
+                    <a href="#" class="icone_autenticacao" *ngIf="selectedButton === 'autenticacao'"><i class="material-icons">lock</i></a>
+                    <h3>Autenticação</h3>
+                </button>
+            </div>
+            <div class="espaco">
+                <button class="notificacoes" [ngClass]="{'ativo': selectedButton === 'notificacoes'}" (click)="selectButton('notificacoes')">
+                    <a href="#" class="icone_notificacoes" *ngIf="selectedButton === 'notificacoes'"><i class="material-icons">notifications</i></a>
+                    <h3>Notificações</h3>
+                </button>
+            </div>
+
+            <div class="espaco_sair">
+                <button class="sair" href="#">
+                    <a href="#" class="icone_sair"><i class="material-icons">logout</i></a>
+                    <h2>Sair</h2>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+.hobby-mes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 148px 8px 164px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E15C31;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 164px;
+    width: 76.3%;
+}
+
+.firstimg, .secondimg, .hobby-content {
+    height: 296px;
+    width: 400px;
+    border-radius: 12px;
+}
+
+.hobby-content {
+    background-color: #043B64;
+    color: #E15C31;
+    text-align: center;
+    border-radius: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.6s ease;
+}
+
+.hobby-content:hover {
+    transform: scale(1.02);
+}
+
+.hobby-text {
+    font-size: 24px;
+}
+
+.discover-btn {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #E15C31;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    
+}
+
+.discover-btn:hover {
+    background-color: #ffffff;
+    color: #E15C31;
+    font-weight: 500;
+}
+
+/* responsividade: */

@@ -1,0 +1,44 @@
+section {
+    padding: 1px 150px;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/* responsividade */
+@media (max-width: 1024px) {
+    section {
+        padding: 1px 15px;
+    }
+
+    section img {
+        margin: 0 15px; 
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 1px 10px;
+    }
+
+    section img {
+        margin: 0 10px;
+        width: calc(100% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 1px 5px;
+    }
+
+    section img {
+        margin: 0 5px; 
+        width: calc(100% - 10px);
+    }
+}

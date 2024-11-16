@@ -1,0 +1,53 @@
+<app-navblue [categoryName]="'FUTEBOL'" [categoryImage]="'images/footballnav.png'"></app-navblue>
+
+<section>
+  <div class="navegar">
+    <span class="escolas">Escolas > </span>
+    <span class="centro-treinamento">Centro de Treinamento Remo</span>
+  </div>
+  
+  <div class="school-description">
+    <h1 class="school-name">Centro de Treinamento Remo</h1>
+  
+    <div class="image-container">
+      <img src="images/remoschool1.png" class="school-image">
+      <img src="images/remoschool2.png" class="school-image">
+      <img src="images/remoschool3.png" class="school-image">
+    </div>
+  
+    <h2 class="training-title">Escola de treinamento infanto-juvenil</h2>
+  
+    <p class="description">
+      O Centro de Treinamento Remo é ideal para jovens atletas, oferecendo uma formação de alta qualidade com técnicas avançadas e um ambiente muito estimulante. Aqui, cada treino é uma oportunidade para aprimorar habilidades, desenvolver a paixão pelo futebol e alcançar novos objetivos, sempre em um espaço acolhedor e motivador.
+    </p>
+  
+    <div class="info-section">
+      <div class="info-text">
+        <p>
+          <span class="material-icons">calendar_month</span><strong>Horários e Dias de Aula: </strong> Segunda a sexta-feira, das 16h às 18h
+        </p>
+        <p>
+          <span class="material-icons">location_on</span> <strong>Endereço:</strong> Campos Amarelos, 786 - Jardim Gabriela I, São Paulo, SP
+        </p>
+        <p>
+          <span class="material-icons">phone</span> <strong>Contato:</strong> (11) 98765-4321 | Email: contato&#64;centroremo.com.br
+        </p>
+        <p>
+          <span class="material-icons">verified_user</span> Profissionais qualificados e certificados
+        </p>
+        <p>
+          Estacionamento gratuito | Acesso para cadeirantes | Equipamentos de qualidade
+        </p>
+      </div>
+      <div class="investment-box">
+        <p class="investment-minimium">R$80,00</p>
+        <p class="cost-note">por semana</p>
+      </div>
+    </div>
+  
+    <button mat-raised-button class="register-button" [routerLink]="['/signup']">Inscreva-se</button>
+  </div>
+</section>
+
+<app-ratings></app-ratings>
+<app-footer></app-footer>

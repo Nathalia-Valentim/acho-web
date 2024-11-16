@@ -1,0 +1,23 @@
+.logo img{
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 64px;
+    position: relative;
+  }
+  
+  .fundo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 1px 172px;
+  }
+  
+  .fundo img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }

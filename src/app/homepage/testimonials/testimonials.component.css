@@ -1,0 +1,111 @@
+section {
+    padding-top: 24px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    padding: 32px 148px 8px 164px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E15C31;
+    margin: 0; 
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 100%;
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card {
+    width: 304px;
+    height: 240px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #E15C31;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.profile-info {
+    text-align: justify;
+    margin: 5px;
+}
+
+.comment-text {
+    color: #403939;
+    font-weight: 500;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    padding-left: 8px;
+    color: #E15C31;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #E15C31;
+}
+
+.left-arrow {
+    padding-left: 12%;
+}
+
+.right-arrow {
+    padding-left: 86.6%;
+}
+
+.dots {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.dots span {
+    height: 8px;
+    width: 8px;
+    background-color: #e7d4cd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #E15C31;
+}

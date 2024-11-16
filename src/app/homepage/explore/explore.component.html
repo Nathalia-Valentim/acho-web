@@ -1,0 +1,22 @@
+<div class="explorar-section">
+  <!-- Container para título e seta -->
+  <div class="explorar-header">
+    <p class="title">Explore</p>
+    <button class="seta-direita" (click)="moveNext()">
+      <span class="material-icons">arrow_forward</span>
+    </button>
+  </div>
+
+  <!-- Containers de hobbies (nome, imagem, botão dentro da imagem) -->
+  <div class="hobby-containers">
+    <div class="hobby-container" *ngFor="let hobby of hobbies">
+      <p class="hobby-name">{{ hobby.name }}</p>
+      <div class="image-container">
+        <img [src]="hobby.img" alt="{{ hobby.name }}" class="hobby-image">
+        <button class="see-more-button">Veja Mais</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  

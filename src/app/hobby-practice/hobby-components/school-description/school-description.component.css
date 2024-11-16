@@ -1,0 +1,120 @@
+section {
+    padding: 22px 160px 0 168px;
+}
+
+.school-description {
+    max-width: 1400px;
+    position: relative;
+}
+
+.school-name {
+    color: #043B64;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.image-container {
+    display: flex;
+    gap: 8px;
+}
+
+.school-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.training-title {
+    color: #403939;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.description {
+    color: #403939;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.info-section {
+    padding: 50px 0;
+    font-weight: 500;
+    display: flex; 
+    align-items: flex-start;
+}
+
+.info-text {
+    flex: 1; 
+}
+
+.investment-box {
+    background-color: white; 
+    border: 2px solid #043B64;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    width: auto; 
+    padding: 12px;
+    padding-left: 20px;
+}
+
+.investment-minimium {
+    color: #e15c31;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.cost-note {
+    font-size: 12px;
+    color: #403939;
+    margin: 0;
+}
+
+
+.register-button {
+    background-color: #043B64;
+    border: 1px solid #043B64; 
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 50px; 
+    position: absolute; 
+    right: 2px; 
+    bottom: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: white; 
+    color: #043B64;
+    border: 1px solid #043B64; 
+}
+
+
+.material-icons {
+    vertical-align: middle; 
+    padding-right: 5px;
+}
+
+
+.escolas {
+    color: #403939;
+    font-size: 14px;
+}
+  
+.centro-treinamento {
+    color: #043B64;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navegar {
+    padding-top: 328px;
+}
+  
+  

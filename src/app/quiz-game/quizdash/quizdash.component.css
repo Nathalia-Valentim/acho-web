@@ -1,0 +1,69 @@
+.container_image {
+    position: relative; /* O texto será posicionado em relação a este container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 176px 32px;
+  }
+  
+  .fundo {
+    position: relative; /* Referência para o posicionamento absoluto */
+  }
+  
+  .fundo img {
+    width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto;
+    opacity: 0.5;
+    display: block; /* Remove espaços extras ao redor da imagem */
+  }
+  
+  .texto {
+    position: absolute; /* Faz o texto flutuar sobre a imagem */
+    top: 30%; /* Ajuste para alinhar o texto verticalmente */
+    left: 50%;
+    transform: translate(-50%, -30%); /* Centraliza o texto horizontalmente e ajusta verticalmente */
+    text-align: center;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #403939;
+    font-size: 4vw; /* Tamanho do texto ajustável */
+  }
+  
+  .highlight {
+    color: #E15C31;
+  }
+  
+  .botao {
+    position: absolute; /* Faz o botão flutuar sobre a imagem */
+    top: 60%; /* Ajuste para alinhar o botão verticalmente */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    text-align: center;
+  }
+  
+  .comecar {
+    width: 160px;
+    height: 40px;
+    background-color: #E15C31;
+    border: 1px solid #E15C31;
+    color: #ffffff;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .comecar:hover {
+    background-color: #ffffff;
+    color: #E15C31;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .comecar:not(:hover) {
+    transition: background-color 0.5s ease;
+  }

@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<div class="categoria_hobbies">
+    <h1 class="categoria">Categoria</h1>
+    <h1 class="tipo_hobbies">> {{ categoriaNome }}</h1>
+  </div>
+  
+  <h1 class="esportes">{{ categoriaNome }}</h1>
+  
+  <div class="container">
+    <div *ngFor="let categoria of categorias" class="grupo">
+      <h2>{{ categoria.nome }}</h2>
+      <button class="grupo_categoria" (click)="categoria.nome === 'Futebol' ? irParaFutebol() : null">
+        <img [src]="categoria.imagem" alt="{{ categoria.nome }}">
+      </button>
+    </div>
+  </div>
+  
+  
+<app-footer></app-footer>
