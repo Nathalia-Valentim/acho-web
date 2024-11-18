@@ -24,6 +24,19 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  cursor: pointer;
+}
+
+.categorias-container::-webkit-scrollbar {
+  height: 8px; /* Altura da barra de rolagem */
+}
+
+.categorias-container::-webkit-scrollbar-thumb {
+  background: transparent; /* Cor do botão da barra de rolagem */
+  border-radius: 10px; /* Borda arredondada */
 }
 
 .categoria {
