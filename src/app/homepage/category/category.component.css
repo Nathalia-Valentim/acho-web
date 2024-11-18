@@ -1,49 +1,42 @@
+section {
+  padding: 1px 150px 50px;
+}
+
+.categorias-header {
+  padding-bottom: 16px;
+  padding-left: 14px;
+}
+
 .title {
-  font-size: 24px;
+  margin: 0;
+  font-size: 20px;
   font-weight: 600;
   color: #E15C31;
-  margin: 0; 
 }
 
 .categorias-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 148px 20px 164px;
-}
-
-button.seta-direita {
-  background: none;
-  border: none;
-  color: #E15C31;
-  font-size: 24px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-button.seta-direita .material-icons {
-  font-size: 32px;
 }
 
 .categorias-container {
-  width: 77%;
-  padding: 1px 154px;
+  padding-left: 4px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 40px;
+  justify-content: space-between;
 }
 
 .categoria {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
-  width: 80px;
+  width: 88px;
 }
 
 .icone-categoria {
-  width: 80px;
-  height: 80px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   background-color: #E15C31;
   display: flex;
@@ -52,17 +45,51 @@ button.seta-direita .material-icons {
 }
 
 .icone-categoria .material-icons {
-  font-size: 40px;
+  font-size: 32px;
   color: white;
 }
 
 p {
   margin: 0;
-  padding-top: 12px;
-  font-size: 14px;
+  padding-top: 8px;
+  font-size: 13px;
   font-weight: 600;
   color: #E15C31;
+  text-align: center;
 }
 
-
 /* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+      padding: 1px 100px 44px;
+  }
+
+  .categorias-header {
+    padding-bottom: 16px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+      padding: 1px 56px 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+      padding: 1px 38px 24px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+      padding: 1px 28px 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+      padding: 1px 30px 16px;
+  }
+}

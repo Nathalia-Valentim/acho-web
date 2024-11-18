@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 64px;
+  padding: 50px 64px 32px;
   position: relative;
 }
 
@@ -42,9 +42,20 @@ nav {
 
 .user-actions a {
   color: #E15C31;
-  padding: 0 12px 0 12px;
   display: flex;
   text-decoration: none;
+}
+
+.serach-link {
+  padding: 0 12px 0 12px;
+}
+
+.person-link {
+  padding-left: 12px;
+}
+
+.menu-link {
+  padding-left: 12px;
 }
 
 .menu-actions {
@@ -52,6 +63,7 @@ nav {
   align-items: center;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .menu-actions a {
@@ -106,7 +118,7 @@ nav {
 .sidebar-link {
   color: #403939;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   padding: 0 0 10px 0;
 }
@@ -119,18 +131,19 @@ nav {
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
+    padding: 0 16px 0 16px;
   }
 
   .material-icons {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
   header {
-    padding: 40px 40px;
+    padding: 40px 40px 24px;
   }
   
   .logo img {
@@ -147,17 +160,17 @@ nav {
   }
 
   .material-icons {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 380px) {
   header {
-    padding: 40px 40px;
+    padding: 40px 32px 24px;
   }
   
   .logo img {
-    max-width: 68px;
+    max-width: 60px;
     height: auto;
   }
 
@@ -167,5 +180,24 @@ nav {
 
   .material-icons {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    padding: 40px 32px 24px;
+  }
+  
+  .logo img {
+    max-width: 56px;
+    height: auto;
+  }
+
+  .user-actions a {
+    padding: 0 8px 0 8px;
+  }
+
+  .material-icons {
+    font-size: 16px;
   }
 }
