@@ -5,11 +5,12 @@ import { NavgreenComponent } from "./shared/components/navbar/navgreen/navgreen.
 import { NavblueComponent } from "./shared/components/navbar/navblue/navblue.component";
 import { GalleryComponent } from "./homepage/gallery/gallery.component";
 import { CategoryComponent } from "./homepage/category/category.component";
+import { QuizComponent } from "./homepage/quiz/quiz.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, NavgreenComponent, NavblueComponent, GalleryComponent, CategoryComponent],
+  imports: [RouterOutlet, NavbarComponent, NavgreenComponent, NavblueComponent, GalleryComponent, CategoryComponent, QuizComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
