@@ -1,5 +1,7 @@
 section {
   padding: 1px 150px 50px;
+  overflow: visible; /* Garante que o conteúdo além do padding apareça */
+  position: relative; /* Permite o controle de posicionamento de elementos */ 
 }
 
 .categorias-header {
@@ -20,14 +22,15 @@ section {
 }
 
 .categorias-container {
-  padding-left: 4px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: flex-start;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   cursor: pointer;
+  gap: 9px;
+  padding-left: 8px;
+  position: relative; /* Mantém a relação com o section */
+  z-index: 1; /* Para sobrepor o background ou outros elementos */
 }
 
 .categorias-container::-webkit-scrollbar {
@@ -48,50 +51,179 @@ section {
 }
 
 .icone-categoria {
-  width: 68px;
-  height: 68px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background-color: #E15C31;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3; /* Certifica-se de que o círculo aparece acima de tudo */
 }
 
 .icone-categoria .material-icons {
-  font-size: 32px;
+  font-size: 36px;
   color: white;
 }
 
 p {
   margin: 0;
   padding-top: 8px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #E15C31;
   text-align: center;
 }
 
+.categorias-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: none; /* Esconde as setas por padrão */
+}
+
+.arrow.left {
+  left: -30px; /* Ajuste conforme necessário */
+}
+
+.arrow.right {
+  right: -40px; /* Ajuste conforme necessário */
+}
+
+.arrow span {
+  font-size: 32px;
+  color: #043B64;
+}
+
 /* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
-      padding: 1px 100px 44px;
+    padding: 0 96px 24px 96px;
+    overflow: visible; /* Mantém o círculo visível em telas menores */
   }
 
   .categorias-header {
     padding-bottom: 16px;
-    padding-left: 12px;
+  }
+
+  .categorias-container {
+    gap: 16px;
+    padding-left: 14px;
+  }
+
+  .icone-categoria {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .icone-categoria .material-icons {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; /* As setas devem estar acima do restante */
   }
 }
 
 @media screen and (max-width: 768px) {
   section {
-      padding: 1px 56px 40px;
+    padding: 1px 56px 40px;
+    overflow: visible; /* Mantém o círculo visível em telas menores */
+  }
+
+  .categorias-header {
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .categorias-header {
+    padding-bottom: 16px;
+  }
+
+  .categorias-container {
+    gap: 14px;
+    padding-left: 14px;
+  }
+
+  .icone-categoria {
+    width: 58px;
+    height: 58px;
+  }
+  
+  .icone-categoria .material-icons {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; /* As setas devem estar acima do restante */
   }
 }
 
 @media screen and (max-width: 480px) {
   section {
-      padding: 1px 38px 24px;
+    padding: 1px 38px 24px;
+    overflow: visible; /* Mantém o círculo visível em telas menores */
+  }
+
+  .categorias-header {
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .categorias-header {
+    padding-bottom: 16px;
+  }
+
+  .categorias-container {
+    gap: 14px;
+    padding-left: 14px;
+  }
+
+  .icone-categoria {
+    width: 58px;
+    height: 58px;
+  }
+  
+  .icone-categoria .material-icons {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; /* As setas devem estar acima do restante */
   }
 }
 

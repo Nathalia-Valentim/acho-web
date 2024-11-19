@@ -34,16 +34,6 @@ export class CategoryComponent {
     this.router.navigate(['/category', nome]);
   }
 
-  scrollEsquerda(): void {
-    const container = document.querySelector('.categorias-container') as HTMLElement;
-    container.scrollBy({ left: -200, behavior: 'smooth' });
-  }
-
-  scrollDireita(): void {
-    const container = document.querySelector('.categorias-container') as HTMLElement;
-    container.scrollBy({ left: 200, behavior: 'smooth' });
-  }
-
   currentScreenSize: string = 'desktop';
 
   observeScreenSize() {
@@ -65,5 +55,19 @@ export class CategoryComponent {
         }
       }
     });
+
+    this.breakpointObserver.observe(['(max-width: 1024px)']).subscribe(result => {
+      this.showArrows = result.matches; // Só ativa as setas se a tela for <= 1024px
+    });
+  }
+
+  showArrows: boolean = false; // Define se as setas devem aparecer ou não
+
+  scrollCarrossel(direction: number): void {
+    const container = document.querySelector('.categorias-container') as HTMLElement;
+    if (container) {
+      const scrollAmount = 150; // Pixels para rolar
+      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
   }
 }
