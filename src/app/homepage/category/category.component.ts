@@ -68,6 +68,31 @@ export class CategoryComponent {
     if (container) {
       const scrollAmount = 150; // Pixels para rolar
       container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+
+      // Aguarde o scroll terminar e atualize as setas
+      setTimeout(() => this.updateArrowsVisibility(container), 300);
+    }
+  }
+
+  updateArrowsVisibility(container: HTMLElement): void {
+    const scrollLeft = container.scrollLeft;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+  
+    this.showLeftArrow = scrollLeft > 0; // Mostra a seta esquerda se scrollLeft for maior que 0
+    this.showRightArrow = scrollLeft < maxScrollLeft; // Mostra a seta direita se não estiver no fim
+  }
+  
+  // Inicialização das variáveis
+  showLeftArrow: boolean = false; // Seta esquerda está inicialmente escondida
+  showRightArrow: boolean = true; // Seta direita aparece inicialmente
+  
+  ngAfterViewInit(): void {
+    const container = document.querySelector('.categorias-container') as HTMLElement;
+    if (container) {
+      this.updateArrowsVisibility(container);
+  
+      // Monitora eventos de rolagem para atualizar setas
+      container.addEventListener('scroll', () => this.updateArrowsVisibility(container));
     }
   }
 }

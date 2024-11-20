@@ -22,18 +22,18 @@ img {
 
 @media screen and (max-width: 480px) {
   section {
-      padding: 1px 38px 24px;
+      padding: 1px 38px 12px;
   }
 }
 
 @media screen and (max-width: 380px) {
   section {
-      padding: 1px 28px 20px;
+      padding: 1px 28px 10px;
   }
 }
 
 @media screen and (max-width: 320px) {
   section {
-      padding: 1px 30px 16px;
+      padding: 1px 30px 8px;
   }
 }

@@ -4,7 +4,7 @@
   </div>
   
   <div class="categorias-carousel">
-    <button class="arrow left" *ngIf="showArrows" (click)="scrollCarrossel(-1)">
+    <button class="arrow left" *ngIf="showLeftArrow" (click)="scrollCarrossel(-1)">
       <span class="material-icons">chevron_left</span>
     </button>
 
@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <button class="arrow right" *ngIf="showArrows" (click)="scrollCarrossel(1)">
+    <button class="arrow right" *ngIf="showRightArrow" (click)="scrollCarrossel(1)">
       <span class="material-icons">chevron_right</span>
     </button>
   </div>  
