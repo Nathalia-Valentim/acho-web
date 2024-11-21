@@ -1,4 +1,5 @@
 .explorar-header {
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,10 +32,20 @@ button.seta-direita {
 .hobby-containers {
   display: flex;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
   gap: 16px;
   padding: 8px 156px 20px 164px;
-
   scrollbar-width: none;
+  user-select: none; /* Impede seleção de texto */
+}
+
+.hobby-containers:active {
+  cursor: grabbing; /* Indica que o usuário está arrastando */
+}
+
+.hobby-containers::-webkit-scrollbar {
+  display: none;
 }
 
 .hobby-container {
@@ -92,4 +103,80 @@ button.seta-direita {
 
 .see-more-button:hover {
   background-color: #043B64;
+}
+
+@media screen and (max-width: 1024px) {
+  .explorar-header {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 148px 8px 164px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E15C31;
+    margin: 0; 
+  }
+  
+  button.seta-direita {
+    background: none;
+    border: none;
+    color: #E15C31;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .material-icons {
+    font-size: 32px;
+  }
+  
+  /* containers de hobbies */
+  .hobby-containers {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    gap: 16px;
+    padding: 8px 156px 20px 164px;
+    scrollbar-width: none;
+    user-select: none; /* Impede seleção de texto */
+  }
+  
+  .hobby-containers:active {
+    cursor: grabbing; /* Indica que o usuário está arrastando */
+  }
+  
+  .hobby-containers::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hobby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 190px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 380px) {
+  
+}
+
+@media screen and (max-width: 320px) {
+  
 }

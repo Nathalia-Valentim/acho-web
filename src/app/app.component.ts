@@ -6,11 +6,12 @@ import { NavblueComponent } from "./shared/components/navbar/navblue/navblue.com
 import { GalleryComponent } from "./homepage/gallery/gallery.component";
 import { CategoryComponent } from "./homepage/category/category.component";
 import { QuizComponent } from "./homepage/quiz/quiz.component";
+import { ExploreComponent } from "./homepage/explore/explore.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, NavgreenComponent, NavblueComponent, GalleryComponent, CategoryComponent, QuizComponent],
+  imports: [RouterOutlet, NavbarComponent, NavgreenComponent, NavblueComponent, GalleryComponent, CategoryComponent, QuizComponent, ExploreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

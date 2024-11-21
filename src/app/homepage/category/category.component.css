@@ -31,16 +31,19 @@ section {
   position: relative; /* Mantém a relação com o section */
   z-index: 1; /* Para sobrepor o background ou outros elementos */
   gap: 28px;
+  scrollbar-width: none;
 }
 
+/*
 .categorias-container::-webkit-scrollbar {
-  height: 8px; /* Altura da barra de rolagem */
+  height: 8px;  Altura da barra de rolagem 
 }
 
 .categorias-container::-webkit-scrollbar-thumb {
-  background: transparent; /* Cor do botão da barra de rolagem */
-  border-radius: 10px; /* Borda arredondada */
+  background: transparent;  Cor do botão da barra de rolagem 
+  border-radius: 10px;  Borda arredondada 
 }
+*/
 
 .categoria {
   display: flex;
@@ -50,6 +53,7 @@ section {
   min-width: 64px; /* Define uma largura mínima */
   width: 80px; /* Garantir largura consistente */
   flex-shrink: 0; /* Evita que os itens diminuam no flexbox */
+  scroll-snap-align: start; /* Garante que o item alinhe ao início ao parar */
 }
 
 .icone-categoria {
@@ -228,6 +232,7 @@ p {
   .arrow {
     display: block;
     z-index: 2; /* As setas devem estar acima do restante */
+    top: 40%;
   }
 
   .arrow.left {
