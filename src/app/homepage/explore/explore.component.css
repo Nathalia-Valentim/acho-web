@@ -10,7 +10,7 @@
   font-size: 24px;
   font-weight: 600;
   color: #E15C31;
-  margin: 0; 
+  margin: 0;
 }
 
 button.seta-direita {
@@ -107,20 +107,28 @@ button.seta-direita {
 
 @media screen and (max-width: 1024px) {
   .explorar-header {
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 148px 8px 164px;
+    padding: 32px 100px 8px 110px;
   }
-  
+
+
+  /* containers de hobbies */
+  .hobby-containers {
+    padding: 8px 108px 20px 112px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explorar-header {
+    padding: 32px 58px 8px 66px;
+  }
+
   .title {
     font-size: 24px;
     font-weight: 600;
     color: #E15C31;
-    margin: 0; 
+    margin: 0;
   }
-  
+
   button.seta-direita {
     background: none;
     border: none;
@@ -131,11 +139,11 @@ button.seta-direita {
     align-items: center;
     justify-content: center;
   }
-  
+
   .material-icons {
     font-size: 32px;
   }
-  
+
   /* containers de hobbies */
   .hobby-containers {
     display: flex;
@@ -143,19 +151,19 @@ button.seta-direita {
     scroll-snap-type: x mandatory;
     cursor: grab;
     gap: 16px;
-    padding: 8px 156px 20px 164px;
+    padding: 32px 60px 8px 68px;
     scrollbar-width: none;
     user-select: none; /* Impede seleção de texto */
   }
-  
+
   .hobby-containers:active {
     cursor: grabbing; /* Indica que o usuário está arrastando */
   }
-  
+
   .hobby-containers::-webkit-scrollbar {
     display: none;
   }
-  
+
   .hobby-container {
     display: flex;
     flex-direction: column;
@@ -165,18 +173,14 @@ button.seta-direita {
   }
 }
 
-@media screen and (max-width: 768px) {
-  
-}
-
 @media screen and (max-width: 480px) {
-  
+
 }
 
 @media screen and (max-width: 380px) {
-  
+
 }
 
 @media screen and (max-width: 320px) {
-  
+
 }
