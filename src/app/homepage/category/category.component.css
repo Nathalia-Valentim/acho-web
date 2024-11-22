@@ -2,11 +2,14 @@ section {
   padding: 1px 160px 24px;
   overflow: visible; /* Garante que o conteúdo além do padding apareça */
   position: relative; /* Permite o controle de posicionamento de elementos */
+
 }
 
 .categorias-header {
   padding-bottom: 18px;
   padding-left: 6px;
+  display: flex;
+  align-items: center;
 }
 
 .title {
@@ -16,22 +19,17 @@ section {
   color: #E15C31;
 }
 
-.categorias-header {
-  display: flex;
-  align-items: center;
-}
-
 .categorias-container {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   cursor: pointer;
   position: relative; /* Mantém a relação com o section */
   z-index: 1; /* Para sobrepor o background ou outros elementos */
-  gap: 28px;
   scrollbar-width: none;
+  user-select: none; /* Impede seleção de texto */
 }
 
 /*
@@ -254,7 +252,7 @@ p {
   }
 
   .categorias-header {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     padding-left: 12px;
   }
 

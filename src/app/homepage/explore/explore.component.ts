@@ -9,6 +9,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   templateUrl: './explore.component.html',
   styleUrl: './explore.component.css'
 })
+
 export class ExploreComponent {
   hobbies = [
     { name: 'Cerâmica', img: 'images/ceramica.png' },
