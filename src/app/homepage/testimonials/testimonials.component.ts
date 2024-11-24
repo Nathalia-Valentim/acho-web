@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.css'
 })
+
 export class TestimonialsComponent {
   comments : { name: string; img: string; text: string; }[] = [
     { name: 'Julia Fernandes', img: 'images/profileavatar3.png', 
@@ -38,9 +39,10 @@ export class TestimonialsComponent {
     { name: 'Clara Amorian', img: 'images/profileavatar7.png', 
       text: 'É um site que eu irei usar com frequência, muito bom. Recomendo fazer o quiz, me ajudou a encontrar um hobby que realmente combina com meus interesses.' }
   ];
+
   visibleComments: { name: string; img: string; text: string; }[] = [];
   currentPage = 0;
-  itemsPerPage = 3;
+  itemsPerPage = 1;
   totalPages = Math.ceil(this.comments.length / this.itemsPerPage);
 
   constructor() {
@@ -48,25 +50,23 @@ export class TestimonialsComponent {
   }
 
   updateVisibleComments() {
-    const startIndex = this.currentPage * this.itemsPerPage;
-    this.visibleComments = this.comments.slice(startIndex, startIndex + this.itemsPerPage);
+  const startIndex = this.currentPage - 1 < 0 ? this.comments.length - 1 : this.currentPage - 1;
+  const endIndex = (this.currentPage + 1) % this.comments.length;
+
+  const previous = this.comments[startIndex];
+  const current = this.comments[this.currentPage];
+  const next = this.comments[endIndex];
+
+  this.visibleComments = [previous, current, next];
   }
 
   next() {
-    if (this.currentPage < this.totalPages - 1) {
-      this.currentPage++;
-    } else {
-      this.currentPage = 0; // Volta ao primeiro comentário
-    }
+    this.currentPage = (this.currentPage + 1) % this.comments.length;
     this.updateVisibleComments();
   }
 
   previous() {
-    if (this.currentPage > 0) {
-      this.currentPage--;
-    } else {
-      this.currentPage = this.totalPages - 1; // Volta ao último comentário
-    }
+    this.currentPage = (this.currentPage - 1 + this.comments.length) % this.comments.length;
     this.updateVisibleComments();
   }
 

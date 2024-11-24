@@ -1,4 +1,3 @@
-<section class="testimonial-container">
   <div class="testimonial-header">
     <p class="title">O que nossos clientes estão dizendo</p>
   </div>
@@ -9,22 +8,19 @@
     
     <!-- Cards de avaliação -->
     <div class="carousel">
-      <div *ngFor="let comment of visibleComments" class="card">
-        <div class="profile-info">
-          <div class="commnet-container">
+      <div *ngFor="let comment of visibleComments; let idx = index" class="card" [ngClass]="{'highlight': idx === 1}">
+          <div class="comment-container">
             <p class="comment-text">{{ comment.text }}</p>
           </div>
           <div class="profile">
-            <img [src]="comment.img" class="profile-img">
+            <img [src]="comment.img" class="profile-img" />
             <h4 class="profile-name">{{ comment.name }}</h4>
           </div>
-        </div>
       </div>
     </div>
     
     <!-- Setas para navegação -->
     <button class="arrow right-arrow" (click)="next()">&#10095;</button>
-  
     <!-- Indicadores de páginas -->
     <div class="dots">
       <span *ngFor="let i of [].constructor(totalPages); let idx = index" 
@@ -33,5 +29,3 @@
       </span>
     </div>
   </div>
-</section>
-  

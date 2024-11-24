@@ -1,7 +1,7 @@
 .hobby-mes-header {
     display: flex;
     align-items: center;
-    padding: 24px 150px 16px 164px;
+    padding: 24px 150px 16px 166px;
 }
 
 .title {
@@ -36,8 +36,8 @@
 .hobby-content p {
     color: #E15C31;
     text-align: start;
-    width: 146px;
-    font-size: 20px;
+    width: 166px;
+    font-size: 22px;
 }
 
 .hobby-content:hover {

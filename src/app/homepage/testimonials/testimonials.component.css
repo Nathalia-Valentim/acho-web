@@ -1,15 +1,9 @@
-section {
-    padding-top: 24px;
-}
-
 .testimonial-header {
-    display: flex;
-    align-items: center;
-    padding: 32px 148px 8px 164px;
+    padding: 40px 112px 24px 165px;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #E15C31;
     margin: 0; 
@@ -24,30 +18,67 @@ section {
 
 .carousel {
     width: 100%;
-    padding-top: 28px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    gap: 164px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card.highlight {
+    flex: 0 0 36%; /* Tamanho maior para o card central */
+    height: 288px;
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
 }
 
 .card {
-    width: 304px;
+    display: flex;
+    flex-direction: column; /* Coloca o texto e o perfil em colunas */
+    justify-content: space-between; /* Espaça o conteúdo e o perfil */
+    align-items: flex-start; /* Garante alinhamento à esquerda */
+    flex: 0 0 32%; /* Para as caixas laterais menores */
     height: 240px;
     box-sizing: border-box;
-    padding-left: 12px;
-    padding-right: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     border: 2px solid #E15C31;
     border-radius: 10px;
-    word-wrap: break-word;
+    padding: 24px 48px;
+    opacity: 0.6;
+    font-size: 16px;
+    overflow: hidden; /* Evita que conteúdo extra ultrapasse os limites do card */
 }
 
-.profile-info {
+/* Para todos os cards */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0; /* Não encolher */
+    font-size: 1em; /* Define a base para tamanho relativo */
+}
+
+/* Ajusta o tamanho da imagem em relação ao texto */
+.profile-img {
+    width: 3em; /* Tamanho relativo ao font-size do card */
+    height: 3em;
+    border-radius: 50%;
+}
+
+/* Nome do perfil também ajustado proporcionalmente */
+.profile-name {
+    font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+    padding-left: 12px;
+    color: #E15C31;
+}
+
+
+.comment-container {
+    flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível */
+    display: flex; /* Para manter consistência, mesmo se o texto for vazio */
+    align-items: flex-start; /* Alinha o texto no início */
     text-align: justify;
-    margin: 5px;
 }
 
 .comment-text {
@@ -55,40 +86,24 @@ section {
     font-weight: 500;
 }
 
-.profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.profile-name {
-    padding-left: 8px;
-    color: #E15C31;
-}
-
 .arrow {
     position: absolute;
-    top: 50%;
-    transform: translateY(-70%);
+    top: 40%;
+    transform: translateY(-50%);
     background-color: transparent;
     border: none;
     font-size: 2rem;
     cursor: pointer;
     color: #E15C31;
+    z-index: 2;
 }
 
 .left-arrow {
-    padding-left: 12%;
+    left: 24%;
 }
-
+  
 .right-arrow {
-    padding-left: 86.6%;
+    right: 24%;
 }
 
 .dots {
@@ -108,4 +123,167 @@ section {
 
 .dots .active {
     background-color: #E15C31;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .testimonial-header {
+        padding: 24px 96px 22px 114px;
+    }
+    
+    .carousel {
+        gap: 100px;
+    }
+
+    .card.highlight {
+        flex: 0 0 44%; /* Tamanho maior para o card central */
+        height: 280px;
+        opacity: 1;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+    }
+    
+    .card {
+        flex: 0 0 40%; /* Para as caixas laterais menores */
+        height: 256px;
+        border-radius: 10px;
+        padding: 24px 40px;
+        opacity: 0.6;
+        font-size: 16px;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0; /* Não encolher */
+        font-size: 1em; /* Define a base para tamanho relativo */
+    }
+    
+    /* Ajusta o tamanho da imagem em relação ao texto */
+    .profile-img {
+        width: 3em; /* Tamanho relativo ao font-size do card */
+        height: 3em;
+        border-radius: 50%;
+    }
+    
+    /* Nome do perfil também ajustado proporcionalmente */
+    .profile-name {
+        font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        z-index: 2;
+    }
+    
+    .left-arrow {
+        left: 22%;
+    }
+      
+    .right-arrow {
+        right: 22%;
+    }
+    
+    .dots {
+        padding-top: 16px;
+    }
+    
+    .dots span {
+        height: 8px;
+        width: 8px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .testimonial-header {
+        padding: 24px 56px 16px 66px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+
+    .carousel {
+        gap: 100px;
+    }
+
+    .card.highlight {
+        flex: 0 0 44%; /* Tamanho maior para o card central */
+        height: 280px;
+        opacity: 1;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+    }
+    
+    .card {
+        flex: 0 0 40%; /* Para as caixas laterais menores */
+        height: 256px;
+        border-radius: 10px;
+        padding: 24px 40px;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0; /* Não encolher */
+        font-size: 1em; /* Define a base para tamanho relativo */
+    }
+    
+    /* Ajusta o tamanho da imagem em relação ao texto */
+    .profile-img {
+        width: 3em; /* Tamanho relativo ao font-size do card */
+        height: 3em;
+        border-radius: 50%;
+    }
+    
+    /* Nome do perfil também ajustado proporcionalmente */
+    .profile-name {
+        font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        z-index: 2;
+    }
+    
+    .left-arrow {
+        left: 22%;
+    }
+      
+    .right-arrow {
+        right: 22%;
+    }
+    
+    .dots {
+        padding-top: 16px;
+    }
+    
+    .dots span {
+        height: 8px;
+        width: 8px;
+        margin: 0 5px;
+    }
 }
