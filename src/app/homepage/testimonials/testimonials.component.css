@@ -138,8 +138,6 @@
     .card.highlight {
         flex: 0 0 44%; /* Tamanho maior para o card central */
         height: 280px;
-        opacity: 1;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         font-size: 18px;
     }
     
@@ -148,8 +146,62 @@
         height: 256px;
         border-radius: 10px;
         padding: 24px 40px;
-        opacity: 0.6;
         font-size: 16px;
+    }
+
+    .profile {
+        flex-shrink: 0; /* Não encolher */
+        font-size: 1em; /* Define a base para tamanho relativo */
+    }
+    
+    /* Ajusta o tamanho da imagem em relação ao texto */
+    .profile-img {
+        width: 2.8em; /* Tamanho relativo ao font-size do card */
+        height: 2.8em;
+    }
+    
+    /* Nome do perfil também ajustado proporcionalmente */
+    .profile-name {
+        font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    
+    .left-arrow {
+        left: 22%;
+    }
+      
+    .right-arrow {
+        right: 22%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .testimonial-header {
+        padding: 24px 56px 16px 66px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+
+    .carousel {
+        gap: 70px;
+    }
+
+    .card.highlight {
+        flex: 0 0 44%; /* Tamanho maior para o card central */
+        height: 256px;
+        font-size: 16px;
+    }
+    
+    .card {
+        flex: 0 0 40%; /* Para as caixas laterais menores */
+        height: 232px;
+        border-radius: 10px;
+        padding: 24px 32px;
+        opacity: 0.6;
+        font-size: 14px;
     }
 
     .profile {
@@ -162,14 +214,14 @@
     
     /* Ajusta o tamanho da imagem em relação ao texto */
     .profile-img {
-        width: 3em; /* Tamanho relativo ao font-size do card */
-        height: 3em;
+        width: 2.6em; /* Tamanho relativo ao font-size do card */
+        height: 2.6em;
         border-radius: 50%;
     }
     
     /* Nome do perfil também ajustado proporcionalmente */
     .profile-name {
-        font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+        font-size: 1em; /* Ligeiramente menor que o texto do card */
         padding-left: 12px;
         color: #E15C31;
     }
@@ -205,34 +257,32 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
     .testimonial-header {
-        padding: 24px 56px 16px 66px;
+        padding: 24px 32px 16px 42px;
     }
     
     .title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .carousel {
-        gap: 100px;
+        gap: 70px;
     }
 
     .card.highlight {
-        flex: 0 0 44%; /* Tamanho maior para o card central */
-        height: 280px;
-        opacity: 1;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        font-size: 16px;
+        flex: 0 0 68%; /* Tamanho maior para o card central */
+        height: 216px;
+        font-size: 14px;
     }
     
     .card {
         flex: 0 0 40%; /* Para as caixas laterais menores */
-        height: 256px;
+        height: 232px;
         border-radius: 10px;
-        padding: 24px 40px;
+        padding: 18px 24px;
         opacity: 0.6;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .profile {
@@ -245,14 +295,14 @@
     
     /* Ajusta o tamanho da imagem em relação ao texto */
     .profile-img {
-        width: 3em; /* Tamanho relativo ao font-size do card */
-        height: 3em;
+        width: 2.6em; /* Tamanho relativo ao font-size do card */
+        height: 2.6em;
         border-radius: 50%;
     }
     
     /* Nome do perfil também ajustado proporcionalmente */
     .profile-name {
-        font-size: 1.1em; /* Ligeiramente menor que o texto do card */
+        font-size: 1em; /* Ligeiramente menor que o texto do card */
         padding-left: 12px;
         color: #E15C31;
     }
@@ -265,25 +315,106 @@
     .arrow {
         top: 40%;
         transform: translateY(-50%);
-        font-size: 2rem;
+        font-size: 1.6rem;
         z-index: 2;
     }
     
     .left-arrow {
-        left: 22%;
+        left: 6%;
     }
       
     .right-arrow {
-        right: 22%;
+        right: 6%;
     }
     
     .dots {
-        padding-top: 16px;
+        padding-top: 10px;
     }
     
     .dots span {
-        height: 8px;
-        width: 8px;
+        height: 6px;
+        width: 6px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .testimonial-header {
+        padding: 24px 26px 16px 34px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+
+    .carousel {
+        gap: 70px;
+    }
+
+    .card.highlight {
+        flex: 0 0 72%; /* Tamanho maior para o card central */
+        height: 200px;
+        font-size: 13px;
+    }
+    
+    .card {
+        flex: 0 0 40%; /* Para as caixas laterais menores */
+        height: 232px;
+        border-radius: 10px;
+        padding: 16px 20px;
+        opacity: 0.6;
+        font-size: 12px;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0; /* Não encolher */
+        font-size: 1em; /* Define a base para tamanho relativo */
+    }
+    
+    /* Ajusta o tamanho da imagem em relação ao texto */
+    .profile-img {
+        width: 2.6em; /* Tamanho relativo ao font-size do card */
+        height: 2.6em;
+        border-radius: 50%;
+    }
+    
+    /* Nome do perfil também ajustado proporcionalmente */
+    .profile-name {
+        font-size: 1em; /* Ligeiramente menor que o texto do card */
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        z-index: 2;
+    }
+    
+    .left-arrow {
+        left: 5%;
+    }
+      
+    .right-arrow {
+        right: 5%;
+    }
+    
+    .dots {
+        padding-top: 4px;
+    }
+    
+    .dots span {
+        height: 6px;
+        width: 6px;
         margin: 0 5px;
     }
 }

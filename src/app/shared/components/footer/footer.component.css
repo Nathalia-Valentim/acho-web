@@ -1,6 +1,5 @@
 section {
-  padding-top: 200px;
-  padding-bottom: 24px;
+  padding: 96px 0 24px 0;
 }
 
 footer {
@@ -27,7 +26,6 @@ hr {
 .footer-left, .footer-right {
   width: 44%;
 }
-
 
 li {
   padding-bottom: 4px;
@@ -72,13 +70,66 @@ footer li {
 
 /* responsividade */
 @media (max-width: 768px) {
+  section {
+    padding-top: 64px;
+  }
+  
+  .footer-container {
+    padding-top: 40px;
+    width: 90%;
+  }
+  
   .footer-left, .footer-right {
     width: 100%;
-    margin-bottom: 20px;
+  }
+  
+  li {
+    padding-bottom: 4px;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #403939;
+  }
+  
+  footer p {
+    color: #403939;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  
+  footer h2 {
+    color: #E15C31;
+    font-size: 16px;
+  }
+  
+  footer li {
+    font-weight: 500;
+  }
+  
+  .social-icons {
+    padding-top: 16px;
+  }
+  
+  .socials {
+    padding-right: 16px;
+    width: 28px;
+    height: 28px;
   }
 }
 
 @media (max-width: 480px) {
+  footer {
+    padding: 0 40px;
+  }
+  
   footer p, footer h2 {
     font-size: 14px;
   }
@@ -88,7 +139,7 @@ footer li {
   }
 
   .socials {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
 }
