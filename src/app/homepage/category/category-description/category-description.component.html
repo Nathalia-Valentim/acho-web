@@ -1,11 +1,13 @@
 <app-navbar></app-navbar>
-<div class="categoria_hobbies">
+
+<section>
+  <div class="categoria_hobbies">
     <h1 class="categoria">Categoria</h1>
     <h1 class="tipo_hobbies">> {{ categoriaNome }}</h1>
   </div>
-  
+    
   <h1 class="esportes">{{ categoriaNome }}</h1>
-  
+    
   <div class="container">
     <div *ngFor="let categoria of categorias" class="grupo">
       <h2>{{ categoria.nome }}</h2>
@@ -14,6 +16,6 @@
       </button>
     </div>
   </div>
-  
-  
+</section>
+
 <app-footer></app-footer>

@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   templateUrl: './category-description.component.html',
   styleUrl: './category-description.component.css'
 })
+
 export class CategoryDescriptionComponent implements OnInit {
   categoriaNome: string = '';
   categorias = [

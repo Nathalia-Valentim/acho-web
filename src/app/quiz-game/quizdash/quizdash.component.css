@@ -1,69 +1,148 @@
+section {
+  padding: 12px 164px 24px 166px;
+}
+
 .container_image {
-    position: relative; /* O texto será posicionado em relação a este container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 176px 32px;
+  position: relative; /* O texto será posicionado em relação a este container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundo {
+  position: relative; /* Referência para o posicionamento absoluto */
+}
+
+.fundo img {
+  width: 100%; /* Garante que a imagem seja responsiva */
+  height: auto;
+  opacity: 0.5;
+  display: block; /* Remove espaços extras ao redor da imagem */
+}
+
+.texto {
+  position: absolute; /* Faz o texto flutuar sobre a imagem */
+  top: 30%; /* Ajuste para alinhar o texto verticalmente */
+  left: 50%;
+  transform: translate(-50%, -30%); /* Centraliza o texto horizontalmente e ajusta verticalmente */
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  color: #403939;
+  font-size: 4vw; /* Tamanho do texto ajustável */
+}
+
+.highlight {
+  color: #E15C31;
+}
+
+.botao {
+  position: absolute; /* Faz o botão flutuar sobre a imagem */
+  top: 60%; /* Ajuste para alinhar o botão verticalmente */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+  text-align: center;
+}
+
+.iniciar {
+  width: 164px;
+  height: 40px;
+  background-color: #E15C31;
+  border: 1px solid #E15C31;
+  color: #ffffff;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 18px;
+  user-select: none;
+}
+
+.iniciar:hover {
+  background-color: #ffffff;
+  color: #E15C31;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+}
+
+.iniciar:not(:hover) {
+  transition: background-color 0.5s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 12px 108px 24px 114px;
   }
-  
-  .fundo {
-    position: relative; /* Referência para o posicionamento absoluto */
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1px 66px 24px 66px;
   }
-  
-  .fundo img {
-    width: 100%; /* Garante que a imagem seja responsiva */
-    height: auto;
-    opacity: 0.5;
-    display: block; /* Remove espaços extras ao redor da imagem */
-  }
-  
+
   .texto {
-    position: absolute; /* Faz o texto flutuar sobre a imagem */
-    top: 30%; /* Ajuste para alinhar o texto verticalmente */
-    left: 50%;
-    transform: translate(-50%, -30%); /* Centraliza o texto horizontalmente e ajusta verticalmente */
-    text-align: center;
-    width: 100%;
+    top: 32%;
   }
-  
-  h1 {
-    color: #403939;
-    font-size: 4vw; /* Tamanho do texto ajustável */
-  }
-  
-  .highlight {
-    color: #E15C31;
-  }
-  
+
   .botao {
-    position: absolute; /* Faz o botão flutuar sobre a imagem */
-    top: 60%; /* Ajuste para alinhar o botão verticalmente */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
-    text-align: center;
+    top: 58%;
   }
   
-  .comecar {
-    width: 160px;
-    height: 40px;
-    background-color: #E15C31;
-    border: 1px solid #E15C31;
-    color: #ffffff;
-    border-radius: 24px;
-    border: none;
-    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
-    font-weight: 500;
+  .iniciar {
+    width: 140px;
+    height: 36px;
     font-size: 18px;
   }
-  
-  .comecar:hover {
-    background-color: #ffffff;
-    color: #E15C31;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 1px 40px 24px 42px;
+  }
+
+  .texto {
+    top: 30%;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .botao {
+    top: 60%;
   }
   
-  .comecar:not(:hover) {
-    transition: background-color 0.5s ease;
+  .iniciar {
+    width: 108px;
+    height: 24px;
+    font-size: 14px;
   }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 1px 32px 24px 34px;
+  }
+
+  .texto {
+    top: 30%;
+  }
+
+  h1 {
+    font-size: 4.2vw;
+  }
+
+  .botao {
+    top: 60%;
+  }
+  
+  .iniciar {
+    width: 88px;
+    height: 22px;
+    font-size: 12px;
+  }
+}

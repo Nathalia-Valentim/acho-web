@@ -1,51 +1,137 @@
+section {
+  padding: 64px 164px 24px 166px;
+}
+
 .quiz-instruction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 120px; 
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid #e15c31;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.instruction-text {
+  color: #403939;
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 60px;
+  margin: 0;
+}
+
+.highlight {
+  color: #e15c31;
+  font-weight: 600;
+}
+
+.botao {
+  padding-top: 12px;
+}
+
+.continuar {
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  color: #e15c31;
+  border-radius: 24px;
+  border: 1px solid #E15C31;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.continuar:hover {
+  background-color: #E15C31; /* Cor ao passar o mouse */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.continuar:not(:hover) {
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 108px 24px 114px;
   }
-  
-  .container {
-    border: 1px solid #e15c31;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px 0;
-    width: 60%; 
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
+
   .instruction-text {
     color: #403939;
     text-align: center;
-    font-size: 18px;
-  }
-  
-  .highlight {
-    color: #e15c31;
-    font-weight: 600;
-  }
-  
-  .continuar {
-    width: 160px;
-    height: 40px;
-    background-color: transparent;
-    color: #e15c31;
-    border-radius: 24px;
-    border: 1px solid #E15C31;
-    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
-    font-weight: 600;
     font-size: 16px;
-    margin-top: 40px;
-    cursor: pointer;
+    padding: 34px 40px;
   }
-  
-  .continuar:hover {
-    background-color: #E15C31; /* Cor ao passar o mouse */
-    color: #ffffff;
-    transition: background-color 0.3s ease;
+
+  .botao {
+    padding-top: 10px;
   }
-  
-  .continuar:not(:hover) {
-    transition: background-color 0.3s ease;
+
+  .continuar {
+    width: 152px;
+    height: 40px;
+    border-radius: 24px;
+    font-size: 15px;
   }
-  
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 48px 66px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 48px 40px 24px 42px;
+  }
+
+  .instruction-text {
+    color: #403939;
+    text-align: center;
+    font-size: 14px;
+    padding: 28px 20px;
+  }
+
+  .botao {
+    padding-top: 6px;
+  }
+
+  .continuar {
+    width: 144px;
+    height: 36px;
+    border-radius: 24px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 64px 32px 24px 34px;
+  }
+
+  .instruction-text {
+    color: #403939;
+    text-align: center;
+    font-size: 14px;
+    padding: 24px 16px;
+  }
+
+  .botao {
+    padding-top: 2px;
+  }
+
+  .continuar {
+    width: 144px;
+    height: 36px;
+    border-radius: 24px;
+    font-size: 14px;
+  }
+}
