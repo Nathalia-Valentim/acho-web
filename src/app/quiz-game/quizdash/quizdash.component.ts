@@ -1,15 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { FooterComponent } from "../../shared/components/footer/footer.component";
 import { RouterModule } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-quizdash',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, RouterModule],
+  imports: [NavbarComponent, RouterModule],
   templateUrl: './quizdash.component.html',
   styleUrl: './quizdash.component.css'
 })
-export class QuizdashComponent {
 
+export class QuizdashComponent {
+  currentScreenSize: string = 'desktop';
+
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.observeScreenSize();
+  }
+  observeScreenSize() {
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall, // <= 480px
+      Breakpoints.Small,  // <= 768px
+      Breakpoints.Medium, // <= 1024px
+      Breakpoints.Large,  // <= 1440px
+    ]).subscribe(result => {
+      if (result.matches) {
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          this.currentScreenSize = 'mobile';
+        } else if (result.breakpoints[Breakpoints.Small]) {
+          this.currentScreenSize = 'tablet';
+        } else if (result.breakpoints[Breakpoints.Medium]) {
+          this.currentScreenSize = 'desktop-medium';
+        } else if (result.breakpoints[Breakpoints.Large]) {
+          this.currentScreenSize = 'desktop-large';
+        }
+      }
+    });
+  }
 }

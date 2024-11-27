@@ -3,8 +3,7 @@ import { NavbarComponent } from "../../shared/components/navbar/navbar.component
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
-
-
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 interface Question {
   question: string;
@@ -18,6 +17,7 @@ interface Question {
   templateUrl: './quizquestion.component.html',
   styleUrl: './quizquestion.component.css'
 })
+
 export class QuizquestionComponent {
   questions: Question[] = [
     {
@@ -95,7 +95,9 @@ export class QuizquestionComponent {
   currentQuestionIndex: number = 0;
   selectedOption: number | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
+    this.observeScreenSize();
+  }
 
   get currentQuestion(): Question {
     return this.questions[this.currentQuestionIndex];
@@ -113,7 +115,6 @@ export class QuizquestionComponent {
       } else {
         // Redirecionar para o componente desejado
         this.router.navigate(['/quizresult']);
-      
       }
     }
   }
@@ -124,5 +125,27 @@ export class QuizquestionComponent {
 
   getOptionLabel(index: number): string {
     return String.fromCharCode(97 + index).toLowerCase(); // 97 é o código ASCII para 'a'
+  }
+
+  currentScreenSize: string = 'desktop';
+  observeScreenSize() {
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall, // <= 480px
+      Breakpoints.Small,  // <= 768px
+      Breakpoints.Medium, // <= 1024px
+      Breakpoints.Large,  // <= 1440px
+    ]).subscribe(result => {
+      if (result.matches) {
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          this.currentScreenSize = 'mobile';
+        } else if (result.breakpoints[Breakpoints.Small]) {
+          this.currentScreenSize = 'tablet';
+        } else if (result.breakpoints[Breakpoints.Medium]) {
+          this.currentScreenSize = 'desktop-medium';
+        } else if (result.breakpoints[Breakpoints.Large]) {
+          this.currentScreenSize = 'desktop-large';
+        }
+      }
+    });
   }
 }

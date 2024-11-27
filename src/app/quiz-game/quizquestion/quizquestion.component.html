@@ -1,21 +1,23 @@
 <app-navbar></app-navbar>
-<div class="question-container">
+
+<section>
+  <div class="question-container">
     <div class="progress-bar" [style.width.%]="progressPercentage"></div>
-  
+    <div class="spacer"></div>
+
     <h2 class="question">{{ currentQuestion.question }}</h2>
   
     <div class="option-container">
-      <div
-        *ngFor="let option of currentQuestion.options; let i = index"
-        class="option"
-        [ngClass]="{ selected: selectedOption === i }"
-        (click)="selectOption(i)"
-      >
-        <span class="option-label">{{ getOptionLabel(i) }}) {{ option }}</span>
+      <div *ngFor="let option of currentQuestion.options; let i = index" class="option"
+      [ngClass]="{ selected: selectedOption === i }" (click)="selectOption(i)">
+        <span class="option-label">{{ getOptionLabel(i) }} {{ option }}</span>
       </div>
     </div>
   
-    <button class="continuar" (click)="nextQuestion()">Próxima</button>
+    <div class="botao">
+      <button class="continuar" (click)="nextQuestion()">Próxima</button>
+    </div>
   </div>
+</section>
   
   

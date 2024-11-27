@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css'
 })
+
 export class QuizComponent {
   currentScreenSize: string = 'desktop';
 

@@ -73,6 +73,7 @@ h1 {
   transition: background-color 0.5s ease;
 }
 
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
     padding: 12px 108px 24px 114px;
@@ -81,7 +82,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 1px 66px 24px 66px;
+    padding: 24px 66px 24px 66px;
   }
 
   .texto {
@@ -101,25 +102,55 @@ h1 {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 1px 40px 24px 42px;
+    padding: 32px 40px 24px 42px;
+  }
+
+  .container_image {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center;
+  }
+
+  .fundo {
+    position: static; /* Remove o posicionamento absoluto */
+    text-align: center; /* Centraliza os elementos */
+  }
+
+  .fundo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
   }
 
   .texto {
-    top: 30%;
+    position: static;
+    transform: none;
+    padding: 16px 0;
+    margin: 0;
   }
 
   h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .highlight {
+    font-weight: bold;
   }
 
   .botao {
-    top: 60%;
+    position: static;
+    transform: none;
+    text-align: center;
   }
-  
+
   .iniciar {
-    width: 108px;
-    height: 24px;
-    font-size: 14px;
+    width: 140px;
+    height: 36px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 600;
   }
 }
 
@@ -144,5 +175,11 @@ h1 {
     width: 88px;
     height: 22px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 1px 30px 24px;
   }
 }
