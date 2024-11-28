@@ -1,0 +1,10 @@
+<div class="barra-horizontal">
+    <button class="botao" [class.ativo]="ativoBotao === 'pratique-seu-hobby'" (click)="carregarComponente('practiceyourhobby')">PRATIQUE SEU HOBBY</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'origin'" (click)="carregarComponente('origin')">ORIGEM</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'fundamentals'" (click)="carregarComponente('fundamentals')">FUNDAMENTOS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'benefits'" (click)="carregarComponente('benefits')">BENEFÍCIOS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'materials'" (click)="carregarComponente('materials')">MATERIAIS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'tips'" (click)="carregarComponente('tips')">DICAS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'events'" (click)="carregarComponente('events')">EVENTOS</button>
+</div>
+<router-outlet></router-outlet>

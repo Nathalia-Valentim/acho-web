@@ -1,0 +1,67 @@
+<div class="background-container">
+  <header [ngClass]="currentScreenSize">
+    <div class="logo">
+      <a [routerLink]="['/home']">
+        <img src="images/logobranca.png">
+      </a>
+    </div>
+  
+    <div class="nav-container">
+      <nav *ngIf="currentScreenSize !== 'mobile'">
+        <a [routerLink]="['/home']" class="nav-link">Hobbies</a>
+        <a [routerLink]="['/quizdash']" class="nav-link">Quiz</a>
+        <a [routerLink]="['/home']" class="nav-link nav-link-contate">Contate-nos</a>
+      </nav>
+  
+      <div class="overlay" *ngIf="sidebarOpen">
+        <div class="sidebar-content" (click)="$event.stopPropagation()">
+          <div class="sidebar_logo">
+            <img src="images/logo1.png">
+            <button class="close-btn" (click)="toggleSidebar()">
+              <a class="button-link"><i class="material-icons">close</i></a>
+            </button>
+          </div>
+    
+          <nav>
+            <a [routerLink]="['/home']" class="sidebar-link">Hobbies</a>
+            <a [routerLink]="['/quizdash']" class="sidebar-link">Quiz</a>
+            <a [routerLink]="['/home']" class="sidebar-link">Contate-nos</a>
+          </nav>
+        </div>
+      </div>
+  
+
+      <div class="user-actions">
+        <a href="#" class="icon-link serach-link"><i class="material-icons">search</i></a>
+        <a [routerLink]="['/profile']" class="icon-link person-link"><i class="material-icons">person</i></a>
+      </div>
+  
+
+      <button class="menu-actions" *ngIf="currentScreenSize === 'mobile'" (click)="toggleSidebar()">
+        <a class="menu-link"><i class="material-icons">menu</i></a>
+      </button>
+    </div>
+  </header>
+  
+
+  <div class="dynamic-content">
+    <div class="category-info">
+      <img [src]="categoryImage" alt="{{ categoryName }} Image" />
+      <h1 class="category-name">{{ categoryName }}</h1>
+    </div>
+  </div>
+
+  <div class="container-total">
+    <div class="info-container">
+      <p class="description-text">
+        O futebol é um dos esportes mais populares e praticados do mundo, com milhões de fãs e atletas espalhados por todos os continentes. Jogado entre duas equipes de onze jogadores cada, o objetivo principal é marcar gols no adversário.
+      </p>
+    </div>
+    <div class="investment-box">
+      <h2 class="investment-minimium">INVESTIMENTO</h2>
+      <span class="minimium inline-text">mínimo</span>
+      <span class="investment-value inline-text">R$30,00</span>
+      <p class="cost-note">*custo de forma autônoma</p>
+    </div>
+  </div>
+</div>

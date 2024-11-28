@@ -1,0 +1,294 @@
+section {
+  padding: 1px 160px 24px;
+  overflow: visible; 
+  position: relative; 
+}
+
+.categorias-header {
+  padding-bottom: 18px;
+  padding-left: 6px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #E15C31;
+}
+
+.categorias-header {
+  display: flex;
+  align-items: center;
+}
+
+.categorias-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; 
+  scrollbar-width: none;
+  user-select: none; 
+}
+
+/*
+.categorias-container::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.categorias-container::-webkit-scrollbar-thumb {
+  background: transparent; 
+  border-radius: 10px; 
+}
+*/
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 64px; 
+  width: 80px;
+  flex-shrink: 0;
+  scroll-snap-align: start; 
+}
+
+.icone-categoria {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #E15C31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-categoria .material-icons {
+  font-size: 32px;
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #E15C31;
+  text-align: center;
+}
+
+.categorias-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 0; 
+  display: none; 
+}
+
+.arrow.left {
+  left: -38px;
+}
+
+.arrow.right {
+  right: -38px;
+}
+
+.arrow span {
+  font-size: 22px;
+  color: #043B64;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 0 108px 24px 104px;
+    overflow: visible; 
+  }
+
+  .categorias-header {
+    padding-left: 8.5px;
+  }
+
+  .categorias-container {
+    gap: 16px;
+  }
+
+  .categoria {
+    width: 80px; 
+  }
+
+  .icone-categoria {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icone-categoria .material-icons {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1px 62px 40px 56px;
+    overflow: visible; 
+  }
+
+  .categorias-header {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .categorias-container {
+    gap: 6px;
+  }
+
+  .categoria {
+    width: 80px; 
+  }
+
+  .icone-categoria {
+    width: 58px;
+    height: 58px;
+  }
+
+  .icone-categoria .material-icons {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 1px 28px 24px 26px;
+    overflow: visible;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .categorias-header {
+    padding-bottom: 10px;
+    padding-left: 18px;
+  }
+
+  .categorias-container {
+    gap: 0px;
+  }
+
+  .categoria {
+    width: 72px;
+  }
+
+  .icone-categoria {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icone-categoria .material-icons {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 9px;
+    padding-top: 6px;
+  }
+
+  .arrow {
+    display: block;
+    z-index: 2; 
+  }
+
+  .arrow.left {
+    left: -26px;
+  }
+  
+  .arrow.right {
+    right: -26px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+      padding: 1px 28px 20px 20px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .categorias-header {
+    padding-bottom: 10px;
+    padding-left: 12px;
+  }
+
+  .categorias-container {
+    gap: 8px;
+  }
+
+  .categoria {
+    width: 64px;
+  }
+
+  .icone-categoria {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icone-categoria .material-icons {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+    padding-top: 6px;
+  }
+
+  .arrow {
+    top: 26%;
+    display: block;
+    z-index: 2; 
+  }
+
+  .arrow.left {
+    left: -28px;
+  }
+  
+  .arrow.right {
+    right: -28px;
+  }
+}

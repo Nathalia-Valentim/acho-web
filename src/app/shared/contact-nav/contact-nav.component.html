@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<section class="page">
+    <div class="central-atendimento-container">
+        <img src="images/contatenos.jpeg" alt="Imagem de Contato" class="background-image">
+        <h2 class="text-container">Central de Atendimento</h2>
+      </div>
+      
+
+  <div class="contact-form-container" style="padding-left: 176px;">
+    
+
+    <h2>ENVIAR SOLICITAÇÃO</h2>
+  
+
+    <div class="select-container input-container">
+      <label for="motivo" class="input-text">Selecione seu motivo</label>
+      <select id="motivo" name="motivo">
+        <option value="suporte">Suporte técnico</option>
+        <option value="contato">Contato comercial</option>
+        <option value="feedback">Feedback</option>
+        <option value="outro">Outro</option>
+      </select>
+      <i class="material-icons">arrow_drop_down</i>
+    </div>
+  
+
+    <div class="input-container">
+      <label for="email" class="input-text">Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+      <p class="email-description">Por favor, insira o endereço de e-mail onde você deseja receber nossa resposta. Se você é um usuário registrado do ACHÔ, inclua o endereço de e-mail que você usou quando se registrou, se possível, para nos ajudar a localizar sua conta o mais rápido possível.</p>
+    </div>
+  
+    <div class="input-container">
+      <label for="mensagem" class="input-text">Escreva-nos uma mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-custom" type="submit">Enviar</button>
+      </div>
+  
+ 
+  
+    <div class="empresa-info">
+        <div class="empresa-content">
+          <img src="images/contateimage.jpg" alt="Imagem de Empresa" class="empresa-image">
+          <div class="empresa-text">
+            <p>Se você representa uma empresa e deseja fazer parte da nossa plataforma, o ACHÔ oferece uma excelente oportunidade para conectar sua marca a um público engajado e interessado em expandir seus conhecimentos e experiências. Cadastre sua empresa preenchendo o formulário abaixo e ele será avaliado em 7 dias úteis. Estamos ansiosos para conhecê-los!</p>
+            <button class="btn-custom" (click)="navegarParaForms()">Preencher formulário</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<app-footer></app-footer>

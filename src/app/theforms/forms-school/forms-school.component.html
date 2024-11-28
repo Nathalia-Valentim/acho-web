@@ -1,0 +1,113 @@
+<app-navgreen></app-navgreen>
+<div class="container">
+    <div class="d-flex align-items-center">
+      <span class="material-icons" style="font-size: 30px; color: #17616E;">arrow_back</span>
+    </div>
+  
+    <h5 class="titulo1">Editar Curso</h5>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="container-img">
+        <div class="img_edita">
+          <img [src]="imagemPreview || ''" alt=" Imagem do Curso">
+        </div>
+        <div class="button-container-img">
+          <span>Alterar ou Adicionar Imagem</span>
+          <input 
+            type="file" 
+            accept="image/*" 
+            id="imagemInput" 
+            (change)="onImageChange($event)" 
+            style="display: none;">
+          <button class="image-button" type="button" (click)="selecionarImagem()">
+            <div class="plus-icon">+</div>
+          </button>
+        </div>
+      </div>
+  
+      <h5 class="titulo1">Sobre</h5>
+      <div class="mb-3">
+        <label for="nome" class="label-custom">Nome</label>
+        <input type="text" class="form-control rounded-input" id="nome" [(ngModel)]="curso.nome" name="nome">
+      </div>
+      <div class="mb-3">
+        <label for="cnpj" class="label-custom">CNPJ</label>
+        <input type="text" class="form-control rounded-input" id="cnpj" [(ngModel)]="curso.cnpj" name="cnpj">
+      </div>
+      <div class="mb-3">
+        <label for="cursosOferecidos" class="label-custom">Cursos Oferecidos</label>
+        <textarea class="form-control rounded-input" id="cursosOferecidos" [(ngModel)]="curso.cursosOferecidos" name="cursosOferecidos" rows="3"></textarea>
+      </div>
+  
+      <div class="row g-3 mb-5">
+        <div class="col-md-6 col-12">
+          <label for="diasFuncionamento" class="label-custom">Dias de Funcionamento</label>
+          <input type="text" class="form-control rounded-input" id="diasFuncionamento" [(ngModel)]="curso.diasFuncionamento" name="diasFuncionamento">
+        </div>
+        <div class="col-3">
+          <label for="horarioAtendimento" class="label-custom">Horário de Atendimento</label>
+          <input type="text" class="form-control rounded-input" id="horarioAtendimento" [(ngModel)]="curso.horarioAtendimento" name="horarioAtendimento">
+        </div>
+      </div>
+  
+      <!-- Endereço -->
+      <div class="titulo_geral mb-4">
+        <h4 class="titulo2">Endereço</h4>
+      </div>
+      <div class="row g-3 mb-2">
+        <div class="col-2">
+          <label for="cep" class="label-custom">CEP</label>
+          <input type="text" class="form-control rounded-input" id="cep" [(ngModel)]="curso.cep" name="cep">
+        </div>
+        <div class="col-1">
+          <label for="estado" class="label-custom">Estado</label>
+          <input type="text" class="form-control rounded-input" id="estado" [(ngModel)]="curso.estado" name="estado">
+        </div>
+        <div class="col-3">
+          <label for="cidade" class="label-custom">Cidade</label>
+          <input type="text" class="form-control rounded-input" id="cidade" [(ngModel)]="curso.cidade" name="cidade">
+        </div>
+        <div class="col-md-6 col-12">
+          <label for="bairro" class="label-custom">Bairro</label>
+          <input type="text" class="form-control rounded-input" id="bairro" [(ngModel)]="curso.bairro" name="bairro">
+        </div>
+      </div>
+      <div class="row g-3 mb-4">
+        <div class="col-md-6 col-12">
+          <label for="rua" class="label-custom">Rua</label>
+          <input type="text" class="form-control rounded-input" id="rua" [(ngModel)]="curso.rua" name="rua">
+        </div>
+        <div class="col-1">
+          <label for="numero" class="label-custom">Número</label>
+          <input type="text" class="form-control rounded-input" id="numero" [(ngModel)]="curso.numero" name="numero">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="complemento" class="label-custom">Complemento</label>
+        <input type="text" class="form-control rounded-input" id="complemento" [(ngModel)]="curso.complemento" name="complemento">
+      </div>
+  
+      <!-- Contato -->
+      <div class="titulo_geral mb-4">
+        <h4 class="titulo3">Contato</h4>
+      </div>
+      <div class="row g-3 mb-4">
+        <div class="col-md-6 col-12">
+          <label for="email" class="label-custom">Email</label>
+          <input type="email" class="form-control rounded-input" id="email" [(ngModel)]="curso.email" name="email">
+        </div>
+        <div class="col-md-6 col-12">
+          <label for="telefone" class="label-custom">Número de telefone</label>
+          <input type="text" class="form-control rounded-input" id="telefone" [(ngModel)]="curso.telefone" name="telefone">
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="servicos" class="label-custom-serv">Informações Adicionais</label>
+        <textarea class="form-control rounded-input" id="infoadc" [(ngModel)]="curso.infoadc" name="infoadc" rows="3"></textarea>
+      </div>
+  
+      <div class="d-flex justify-content-end mb-4">
+        <button class="btn btn-custom" type="submit">Enviar</button>
+      </div>
+    </form>

@@ -1,0 +1,155 @@
+section {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+    position: absolute;
+    padding-top: 12%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .retangulo {
+    width: 480px;
+    height: 472px;
+    background-color: #E15C31;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .div-input {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 8%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    margin-left: 8%;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .conta {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    margin-top: 14px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .conta:hover {
+    color: #043B64;
+    padding: 8px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .input-container svg {
+    width: 18px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+  }
+  
+  input {
+    width: 352px;
+    height: 22px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+  
+  input:focus {
+    outline: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  input:not(:focus) {
+    color: #E4E2DD;
+  }
+  
+  ::placeholder {
+  color:#E4E2DD;
+  opacity: 0.7;
+  }
+  
+  .cadastrese {
+    width: 160px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #E15C31;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .cadastrese:hover {
+    background-color: #ffffff;
+    color: #E15C31;
+    border: 1px solid #ffffff;
+    transition: background-color 1s ease;
+  }
+  
+  .cadastrese:not(:hover) {
+    transition: background-color 1s ease;
+  }
+  
+  .entre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  .login_icon {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: -4px;
+  }
+  
+  .icon-button {
+    border: none;
+    background-color: transparent;
+  }

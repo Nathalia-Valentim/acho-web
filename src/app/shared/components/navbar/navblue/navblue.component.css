@@ -1,0 +1,294 @@
+.background-container {
+  background-color: #043B64;
+  width: 100%;
+  height: 580px;
+  z-index: -1;
+}
+
+.dynamic-content {
+  display: flex; 
+  align-items: center;
+  padding: 20px; 
+}
+
+.category-info {
+  display: flex;
+  align-items: center; 
+}
+
+.category-info img {
+  padding-left: 104px;
+  max-width: 550px; 
+  height: auto;
+}
+
+.category-name {
+  padding-left: 40px;
+  padding-top: 144px;
+  color: #E4E2DD;
+  font-size: 128px;
+}
+
+.container-total {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-container {
+  display: flex; 
+  align-items: flex-start;
+  padding-left: 168px;
+  padding-right: 64px;
+}
+
+.description-text {
+  color: #403939;
+  font-weight: 500;
+  text-align: justify;
+  max-width: 680px;
+  font-size: 24px;
+}
+
+.investment-box {
+  background-color: white; 
+  border: 2px solid #043B64;
+  border-radius: 10px;
+  width: 224px;
+  height: 104px;
+  padding: 12px;
+}
+
+.investment-minimium {
+  color: #043B64;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.minimium {
+  color: #043B64;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.investment-value {
+  color: #E15C31; 
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.cost-note {
+  font-size: 14px;
+  color: #403939;
+  padding-top: 8px;
+  margin: 0;
+}
+
+header {
+  background-color: #043B64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 64px 32px;
+  position: relative;
+}
+
+.logo img {
+  max-width: 104px;
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-link {
+  color: #E4E2DD;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 16px 0 14px;
+}
+
+.nav-link-contate {
+  color: #E15C31;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.user-actions a {
+  color: #E15C31;
+  display: flex;
+  text-decoration: none;
+}
+
+.serach-link {
+  padding: 0 12px 0 12px;
+}
+
+.person-link {
+  padding-left: 12px;
+}
+
+.menu-link {
+  padding-left: 12px;
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menu-actions a {
+  color: #043B64;
+  display: flex;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.sidebar-content {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; 
+  padding: 40px 40px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #043B64;
+  justify-content: flex-end;
+}
+
+.sidebar_logo {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.sidebar_logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+.sidebar-link {
+  color: #403939;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+
+/* responsividade */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    max-width: 88px;
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 16px 0 16px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 40px 32px 24px;
+  }
+  
+  .logo img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  .nav-container nav {
+    flex-direction: column;
+  }
+
+  .user-actions a {
+    padding: 0 10px 0 10px;
+  }
+
+  .material-icons {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header {
+    padding: 40px 40px 24px;
+  }
+  
+  .logo img {
+    max-width: 68px;
+    height: auto;
+  }
+
+  .user-actions a {
+    padding: 0 8px 0 8px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    padding: 40px 32px 24px;
+  }
+  
+  .logo img {
+    max-width: 56px;
+    height: auto;
+  }
+
+  .user-actions a {
+    padding: 0 8px 0 8px;
+  }
+
+  .material-icons {
+    font-size: 16px;
+  }
+}

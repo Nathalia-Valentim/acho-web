@@ -1,0 +1,359 @@
+.testimonial-header {
+    padding: 40px 112px 24px 165px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E15C31;
+    margin: 0; 
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 164px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card.highlight {
+    flex: 0 0 36%;
+    height: 288px;
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 0 32%;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #E15C31;
+    border-radius: 10px;
+    padding: 24px 48px;
+    opacity: 0.6;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    font-size: 1em;
+}
+
+.profile-img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1em;
+    padding-left: 12px;
+    color: #E15C31;
+}
+
+.comment-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.comment-text {
+    color: #403939;
+    font-weight: 500;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #E15C31;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 26%;
+}
+  
+.right-arrow {
+    right: 26%;
+}
+
+.dots {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.dots span {
+    height: 8px;
+    width: 8px;
+    background-color: #e7d4cd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #E15C31;
+}
+
+@media screen and (max-width: 1024px) {
+    .testimonial-header {
+        padding: 24px 96px 22px 114px;
+    }
+    .carousel {
+        gap: 100px;
+    }
+    .card.highlight {
+        flex: 0 0 44%;
+        height: 280px;
+        font-size: 18px;
+    }
+    .card {
+        flex: 0 0 40%;
+        height: 256px;
+        border-radius: 10px;
+        padding: 24px 40px;
+        font-size: 16px;
+    }
+    .profile {
+        flex-shrink: 0;
+        font-size: 1em;
+    }
+    .profile-img {
+        width: 2.8em;
+        height: 2.8em;
+    }
+    .profile-name {
+        font-size: 1.1em;
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    .left-arrow {
+        left: 22%;
+    }
+    .right-arrow {
+        right: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-header {
+        padding: 24px 56px 16px 66px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .carousel {
+        gap: 70px;
+    }
+    .card.highlight {
+        flex: 0 0 44%;
+        height: 256px;
+        font-size: 16px;
+    }
+    .card {
+        flex: 0 0 40%;
+        height: 232px;
+        border-radius: 10px;
+        padding: 24px 32px;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        font-size: 1em;
+    }
+    .profile-img {
+        width: 2.6em;
+        height: 2.6em;
+    }
+    .profile-name {
+        font-size: 1em;
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        z-index: 2;
+    }
+    .left-arrow {
+        left: 22%;
+    }
+    .right-arrow {
+        right: 22%;
+    }
+    .dots {
+        padding-top: 16px;
+    }
+    .dots span {
+        height: 8px;
+        width: 8px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial-header {
+        padding: 24px 32px 16px 42px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .carousel {
+        gap: 70px;
+    }
+    .card.highlight {
+        flex: 0 0 68%;
+        height: 216px;
+        font-size: 14px;
+    }
+    .card {
+        flex: 0 0 40%;
+        height: 232px;
+        border-radius: 10px;
+        padding: 18px 24px;
+        opacity: 0.6;
+        font-size: 12px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        font-size: 1em;
+    }
+    .profile-img {
+        width: 2.6em;
+        height: 2.6em;
+        border-radius: 50%;
+    }
+    .profile-name {
+        font-size: 1em;
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 1.6rem;
+        z-index: 2;
+    }
+    .left-arrow {
+        left: 6%;
+    }
+    .right-arrow {
+        right: 6%;
+    }
+    .dots {
+        padding-top: 10px;
+    }
+    .dots span {
+        height: 6px;
+        width: 6px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .testimonial-header {
+        padding: 24px 26px 16px 34px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .carousel {
+        gap: 70px;
+    }
+    .card.highlight {
+        flex: 0 0 72%;
+        height: 200px;
+        font-size: 13px;
+    }
+    .card {
+        flex: 0 0 40%;
+        height: 232px;
+        border-radius: 10px;
+        padding: 16px 20px;
+        opacity: 0.6;
+        font-size: 12px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        font-size: 1em;
+    }
+    .profile-img {
+        width: 2.6em;
+        height: 2.6em;
+        border-radius: 50%;
+    }
+    .profile-name {
+        font-size: 1em;
+        padding-left: 12px;
+        color: #E15C31;
+    }
+    .comment-text {
+        color: #403939;
+        font-weight: 500;
+    }
+    .arrow {
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        z-index: 2;
+    }
+    .left-arrow {
+        left: 5%;
+    }
+    .right-arrow {
+        right: 5%;
+    }
+    .dots {
+        padding-top: 4px;
+    }
+    .dots span {
+        height: 6px;
+        width: 6px;
+        margin: 0 5px;
+    }
+}

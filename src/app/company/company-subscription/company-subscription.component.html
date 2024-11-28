@@ -1,0 +1,51 @@
+<div class="profile-container">
+    <div class="company-header">
+      <img class="company-logo" src="images/cursos.png" alt="Logo da Empresa">
+      <div class="company-info">
+        <h2>Centro de Treinamento Remo</h2>
+        <p>São Paulo – SP</p>
+      </div>
+    </div>
+  
+    <div class="contact-info">
+      <div class="contact-row">
+        <div class="contact-item">
+          <span>E-mail</span>
+          <p>contatocentroremo.com.br</p>
+        </div>
+        <div class="contact-item">
+          <span>CNPJ</span>
+          <p>45.4560.138/0001-30</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span>Telefone</span>
+        <p>55 11 97456-6329</p>
+      </div>
+    </div>
+
+    <div class="button-container">
+        <button class="course-button" (click)="toggleCourse()">
+          Por Cursos
+        </button>
+        <button class="course-button">
+          Últimas Inscrições
+        </button>
+      </div>
+      <div class="course-container">
+        <div class="course-header" (click)="toggleCourse()">
+          <h3 class="azul">Centro de Treinamento Remo</h3>
+          <p>Centro de Treinamento Infanto-Juvenil</p>
+          <span class="icon">{{ isExpanded ? '▲' : '▼' }}</span>
+        </div>
+      
+        <!-- Lista de inscritos que aparece ou desaparece ao clicar -->
+        <ul class="student-list" *ngIf="isExpanded">
+          <li *ngFor="let student of students">
+            {{ student.name }}
+            <a href="#" class="view-more">Ver mais</a>
+          </li>
+        </ul>
+      </div>
+      
+    

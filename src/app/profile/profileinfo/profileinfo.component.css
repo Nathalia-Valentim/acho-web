@@ -1,0 +1,102 @@
+.informacoes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 480px;
+}
+
+.image {
+    width: 184px;
+    height: 184px;
+    display: block;
+    justify-items: center;
+}
+
+.infos_principais {
+    padding-left: 64px;
+    display: block;
+    align-self: center;
+}
+
+.nome {
+    color: #043B64;
+    font-family: dm sans;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.local {
+    color: #403939;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 72px;
+}
+
+.edit {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+.icone_edit {
+    width: 22px;
+    height: 22px;
+    color: #043B64;
+}
+
+h3 {
+    height: 16px;
+    display: flex;
+    font-size: 16px;
+    padding-left: 6px;
+    margin: 0;
+    color: #043B64;
+    font-family: Dm Sans;
+    font-weight: 500;
+}
+
+
+.social-icons {
+    padding-top: 12px;
+}
+  
+.socials {
+    padding-right: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+.informacoes_dois {
+    padding-top: 40px;
+    width: 440px;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding-bottom: 6px;
+    color: #043B64;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 16px;
+    color: #403939;
+    font-size: 16px;
+}

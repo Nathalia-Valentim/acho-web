@@ -1,0 +1,120 @@
+<app-navgreen></app-navgreen>
+<div class="container">
+  <div class="d-flex align-center">
+    <span class="material-icons" style="font-size: 30px; color: #17616E; "(click)="voltarParaContateNav()">arrow_back</span>
+  </div>
+
+
+  
+    <h4 class="titulo1">Formulário de empresa</h4>
+  
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+      <div class="form-group mb-3">
+        <label for="nome" class="label-custom">Nome <span class="text-danger">*</span></label>
+        <input type="text" class="input" id="nome" formControlName="nome">
+        <div *ngIf="formulario.get('nome')?.touched && formulario.get('nome')?.invalid" class="error-message">
+          Nome é obrigatório.
+        </div>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="cnpj" class="label-custom">CNPJ <span class="text-danger">*</span></label>
+        <input type="text" class="input" id="cnpj" formControlName="cnpj">
+        <div *ngIf="formulario.get('cnpj')?.touched && formulario.get('cnpj')?.invalid" class="error-message">
+          CNPJ é obrigatório e deve ter 14 dígitos.
+        </div>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="cursosOferecidos" class="label-custom">Cursos Oferecidos</label>
+        <textarea class="input" id="cursosOferecidos" formControlName="cursosOferecidos"></textarea>
+      </div>
+  
+      <div class="titulo-geral mb-4">
+        <h4 class="titulo2">Endereço</h4>
+      </div>
+  
+      <div formGroupName="endereco">
+        <div class="row mb-2">
+          <div class="col-md-2 col-12">
+            <label for="cep" class="label-custom">CEP <span class="text-danger">*</span></label>
+            <input type="text" class="input" id="cep" formControlName="cep">
+            <div *ngIf="formulario.get('endereco.cep')?.touched && formulario.get('endereco.cep')?.invalid" class="error-message">
+              CEP é obrigatório e deve ter 8 dígitos.
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-12">
+            <label for="estado" class="label-custom">Estado <span class="text-danger">*</span></label>
+            <input type="text" class="input" id="estado" formControlName="estado">
+            <div *ngIf="formulario.get('endereco.estado')?.touched && formulario.get('endereco.estado')?.invalid" class="error-message">
+              Estado é obrigatório.
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-12">
+            <label for="cidade" class="label-custom">Cidade <span class="text-danger">*</span></label>
+            <input type="text" class="input" id="cidade" formControlName="cidade">
+            <div *ngIf="formulario.get('endereco.cidade')?.touched && formulario.get('endereco.cidade')?.invalid" class="error-message">
+              Cidade é obrigatória.
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-12">
+            <label for="bairro" class="label-custom">Bairro</label>
+            <input type="text" class="input" id="bairro" formControlName="bairro">
+          </div>
+        </div>
+  
+        <div class="row mb-4">
+          <div class="col-md-9 col-12">
+            <label for="rua" class="label-custom">Rua</label>
+            <input type="text" class="input" id="rua" formControlName="rua">
+          </div>
+          <div class="col-md-3 col-12">
+            <label for="numero" class="label-custom">Número</label>
+            <input type="text" class="input" id="numero" formControlName="numero">
+          </div>
+        </div>
+  
+        <div class="form-group mb-3">
+          <label for="complemento" class="label-custom">Complemento</label>
+          <input type="text" class="input" id="complemento" formControlName="complemento">
+        </div>
+      </div>
+  
+      <div class="titulo-geral mb-4">
+        <h4 class="titulo3">Contato</h4>
+      </div>
+  
+      <div formGroupName="contato">
+        <div class="row mb-4">
+          <div class="col-md-6 col-12">
+            <label for="email" class="label-custom">Email <span class="text-danger">*</span></label>
+            <input type="email" class="input" id="email" formControlName="email">
+            <div *ngIf="formulario.get('contato.email')?.touched && formulario.get('contato.email')?.invalid" class="error-message">
+              Email é obrigatório e deve ser válido.
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-12">
+            <label for="telefone" class="label-custom">Número de telefone <span class="text-danger">*</span></label>
+            <input type="text" class="input" id="telefone" formControlName="telefone">
+            <div *ngIf="formulario.get('contato.telefone')?.touched && formulario.get('contato.telefone')?.invalid" class="error-message">
+              Telefone é obrigatório e deve ter o formato (XX) XXXXX-XXXX.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group mb-3">
+        <label for="servicos" class="label-custom-serv">Serviços</label>
+        <textarea class="input" id="servicos" formControlName="servicos" rows="3"></textarea>
+      </div>
+  
+      <div class="d-flex justify-content-end mb-4">
+        <button class="btn btn-custom" type="submit" [disabled]="formulario.invalid">Enviar</button>
+      </div>
+      
+    </form>
+  </div>

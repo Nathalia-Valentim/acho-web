@@ -1,0 +1,94 @@
+<section>
+  <div class="categorias-header">
+    <p class="title">Categorias</p>
+  </div>
+  
+  <div class="categorias-carousel">
+    <button class="arrow left" *ngIf="showLeftArrow" (click)="scrollCarrossel(-1)">
+      <span class="material-icons">chevron_left</span>
+    </button>
+
+    <div class="categorias-container">
+      <div class="categoria" (click)="irParaCategoria('Esportes')">
+        <div class="icone-categoria">
+          <span class="material-icons">sports_soccer</span>
+        </div>
+        <p>Esportes</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Artes Marciais')">
+        <div class="icone-categoria">
+          <span class="material-icons">sports_mma</span>
+        </div>
+        <p>Artes Marciais</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Gastronomia')">
+        <div class="icone-categoria">
+          <span class="material-icons">restaurant</span>
+        </div>
+        <p>Gastronomia</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Natureza')">
+        <div class="icone-categoria">
+          <span class="material-icons">nature</span>
+        </div>
+        <p>Natureza</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Intelectuais')">
+        <div class="icone-categoria">
+          <span class="material-icons">menu_book</span>
+        </div>
+        <p>Intelectuais</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Artisticos')">
+        <div class="icone-categoria">
+          <span class="material-icons">palette</span>
+        </div>
+        <p>Artísticos</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Música')">
+        <div class="icone-categoria">
+          <span class="material-icons">music_note</span>
+        </div>
+        <p>Música</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Bem-Estar')">
+        <div class="icone-categoria">
+          <span class="material-icons">favorite</span>
+        </div>
+        <p>Bem-Estar</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Manuais')">
+        <div class="icone-categoria">
+          <span class="material-icons">build</span>
+        </div>
+        <p>Manuais</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Tecnologia')">
+        <div class="icone-categoria">
+          <span class="material-icons">computer</span>
+        </div>
+        <p>Tecnologia</p>
+      </div>
+    
+      <div class="categoria" (click)="irParaCategoria('Colecões')">
+        <div class="icone-categoria">
+          <span class="material-icons">collections</span>
+        </div>
+        <p>Coleções</p>
+      </div>
+    </div>
+
+    <button class="arrow right" *ngIf="showRightArrow" (click)="scrollCarrossel(1)">
+      <span class="material-icons">chevron_right</span>
+    </button>
+  </div>  
+</section>

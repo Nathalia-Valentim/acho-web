@@ -1,0 +1,42 @@
+<section>
+  <div class="retangulo">
+    <h1>Minha Conta</h1>
+    <div class="botoes">
+
+      <div class="espaco">
+        <button class="perfil" [ngClass]="{'ativo': selectedButton === 'perfil'}" (click)="navigateTo('/company/perfil')">
+          <a class="icone_perfil" *ngIf="selectedButton === 'perfil'"><i class="material-icons">person</i></a>
+          <h3 class="texto">Perfil</h3>
+        </button>
+      </div>
+
+      <div class="espaco">
+        <button class="inscricoes" [ngClass]="{'ativo': selectedButton === 'inscricoes'}" (click)="navigateTo('/company/inscricoes')">
+          <a class="icone_inscricoes" *ngIf="selectedButton === 'inscricoes'"><i class="material-icons">map</i></a>
+          <h3>Inscrições dos alunos</h3>
+        </button>
+      </div>
+
+      <div class="espaco">
+        <button class="autenticacao" [ngClass]="{'ativo': selectedButton === 'autenticacao'}" (click)="navigateTo('/company/authsessions/autenticacao')">
+          <a class="icone_autenticacao" *ngIf="selectedButton === 'autenticacao'"><i class="material-icons">lock</i></a>
+          <h3>Autenticação</h3>
+        </button>
+      </div>
+
+      <div class="espaco">
+        <button class="notificacoes" [ngClass]="{'ativo': selectedButton === 'notificacoes'}" (click)="navigateTo('/company/notificacoes')">
+          <a class="icone_notificacoes" *ngIf="selectedButton === 'notificacoes'"><i class="material-icons">notifications</i></a>
+          <h3>Notificações</h3>
+        </button>
+      </div>
+
+      <div class="espaco_sair">
+        <button class="sair" (click)="logout()">
+          <a class="icone_sair"><i class="material-icons">logout</i></a>
+          <h2>Sair</h2>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

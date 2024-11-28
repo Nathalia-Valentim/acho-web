@@ -1,0 +1,40 @@
+.container {
+    max-width: 600px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  
+  .mensagem {
+    text-align: center;
+    font-size: 16px;
+    color: #403939;
+    padding-bottom: 20px;
+  }
+  
+  .botao-container {
+    position: absolute;
+    left: 50%; 
+    top: 420px;
+  }
+  
+  .botao {
+    background-color: #043b64;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-family: dm sans;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao:hover {
+    background-color: #E15C31;
+  }
+  

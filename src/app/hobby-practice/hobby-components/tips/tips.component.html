@@ -1,0 +1,30 @@
+<app-navblue [categoryName]="'FUTEBOL'" [categoryImage]="'images/footballnav.png'"></app-navblue>
+<app-action-bar></app-action-bar>
+<router-outlet></router-outlet>
+
+<div class="tips-container">
+    <p class="tips-title">Os praticantes possuem ótimas dicas para você!</p>
+  
+
+    <div class="tips-gallery">
+      <div *ngFor="let tip of tips" class="tip-container">
+        <p class="tip-text">{{ tip }}</p>
+      </div>
+    </div>
+  
+
+    <div class="spacing"></div>
+
+    <p class="tips-share">Compartilhe uma dica você também!</p>
+  
+    <div class="ratings-container">
+        <div class="submit-rating">
+          <textarea [(ngModel)]="newTip" class="rating-input" placeholder="Adicione uma dica..."></textarea>
+          <button (click)="submitTip()" class="submit-button material-icons">send</button>
+        </div>
+      </div>
+  </div>
+  
+
+
+<app-footer></app-footer>  

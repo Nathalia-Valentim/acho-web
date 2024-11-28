@@ -1,0 +1,29 @@
+<div id="explorar" class="explorar-section">
+
+  <div class="explorar-header">
+    <p class="title">Explore</p>
+    <button class="seta-esquerda" *ngIf="isSetaEsquerdaVisible()" (click)="movePrev()">
+      <span class="material-icons">arrow_back</span>
+    </button>
+    <button class="seta-direita" (click)="moveNext()">
+      <span class="material-icons">arrow_forward</span>
+    </button>
+  </div>
+
+
+  <div class="hobby-containers"
+  #carrossel
+    (mousedown)="startDragging($event)" 
+    (mousemove)="dragging($event)"
+    (mouseup)="stopDragging()" 
+    (mouseleave)="stopDragging()"
+  >
+    <div class="hobby-container" *ngFor="let hobby of hobbies">
+      <p class="hobby-name">{{ hobby.name }}</p>
+      <div class="image-container">
+        <img [src]="hobby.img" alt="{{ hobby.name }}" class="hobby-image">
+        <button class="see-more-button">Veja Mais</button>
+      </div>
+    </div>
+  </div>
+</div>

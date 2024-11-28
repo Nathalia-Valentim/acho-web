@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<section>
+  <div class="principal">
+    <div class="container">
+      <div class="texto-principal">
+        <h1>
+          <span class="destaque">ACHÔ</span> OS HOBBIES QUE ESTAVA PROCURANDO?
+        </h1>
+        <p>Mande o quiz para seus amigos e descubram seus hobbies em comum.</p>
+      </div>
+      <div class="imagem">
+        <img src="images/saude-mental.png" alt="Image description">
+      </div>
+    </div>
+    
+    <div class="icone-compartilhar">
+      <i class="material-icons">share</i>
+    </div>
+    
+    <div class="divisor">
+      <span class="linha"></span>
+      <p class="texto-divisor">Aqui estão os hobbies que combinaram com o seu perfil:</p>
+      <span class="linha"></span>
+    </div>
+  </div>
+  
+  <div class="card-grid">
+    <div class="card" *ngFor="let hobby of hobbies">
+      <img [src]="hobby.image" alt="{{ hobby.title }}" class="card-image">
+      <h2 class="card-title">{{ hobby.title }}</h2>
+      <p class="card-description">{{ hobby.description }}</p>
+      <div class="botao">
+        <button class="card-button" (click)="goToDetails(hobby.title)">Saiba Mais</button>
+      </div>
+    </div>
+  </div>
+</section>

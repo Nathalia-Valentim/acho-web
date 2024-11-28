@@ -1,0 +1,77 @@
+.container-prin {
+    padding: 22px 160px 0 168px;
+}
+
+.container, .container-direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container {
+    justify-content: flex-start; /* Mantém os ícones à esquerda */
+}
+
+.container-direita {
+    justify-content: flex-end; /* Mantém os ícones à direita */
+}
+
+/* Ajuste no container-direita */
+.container-direita {
+    padding-left: 188px; /* Alinha o conteúdo à direita da tela */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.circulo, .circulo-direita {
+    background: #043B64;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    margin-right: 15px; /* Ajusta a margem para um espaçamento maior */
+}
+
+.circulo-direita {
+    margin-left: 15px; /* Ajusta a margem para um espaçamento maior */
+}
+
+.img-corre {
+    width: 50px;
+    height: 55px;
+}
+
+.img-bola, .img-cabeca {
+    width: 55px;
+    height: 55px;
+}
+
+.img-pessoas {
+    width: 60px;
+    height: 35px;
+}
+
+.conteudo {
+    max-width: 400px; /* Limita a largura do conteúdo */
+}
+
+.titulo-esquerda, .titulo-direita {
+    font-weight: bold;
+    font-size: 22px;
+    color: #043B64;
+    margin-bottom: 5px;
+}
+
+.texto-esquerda, .texto-direita {
+    font-size: 18px;
+    color: #403939;
+    font-weight: 100;
+    line-height: 1.5em;
+}

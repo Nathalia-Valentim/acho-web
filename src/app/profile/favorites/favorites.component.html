@@ -1,0 +1,21 @@
+<h3 class="favtext">Favoritos</h3>
+<div class="card-container">
+    <div class="card" *ngFor="let school of schools">
+      <img [src]="school.image" alt="{{ school.title }}" class="card-image">
+      
+      <div class="card-text">
+        <h2 class="card-title">{{ school.title }}</h2>
+        <h3 class="card-category">{{ school.category }}</h3>
+        <p class="card-description">{{ school.description }}</p>
+      </div>
+    
+      
+      <div class="card-footer">
+        <button class="card-button" (click)="goToDetails()">Veja Mais</button>
+        <button class="favorite-button">
+            <span class="material-icons favorite-icon">favorite</span>
+          </button>
+      </div>
+    </div>
+  </div>
+  

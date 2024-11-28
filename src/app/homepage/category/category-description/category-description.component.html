@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<section>
+<div class="categoria_hobbies">
+  <h1 class="categoria">Categoria</h1>
+  <h1 class="tipo_hobbies">> {{ categoriaNome }}</h1>
+</div>
+
+<h1 class="esportes">{{ categoriaNome }}</h1>
+
+<div class="container" *ngIf="itensCategoriaSelecionada.length > 0; else semItens">
+  <div *ngFor="let item of itensCategoriaSelecionada" class="grupo">
+    <h2>{{ item.nome }}</h2>
+    <button class="grupo_categoria" (click)="navegarParaCategoria(item.nome)">
+      <img [src]="item.imagem" [alt]="item.nome" />
+    </button>
+  </div>
+</div>
+
+<ng-template #semItens>
+  <p class="noitems"> Não há itens disponíveis nesta categoria.</p>
+</ng-template>
+
+</section>
+<app-footer></app-footer>

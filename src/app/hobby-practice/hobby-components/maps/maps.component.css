@@ -1,0 +1,63 @@
+#mapa-fake {
+  padding-left: 168px; 
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding-bottom: 56px;
+}
+  
+#mapa-fake img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.maps-info {
+  padding: 22px 0 0 168px; /* padding-top e padding-left */
+  padding-bottom: 15px;
+}
+
+.gray-text {
+  color: #403939;
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.blue-text {
+  color: #043B64;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+p.gray-text {
+  color: #403939;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#filter-button {
+  background-color: #043B64; 
+  color: #ffffff; 
+  font-weight: bold;
+  border: 2px solid #043B64; 
+  border-radius: 30px;
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filter-button:hover {
+  background-color: transparent;
+  color: #043B64;
+  font-weight: bold;
+  border: 1px solid #043B64;
+}

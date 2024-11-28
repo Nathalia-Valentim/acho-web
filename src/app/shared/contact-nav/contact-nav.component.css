@@ -1,0 +1,200 @@
+.page {
+    padding: 0 164px 0 166px;
+  }
+  
+  .central-atendimento-container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-container {
+    padding-bottom: 50px;
+  }
+  
+  .background-image {
+    position: absolute;
+    padding-left: 172px;
+    padding-right: 122px;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    width: 81%;
+    height: 81%;
+    object-fit: cover;
+    z-index: -1; 
+  }
+  
+  .central-atendimento-container h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  .contact-form-container {
+    padding: 10px 120px;
+    background-color: white;
+  }
+  
+  .contact-form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #E15C31;
+    padding-bottom: 20px;
+  }
+  
+  .select-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .select-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E15C31;
+    border-radius: 10px;
+    min-height: 60px;
+    font-size: 1rem;
+    color: #403939;
+    background: transparent;
+  }
+  
+  .select-container select:focus {
+    outline: none;
+    border-color: #E15C31;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-container i {
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #E15C31;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .input-container input {
+    padding-top: 6px; 
+  }
+  
+  .input-text {
+    color: #E15C31;
+    font-weight: 500;
+  }
+  
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid #E15C31;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: dm Sans;
+    min-height: 60px;
+  }
+  
+  .input-container input:focus,
+  .input-container textarea:focus {
+    border-color: #E15C31;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 48, 23, 0.5);
+  }
+  
+  .email-description {
+    font-size: 0.895rem;
+    color: #403939;
+    text-align: justify;
+  }
+  
+  .btn-custom {
+    background-color: #E15C31;
+    color: #fff;
+    border: none;
+    padding: 8px 45px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:disabled {
+    background-color: #E15C31;
+    cursor: not-allowed;
+  }
+  
+  .btn-custom:hover:not(:disabled) {
+    background-color: #D04E2C;
+  }
+  
+  .empresa-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .empresa-content {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #E15C31;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .empresa-image {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    padding-right: 20px;
+  }
+  
+  .empresa-text {
+    flex-grow: 1;
+  }
+  
+  .empresa-text p {
+    font-size: 16px;
+    color: #403939;
+    padding-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+  
+  .btn-custom {
+    background-color: #E15C31;
+    color: #fff;
+    font-family: dm sans;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #C85F1B;
+  }
+  

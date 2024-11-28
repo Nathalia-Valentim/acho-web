@@ -1,0 +1,33 @@
+<section class="testimonial-container">
+  <div class="testimonial-header">
+    <p class="title">O que nossos clientes estão dizendo</p>
+  </div>
+  
+  <div class="carousel-container">
+
+    <button class="arrow left-arrow" (click)="previous()">&#10094;</button>
+    
+
+    <div class="carousel">
+      <div *ngFor="let comment of visibleComments; let idx = index" class="card" [ngClass]="{'highlight': idx === 1}">
+          <div class="comment-container">
+            <p class="comment-text">{{ comment.text }}</p>
+          </div>
+          <div class="profile">
+            <img [src]="comment.img" class="profile-img" />
+            <h4 class="profile-name">{{ comment.name }}</h4>
+          </div>
+      </div>
+    </div>
+    
+
+    <button class="arrow right-arrow" (click)="next()">&#10095;</button>
+  
+
+    <div class="dots">
+      <span *ngFor="let i of [].constructor(totalPages); let idx = index" 
+        [ngClass]="{'active': idx === currentPage}"
+        (click)="setPage(idx)">
+      </span>
+    </div>
+  </div>

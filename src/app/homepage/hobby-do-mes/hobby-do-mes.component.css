@@ -1,0 +1,229 @@
+.hobby-mes-header {
+    display: flex;
+    align-items: center;
+    padding: 24px 150px 16px 166px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E15C31;
+    margin: 0;
+}
+
+.hobby-container {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    padding: 0 465px 0 165px;
+}
+
+.firstimg, .secondimg, .hobby-content {
+    height: 268px;
+    border-radius: 12px;
+}
+
+.hobby-content {
+    padding: 0 40px;
+    background-color: #043B64;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.6s ease;
+}
+
+.hobby-content p {
+    color: #E15C31;
+    text-align: start;
+    width: 166px;
+    font-size: 22px;
+}
+
+.hobby-content:hover {
+    transform: scale(1.02);
+}
+
+.discover-btn {
+    padding: 12px 16px;
+    background-color: transparent;
+    color: #E15C31;
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    
+}
+
+.discover-btn:hover {
+    background-color: #ffffff;
+    color: #E15C31;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hobby-mes-header {
+        padding: 24px 96px 16px 114px;
+    }
+    
+    .hobby-container {
+        gap: 8px;
+        padding: 0 96px 16px 114px;
+    }
+
+    .secondimg {
+        display: none; 
+    }
+    
+    .firstimg, .hobby-content {
+        height: 358px;
+        border-radius: 12px;
+    }
+    
+    .hobby-content {
+        padding: 0 48px;
+        border-radius: 15px;
+    }
+    
+    .hobby-content p {
+        width: 198px;
+        font-size: 24px;
+    }
+    
+    .discover-btn {
+        padding: 12px 16px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 500; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hobby-mes-header {
+        padding: 24px 56px 16px 66px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    .hobby-container {
+        gap: 8px;
+        padding: 0 70px 0 68px;
+    }
+
+    .firstimg, .hobby-content {
+        height: 280px;
+        border-radius: 12px;
+    }
+    
+    .hobby-content {
+        padding: 0 40px;
+        border-radius: 15px;
+    }
+    
+    .hobby-content p {
+        width: 152px;
+        font-size: 20px;
+    }
+    
+    .discover-btn {
+        padding: 12px 16px;
+        border-radius: 18px;
+        font-size: 18px;
+        font-weight: 500; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hobby-mes-header {
+        padding: 24px 32px 16px 42px;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .hobby-container {
+        gap: 8px;
+        padding: 0 70px 0 44px;
+    }
+
+    .firstimg, .hobby-content {
+        height: 208px;
+        border-radius: 12px;
+    }
+
+    .firstimg {
+        width: 176px;
+        object-fit: cover; 
+        object-position: center;
+    }
+    
+    .hobby-content {
+        padding: 0 24px;
+        border-radius: 15px;
+    }
+    
+    .hobby-content p {
+        width: 106px;
+        font-size: 16px;
+    }
+    
+    .discover-btn {
+        padding: 8px 12px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 500; 
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hobby-mes-header {
+        padding: 24px 32px 16px 34px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .hobby-container {
+        gap: 8px;
+        padding: 0 70px 0 33px;
+    }
+
+    .firstimg, .hobby-content {
+        height: 208px;
+        border-radius: 12px;
+    }
+
+    .firstimg {
+        width: 164px;
+        object-fit: cover; 
+        object-position: center;
+    }
+    
+    .hobby-content {
+        padding: 0 24px;
+        border-radius: 16px;
+    }
+    
+    .hobby-content p {
+        width: 88px;
+        font-size: 14px;
+    }
+    
+    .discover-btn {
+        padding: 6px 10px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 500; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+}

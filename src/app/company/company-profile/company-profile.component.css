@@ -1,0 +1,147 @@
+.profile-container {
+    max-width: 800px;
+    padding: 20px;
+    color: #403939;
+  }
+  
+  .company-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .company-info {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .company-info h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #005f73;
+  }
+  
+  .company-info p {
+    font-size: 18px;
+    color: #403939;
+    font-weight: 500;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 40px;
+  }
+  
+  .contact-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item span {
+    font-weight: 500;
+    color: #005f73;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    padding-top: 50px;
+    font-weight: 600;
+    color: #17616E;
+    text-align: left;
+  }
+  
+  .course-card {
+    width: 95%;
+    max-width: 850px;
+    border: 1px solid #17616E;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .course-image-container {
+    flex: 0 0 200px;
+  }
+  
+  .course-image {
+    width: 200px; 
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .course-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #17616E;
+    margin: 0; 
+    padding: 0 4px 8px 4px;
+  }
+  
+  .training-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #005f73;
+    margin: 0;
+  }
+  
+  .sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #403939;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #2e2b2b;
+    margin: 0;
+  }
+  
+  .edit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #17616E;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .edit-button:hover {
+    color: #005f73;
+  }
+  
+  .material-icons {
+    font-size: 24px; 
+  }
+  

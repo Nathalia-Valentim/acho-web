@@ -1,0 +1,94 @@
+.barra-horizontal {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: none;
+    padding-top: 360px;
+    padding-left: 168px;
+    padding-right: 184px;
+    gap: 12px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    cursor: pointer;
+}
+
+.barra-horizontal::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.barra-horizontal::-webkit-scrollbar-thumb {
+    background: #043B64; /* Cor do botão da barra de rolagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.botao {
+    border: 2px solid #043B64;
+    background-color: transparent; 
+    color: #043B64;
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    font-family: dm sans;
+}
+
+.botao:hover {
+    background-color: #043B64;
+    color: #E15C31;
+}
+
+.botao.ativo {
+    background-color: #043B64; 
+    color: #E15C31;
+    border: 2px solid #043B64;
+}
+
+
+
+
+/* Ajustes para telas com largura máxima de 1024px (tablets) */
+@media (max-width: 1024px) {
+    .barra-horizontal {
+        margin-left: 50px;
+        padding-top: 250px;
+    }
+
+    .botao {
+        font-size: 16px;
+        padding: 8px 30px;
+        margin: 0 7px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 768px (tablets menores e celulares em landscape) */
+@media (max-width: 768px) {
+    .barra-horizontal {
+        margin-left: 30px;
+        padding-top: 200px;
+        flex-wrap: wrap; /* Para quebrar a linha se necessário */
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 8px 25px;
+        margin: 0 5px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 480px (celulares) */
+@media (max-width: 480px) {
+    .barra-horizontal {
+        margin-left: 15px;
+        padding-top: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 6px 20px;
+        margin: 5px;
+    }
+}

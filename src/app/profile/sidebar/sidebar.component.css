@@ -1,0 +1,92 @@
+section {
+    padding-left: 176px;
+}
+
+.retangulo {
+    width: 224px;
+    height: 376px;
+    border: 2px solid #043B64CC;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+h1 {
+    color: #043B64;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 28px;
+    padding-top: 8px;
+}
+
+.botoes {
+    padding-left: 28px;
+    padding-top: 8px;
+}
+
+button {
+    background-color: transparent;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+a {
+    width: 22px;
+    height: 22px;
+}
+
+button {
+    width: 224px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+}
+
+button.ativo {
+    background-color: #E15C31;
+    color: #ffffff;
+}
+
+button h3 {
+    color: #043B64;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: dm sans;
+}
+
+button.ativo h3 {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+button.ativo a {
+    color: #ffffff;
+    padding-left: 16px;
+
+}
+
+.espaco {
+    padding-bottom: 8px;
+}
+
+.espaco_sair {
+    padding-top: 16px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: dm sans;
+    color: #043B64;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.icone_sair {
+    color: #043B64;
+}

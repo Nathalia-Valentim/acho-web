@@ -1,0 +1,39 @@
+section {
+    padding: 1px 150px 24px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+ 
+  @media screen and (max-width: 1024px) {
+    section {
+        padding: 1px 100px 44px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    section {
+        padding: 1px 56px 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    section {
+        padding: 1px 38px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    section {
+        padding: 1px 28px 10px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    section {
+        padding: 1px 30px 8px;
+    }
+  }

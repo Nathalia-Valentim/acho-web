@@ -1,0 +1,51 @@
+.session-management-container {
+    width: 300px;
+    color: #043b64;
+  }
+  
+  .back-arrow {
+    text-decoration: none;
+    color: #043b64;
+    font-size: 2.0em;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #043b64;
+    padding-bottom: 15px;
+  }
+  
+  .session-info {
+    font-size: 0.9em;
+    color: #403939;
+    padding-bottom: 20px;
+  }
+  
+  .session-current {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #043b64;
+    padding-bottom: 3px;
+  }
+  
+  .ip-address {
+    word-break: break-word;
+  }
+  
+  .logout {
+    color: #043b64;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    padding-left: 400px;
+    font-weight: 500;
+  }
+  
+  .logout:hover {
+    text-decoration: underline;
+  }
+
+  

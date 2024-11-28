@@ -1,0 +1,156 @@
+
+.container {
+    max-width: 1600px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .material-icons {
+   padding-top: 40px;
+  }
+  
+  .align-center {
+    align-items: center; 
+  }
+  
+
+  .titulo1,
+  .titulo2,
+  .titulo3 {
+    font-size: 1.5rem;
+    color: #17616E;
+    padding-bottom: 5px;
+  }
+  
+
+  .label-custom {
+    display: block;
+    font-weight: 500;
+    color: #403939;
+    padding-bottom: 5px;
+    font-family: dm sans;
+  }
+  
+  .label-custom-serv {
+    display: block;
+    font-weight: bold;
+    color: #17616E;
+    padding-bottom: 5px;
+  }
+  
+  
+  .input,
+  textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #17616E;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-family: dm sans;
+  }
+  
+
+  .input:focus,
+  textarea:focus {
+    border-color: #17616E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(23, 97, 110, 0.5);
+    font-family: dm sans;
+  }
+  
+  
+  .btn-custom {
+    background-color: #17616E;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: dm sans;
+  }
+  
+  .btn-custom:disabled {
+    background-color: #17616E;
+    cursor: not-allowed;
+  }
+  
+  .btn-custom:hover:not(:disabled) {
+    background-color: #0e404a;
+  }
+  
+  
+  .error-message {
+    color: #17616E;
+    font-size: 0.875rem;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .col-12 {
+    flex: 1 1 100%;
+  }
+  
+  .col-md-2 {
+    flex: 1 1 20%;
+  }
+  
+  .col-md-4 {
+    flex: 1 1 40%;
+  }
+  
+  .col-md-6 {
+    flex: 1 1 50%;
+  }
+  
+  .col-md-9 {
+    flex: 1 1 75%;
+  }
+  
+  .col-md-3 {
+    flex: 1 1 25%;
+  }
+  
+  
+  .form-group .input,
+  .form-group textarea {
+    margin-bottom: 10px;
+  }
+  
+  .form-group .input {
+    width: 100%;
+  }
+  
+ 
+  .d-flex.justify-content-end {
+    justify-content: flex-end; 
+  }
+  
+  .titulo-geral {
+    padding-top: 10px;
+  }
+  
+  .mb-3 {
+    padding-bottom: 24px;
+  }
+  
+  .mb-4 {
+    padding-bottom: 16px;
+  }
+  
