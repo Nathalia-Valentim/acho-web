@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 152px 8px 165px;
+
 }
 
 .title {
@@ -23,6 +24,16 @@ button.seta-direita {
   justify-content: center;
 }
 
+button.seta-esquerda {
+  background: none;
+  border: none;
+  color: #E15C31;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  right: 190px;
+}
+
 .material-icons {
   font-size: 26px;
 }
@@ -36,11 +47,11 @@ button.seta-direita {
   gap: 16px;
   padding: 8px 162px 20px 164px;
   scrollbar-width: none;
-  user-select: none; /* Impede seleção de texto */
+  user-select: none; 
 }
 
 .hobby-containers:active {
-  cursor: grabbing; /* Indica que o usuário está arrastando */
+  cursor: grabbing; 
 }
 
 .hobby-containers::-webkit-scrollbar {
@@ -88,6 +99,7 @@ button.seta-direita {
   position: absolute;
   bottom: 10px;
   left: 30%;
+  font-family: dm sans;
   transform: translateX(-15%);
   background-color: #E15C31;
   color: white;
@@ -103,14 +115,16 @@ button.seta-direita {
   background-color: #043B64;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 1024px) {
   .explorar-header {
     padding: 32px 96px 8px 112px;
   }
 
+  button.seta-esquerda {
+    right: 130px;
+  }
 
-  /* containers de hobbies */
   .hobby-containers {
     padding: 8px 108px 20px 114px;
   }
@@ -121,6 +135,10 @@ button.seta-direita {
     padding: 32px 56px 8px 66px;
   }
 
+  button.seta-esquerda {
+    right: 90px;
+  }
+
   .title {
     font-size: 18px;
   }
@@ -129,7 +147,7 @@ button.seta-direita {
     font-size: 24px;
   }
 
-  /* containers de hobbies */
+
   .hobby-containers {
     padding: 8px 66px 8px 68px;
   }
@@ -166,6 +184,10 @@ button.seta-direita {
     padding: 1px 32px 8px 42px;
   }
 
+  button.seta-esquerda {
+    right: 60px;
+  }
+
   .title {
     font-size: 16px;
   }
@@ -174,7 +196,6 @@ button.seta-direita {
     font-size: 22px;
   }
 
-  /* containers de hobbies */
   .hobby-containers {
     padding: 2px 44px 8px 43px;
   }
@@ -211,6 +232,10 @@ button.seta-direita {
     padding: 1px 26px 8px 34px;
   }
 
+  button.seta-esquerda {
+    right: 50px;
+  }
+
   .title {
     font-size: 14px;
   }
@@ -219,7 +244,7 @@ button.seta-direita {
     font-size: 18px;
   }
 
-  /* containers de hobbies */
+
   .hobby-containers {
     padding: 0 34px 8px 35px;
   }
@@ -252,5 +277,7 @@ button.seta-direita {
 }
 
 @media screen and (max-width: 320px) {
-
+  section {
+    padding: 1px 30px 16px;
+  }
 }

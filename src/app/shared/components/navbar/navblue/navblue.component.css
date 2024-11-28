@@ -90,7 +90,7 @@
 }
 
 header {
-  background-color: white;
+  background-color: #043B64;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +113,7 @@ nav {
 }
 
 .nav-link {
-  color: #403939;
+  color: #E4E2DD;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -167,7 +167,7 @@ nav {
   font-size: 24px;
 }
 
-/* barra lateral */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -182,7 +182,7 @@ nav {
   background-color: white;
   display: flex;
   flex-direction: column;
-  z-index: 1000; /* Um nível acima do overlay */
+  z-index: 1000; 
   padding: 40px 40px;
 }
 
@@ -196,9 +196,9 @@ nav {
 .sidebar_logo {
   padding-bottom: 28px;
   display: flex;
-  justify-content: space-between; /* Alinha logo à esquerda e botão à direita */
-  align-items: center; /* Alinha o conteúdo verticalmente */
-  width: 100%; /* Certifica-se de que ocupa toda a largura */
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
 }
 
 .sidebar_logo img {

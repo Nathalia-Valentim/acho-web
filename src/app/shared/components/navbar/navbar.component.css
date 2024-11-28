@@ -19,6 +19,7 @@ header {
 
 nav {
   display: flex;
+
 }
 
 .nav-link {
@@ -27,6 +28,7 @@ nav {
   font-size: 16px;
   font-weight: 600;
   padding: 0 16px 0 14px;
+  cursor: pointer;
 }
 
 .nav-link-contate {
@@ -36,6 +38,7 @@ nav {
 .user-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: transparent;
   border: none;
 }
@@ -45,6 +48,11 @@ nav {
   display: flex;
   text-decoration: none;
 }
+
+.app-search {
+  padding-right: 20px;
+}
+
 
 .serach-link {
   padding: 0 12px 0 12px;
@@ -91,7 +99,7 @@ nav {
   background-color: white;
   display: flex;
   flex-direction: column;
-  z-index: 1000; /* Um nível acima do overlay */
+  z-index: 1000; 
   padding: 40px 40px;
 }
 
@@ -105,9 +113,9 @@ nav {
 .sidebar_logo {
   padding-bottom: 28px;
   display: flex;
-  justify-content: space-between; /* Alinha logo à esquerda e botão à direita */
-  align-items: center; /* Alinha o conteúdo verticalmente */
-  width: 100%; /* Certifica-se de que ocupa toda a largura */
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
 }
 
 .sidebar_logo img {
@@ -122,6 +130,114 @@ nav {
   font-weight: 600;
   padding: 0 0 10px 0;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparência */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.search-container {
+  background-color: #FFFFFF;
+  border: 1px solid #E15C31;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-search {
+  height: 30px;
+  padding-left: 250px;
+}
+
+.close-btn {
+  color: #E15C31;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E15C31;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.search-box i {
+  color: #E15C31;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.suggestions {
+  margin-top: 20px;
+}
+
+.suggestions p {
+  color: #E15C31;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions li {
+  color: #403939;
+  margin-bottom: 5px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.user-actions a {
+  color: #E15C31;
+  display: flex;
+  text-decoration: none;
+}
+
+.search-link {
+  padding: 0 12px;
+}
+
+.text1 {
+  font-family: Dm Sans;
+  font-size: 16px;
+  color: #403939;
+
+}
+
+
+
+
 
 /* responsividade */
 @media screen and (max-width: 1024px) {

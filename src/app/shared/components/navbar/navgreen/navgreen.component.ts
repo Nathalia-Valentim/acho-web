@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navgreen.component.html',
   styleUrl: './navgreen.component.css'
 })
+
 export class NavgreenComponent {
   currentScreenSize: string = 'desktop';  // Estado inicial
   sidebarOpen: boolean = false;

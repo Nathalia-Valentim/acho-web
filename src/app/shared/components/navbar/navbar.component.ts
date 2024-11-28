@@ -3,11 +3,12 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -43,5 +44,26 @@ export class NavbarComponent {
 
   toggleSidebar() {
     this.sidebarOpen = !this.sidebarOpen;
+  }
+
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  isModalOpen: boolean = false;
+  searchQuery: string = '';
+  suggestions: string[] = ['FUTEBOL', 'CERÂMICA', 'DANÇA', 'MÚSICA'];
+
+  openModal(event: Event): void {
+    event.preventDefault();
+    this.isModalOpen = true;
+  }
+
+  closeModal(event: Event): void {
+    event.preventDefault();
+    this.isModalOpen = false;
   }
 }

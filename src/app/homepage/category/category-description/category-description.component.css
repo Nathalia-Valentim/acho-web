@@ -1,3 +1,8 @@
+.noitems {
+  padding-left: 2px;
+  color: #403939CC;
+}
+
 section {
   padding: 0 164px 0 166px;
 }

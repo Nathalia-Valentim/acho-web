@@ -17,7 +17,7 @@ img {
 .texto {
   position: absolute;
   padding-right: 50%;
-  padding-top: 2%;
+  padding-top: 2%; /* 5% */  
   color: #043B64;
   text-align: left;
   font-size: 40px;
@@ -40,6 +40,7 @@ button {
   display: inline-block;
   position: absolute;
   cursor: pointer;
+  font-family: dm sans;
   border: none;
   background-color: #043B64;
   color: #fff;
@@ -53,7 +54,7 @@ button:hover {
   color: #e15c31;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 1024px) {
   section {
     padding: 12px 108px 24px 114px;
@@ -125,7 +126,7 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 1px 44px 24px 42px;
+      padding: 1px 44px 24px 42px;
   }
 
   img {
