@@ -1,5 +1,5 @@
 section {
-    padding-left: 178px;
+    padding-left: 176px;
 }
 
 .retangulo {
@@ -12,8 +12,8 @@ section {
 
 h1 {
     color: #043B64;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     padding-left: 28px;
     padding-top: 8px;
 }
@@ -53,12 +53,13 @@ button.ativo {
 button h3 {
     color: #043B64;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: dm sans;
 }
 
 button.ativo h3 {
     color: #ffffff;
-    padding-left: 8px;
+    padding-left: 10px;
 }
 
 button.ativo a {
@@ -76,11 +77,12 @@ button.ativo a {
 }
 
 h2 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: dm sans;
     color: #043B64;
     letter-spacing: 1px;
-    padding-left: 4px;
+    padding-left: 8px;
     margin: 0;
     cursor: pointer;
 }
@@ -88,4 +90,3 @@ h2 {
 .icone_sair {
     color: #043B64;
 }
-

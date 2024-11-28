@@ -19,6 +19,8 @@
 
 .nome {
     color: #043B64;
+    font-family: dm sans;
+    font-weight: 600;
     font-size: 24px;
     letter-spacing: 0.8px;
     margin: 0;
@@ -27,6 +29,7 @@
 
 .local {
     color: #403939;
+    font-weight: 500;
     font-size: 18px;
     margin: 0;
     padding-bottom: 72px;
@@ -56,9 +59,11 @@ h3 {
     height: 16px;
     display: flex;
     font-size: 16px;
-    padding-left: 8px;
+    padding-left: 6px;
     margin: 0;
     color: #043B64;
+    font-family: Dm Sans;
+    font-weight: 500;
 }
 
 
@@ -82,7 +87,7 @@ h3 {
 
 h4 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.6px;
     margin: 0;
     padding-bottom: 6px;

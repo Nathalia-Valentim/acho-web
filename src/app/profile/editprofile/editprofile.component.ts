@@ -11,6 +11,7 @@ import { NavbarComponent } from '../../shared/components/navbar/navbar.component
   templateUrl: './editprofile.component.html',
   styleUrl: './editprofile.component.css'
 })
+
 export class EditprofileComponent {
   constructor(private router: Router) {}
 

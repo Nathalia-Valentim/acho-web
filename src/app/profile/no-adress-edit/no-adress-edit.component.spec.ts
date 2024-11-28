@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidebarComponent } from './sidebar.component';
+import { NoAdressEditComponent } from './no-adress-edit.component';
 
-describe('SidebarComponent', () => {
-  let component: SidebarComponent;
-  let fixture: ComponentFixture<SidebarComponent>;
+describe('NoAdressEditComponent', () => {
+  let component: NoAdressEditComponent;
+  let fixture: ComponentFixture<NoAdressEditComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SidebarComponent]
+      imports: [NoAdressEditComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SidebarComponent);
+    fixture = TestBed.createComponent(NoAdressEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
