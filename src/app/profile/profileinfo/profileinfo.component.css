@@ -1,3 +1,7 @@
+section {
+    padding: 32px 0 0 56px;
+}
+
 .informacoes {
     display: flex;
     justify-content: space-evenly;
@@ -99,4 +103,127 @@ p {
     padding-bottom: 16px;
     color: #403939;
     font-size: 16px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 32px 0 0 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 32px 0 0 48px;
+    }
+
+    .informacoes {
+        align-items: center;
+        width: 84%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 152px;
+        height: 152px;
+        padding-right: 24px;
+    }
+
+    .infos_principais {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .nome {
+        font-size: 22px;
+        padding-bottom: 4px;
+    }
+
+    .local {
+        font-size: 18px;
+        padding-bottom: 56px;
+    }
+
+    .informacoes_dois {
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        padding: 0 16px;
+        text-align: start;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 32px 0 0 0;
+    }
+
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+        padding-right: 0;
+    }
+
+    .infos_principais {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .nome {
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+
+    .local {
+        font-size: 16px;
+        padding-bottom: 32px;
+    }
+
+    .informacoes_dois {
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        padding-left: 8px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        padding: 0 16px;
+        text-align: start;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+    }
+
+    h4 {
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
+    
+    p {
+        margin: 0;
+        padding-bottom: 16px;
+        color: #403939;
+        font-size: 16px;
+    }
 }

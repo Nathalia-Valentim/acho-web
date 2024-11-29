@@ -113,6 +113,7 @@ p {
   color: #043B64;
 }
 
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
     padding: 0 108px 24px 104px;

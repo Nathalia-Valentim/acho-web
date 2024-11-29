@@ -1,11 +1,11 @@
 section {
-    padding-left: 176px;
+    padding: 32px 0 0 166px;
 }
 
 .retangulo {
-    width: 224px;
+    width: 216px;
     height: 376px;
-    border: 2px solid #043B64CC;
+    border: 2px solid #043a64be;
     border-radius: 20px;
     background-color: transparent;
 }
@@ -37,7 +37,7 @@ a {
 }
 
 button {
-    width: 224px;
+    width: 216px;
     height: 38px;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ button {
 }
 
 button.ativo {
-    background-color: #E15C31;
+    background-color: #e15d31;
     color: #ffffff;
 }
 
@@ -89,4 +89,127 @@ h2 {
 
 .icone_sair {
     color: #043B64;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    section {
+      padding: 32px 0 0 114px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      padding: 32px 0 0 66px;
+    }
+
+    .retangulo {
+        width: 184px;
+        height: 336px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+        padding: 22px 0 10px 24px;
+        margin: 0;
+    }
+
+    .botoes {
+        padding-left: 24px;
+        padding-top: 8px;
+    }
+
+    .material-icons {
+        font-size: 22px;
+    }
+
+    button {
+        width: 184px;
+        height: 38px;
+    }
+
+    button h3 {
+        font-size: 16px;
+    }
+    
+    button.ativo h3 {
+        padding-left: 6px;
+    }
+    
+    button.ativo a {
+        padding-left: 6px;
+    
+    }
+
+    .espaco {
+        padding-bottom: 4px;
+    }
+    
+    .espaco_sair {
+        padding-top: 4px;
+    }
+    
+    h2 {
+        font-size: 17px;
+        padding-left: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+      padding: 32px 0 0 42px;
+    }
+
+    .retangulo {
+        width: 136px;
+        height: 304px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 15px;
+        padding: 16px 0 2px 16px;
+        margin: 0;
+    }
+
+    .botoes {
+        padding-left: 12px;
+        padding-top: 8px;
+    }
+
+    .material-icons {
+        font-size: 20px;
+    }
+
+    button {
+        width: 136px;
+        height: 38px;
+    }
+
+    button h3 {
+        font-size: 14px;
+    }
+    
+    button.ativo h3 {
+        padding-left: 6px;
+    }
+    
+    button.ativo a {
+        padding-left: 6px;
+    
+    }
+
+    .espaco {
+        padding-bottom: 4px;
+    }
+    
+    .espaco_sair {
+        padding-top: 4px;
+    }
+    
+    h2 {
+        font-size: 15px;
+        padding-left: 8px;
+    }
 }

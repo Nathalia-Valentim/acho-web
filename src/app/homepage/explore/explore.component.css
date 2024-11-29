@@ -115,7 +115,7 @@ button.seta-esquerda {
   background-color: #043B64;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   .explorar-header {
     padding: 32px 96px 8px 112px;

@@ -63,7 +63,7 @@
     font-weight: 500;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 1024px) {
     .hobby-mes-header {
         padding: 24px 96px 16px 114px;

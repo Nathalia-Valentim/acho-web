@@ -121,6 +121,7 @@
     background-color: #E15C31;
 }
 
+/* Responsividade */
 @media screen and (max-width: 1024px) {
     .testimonial-header {
         padding: 24px 96px 22px 114px;

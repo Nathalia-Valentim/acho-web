@@ -54,7 +54,7 @@ button:hover {
   color: #e15c31;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
     padding: 12px 108px 24px 114px;

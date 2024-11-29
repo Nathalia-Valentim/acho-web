@@ -1,142 +1,143 @@
 .noitems {
-    padding-left: 2px;
-    color: #403939CC;
+  padding-left: 2px;
+  color: #403939CC;
 }
 
 section {
-    padding: 0 164px 0 166px;
+  padding: 0 164px 0 166px;
+}
+
+.categoria_hobbies {
+  padding: 16px 0 12px;
+}
+
+.categoria, .tipo_hobbies {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0;
+}
+
+.categoria {
+  padding-right: 4px;
+  color: #403939CC;
+}
+
+.esportes {
+  padding-bottom: 32px;
+  color: #E15C31;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 32px 24px; 
+  width: 100%;
+}
+
+.grupo {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+
+.grupo_categoria {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.grupo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 16px;
+  padding-bottom: 12px;
+  font-weight: 600;
+  color: #403939D9;
+  margin: 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 0 108px 24px 114px;
+  }
+
+  .categoria_hobbies {
+    padding: 8px 0 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0 66px 24px 66px;
   }
   
   .categoria_hobbies {
-    padding: 16px 0 12px;
+    padding: 6px 0 12px;
   }
   
   .categoria, .tipo_hobbies {
     font-size: 14px;
-    display: inline-block;
-    margin: 0;
-  }
-  
-  .categoria {
-    padding-right: 4px;
-    color: #403939CC;
   }
   
   .esportes {
-    padding-bottom: 32px;
-    color: #E15C31;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0;
+    padding-bottom: 26px;
+    font-size: 18px;
   }
   
   .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 32px 24px; 
-    width: 100%;
-  }
-  
-  .grupo {
-    width: 100%;
-    display: flex;
-    flex-direction: column; 
-  }
-  
-  .grupo_categoria {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .grupo img {
-    width: 100%;
-    height: auto;
-    display: block;
+    gap: 24px 16px; 
   }
   
   h2 {
-    font-size: 16px;
-    padding-bottom: 12px;
+    font-size: 14px;
+    padding-bottom: 8px;
     font-weight: 600;
     color: #403939D9;
     margin: 0;
   }
-  
-  @media screen and (max-width: 1024px) {
-    section {
-      padding: 0 108px 24px 114px;
-    }
-  
-    .categoria_hobbies {
-      padding: 8px 0 12px;
-    }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 0 44px 24px 42px;
   }
   
-  @media screen and (max-width: 768px) {
-    section {
-      padding: 0 66px 24px 66px;
-    }
-    
-    .categoria_hobbies {
-      padding: 6px 0 12px;
-    }
-    
-    .categoria, .tipo_hobbies {
-      font-size: 14px;
-    }
-    
-    .esportes {
-      padding-bottom: 26px;
-      font-size: 18px;
-    }
-    
-    .container {
-      gap: 24px 16px; 
-    }
-    
-    h2 {
-      font-size: 14px;
-      padding-bottom: 8px;
-      font-weight: 600;
-      color: #403939D9;
-      margin: 0;
-    }
+  .categoria_hobbies {
+    padding: 4px 0 8px;
   }
   
-  @media screen and (max-width: 480px) {
-    section {
-      padding: 0 44px 24px 42px;
-    }
-    
-    .categoria_hobbies {
-      padding: 4px 0 8px;
-    }
-    
-    .categoria, .tipo_hobbies {
-      font-size: 12px;
-    }
-    
-    .esportes {
-      padding-bottom: 24px;
-      color: #E15C31;
-      font-size: 16px;
-      margin: 0;
-    }
-    
-    .container {
-      grid-template-columns: repeat(1, 1fr); 
-    }
-    
-    h2 {
-      font-size: 13px;
-      padding-bottom: 8px;
-    }
+  .categoria, .tipo_hobbies {
+    font-size: 12px;
   }
   
-  @media screen and (max-width: 380px) {
-    section {
-      padding: 0 36px 24px 34px;
-    }
+  .esportes {
+    padding-bottom: 24px;
+    color: #E15C31;
+    font-size: 16px;
+    margin: 0;
   }
+  
+  .container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  
+  h2 {
+    font-size: 13px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 0 36px 24px 34px;
+  }
+}

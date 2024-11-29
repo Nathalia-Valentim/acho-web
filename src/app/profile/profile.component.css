@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-  margin-right: 96px;
+  padding-right: 96px;
 }
 
 
@@ -17,4 +17,9 @@
 .navbar, .footer {
   width: 100%;
 }
-  
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    padding-right: 24px;
+  }
+}

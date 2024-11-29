@@ -9,14 +9,12 @@
         </button>
       </div>
 
-      
       <div class="espaco">
         <button class="endereco" [ngClass]="{'ativo': selectedButton === 'endereco'}" (click)="navigateTo('/profile/enderecos')">
           <a class="icone_endereco" *ngIf="selectedButton === 'endereco'"><i class="material-icons">map</i></a>
           <h3>Meus endereços</h3>
         </button>
       </div>
-
 
       <div class="espaco">
         <button class="favoritos" [ngClass]="{'ativo': selectedButton === 'favoritos'}" (click)="navigateTo('/profile/favoritos')">
@@ -25,7 +23,6 @@
         </button>
       </div>
 
-
       <div class="espaco">
         <button class="autenticacao" [ngClass]="{'ativo': selectedButton === 'autenticacao'}" (click)="navigateTo('/profile/authsessions/autenticacao')">
           <a class="icone_autenticacao" *ngIf="selectedButton === 'autenticacao'"><i class="material-icons">lock</i></a>
@@ -33,14 +30,12 @@
         </button>
       </div>
 
-
       <div class="espaco">
         <button class="notificacoes" [ngClass]="{'ativo': selectedButton === 'notificacoes'}" (click)="navigateTo('/profile/notificacoes')">
           <a class="icone_notificacoes" *ngIf="selectedButton === 'notificacoes'"><i class="material-icons">notifications</i></a>
           <h3>Notificações</h3>
         </button>
       </div>
-
 
       <div class="espaco_sair">
         <button class="sair" (click)="logout()">
