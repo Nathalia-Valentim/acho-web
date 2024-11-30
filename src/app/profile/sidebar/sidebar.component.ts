@@ -13,24 +13,23 @@ import { filter } from 'rxjs';
 
 export class SidebarComponent implements OnInit {
   selectedButton: string = '';
+  sidebarVisible: boolean = false;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.sidebarVisible = false; // Garantir que comece fechada
     this.updateSelectedButton();
-
-
     this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.updateSelectedButton(); 
-      });
+    
+    .pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe(() => {
+      this.updateSelectedButton();
+    });
   }
 
-  
   updateSelectedButton() {
     const currentRoute = this.router.url;
-
     if (currentRoute.includes('dados')) {
       this.selectedButton = 'dados';
     } else if (currentRoute.includes('enderecos')) {
@@ -43,16 +42,24 @@ export class SidebarComponent implements OnInit {
       this.selectedButton = 'notificacoes';
     } else {
       this.selectedButton = '';
+    }
   }
-}
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
   }
 
-
   logout(): void {
     this.router.navigate(['/home']);
   }
-}
 
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+    const sidebarElement = document.querySelector('.retangulo');
+    if (this.sidebarVisible) {
+      sidebarElement?.classList.remove('hidden');
+    } else {
+      sidebarElement?.classList.add('hidden');
+    }
+  }
+}

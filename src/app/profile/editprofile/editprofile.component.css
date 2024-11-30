@@ -1,3 +1,7 @@
+section {
+    padding: 32px 0 0 25px;
+}
+
 .informacoes {
     display: flex;
     justify-content: space-evenly;
@@ -204,20 +208,3 @@ option:hover {
 .salvar:not(:hover) {
     transition: background-color 0.5s ease;
 }
-
-
-.container {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-  }
-  
-  .sidebar {
-    margin-right: 96px;
-  }
-  
-  
-  .profile-info {
-    flex-grow: 1;
-  }

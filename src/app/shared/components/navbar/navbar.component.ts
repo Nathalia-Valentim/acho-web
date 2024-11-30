@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 }) 
+
 export class NavbarComponent {
   currentScreenSize: string = 'desktop';  // Estado inicial
   sidebarOpen: boolean = false;

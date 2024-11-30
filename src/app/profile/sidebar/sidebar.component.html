@@ -1,37 +1,41 @@
 <section>
-  <div class="retangulo">
+  <div class="retangulo" [class.hidden]="!sidebarVisible">
+    <button class="toggle-button" (click)="toggleSidebar()" >
+      Minha Conta <i class="material-icons">more_vert</i>
+    </button>
+
     <h1>Minha Conta</h1>
     <div class="botoes">
       <div class="espaco">
-        <button class="dados" [ngClass]="{'ativo': selectedButton === 'dados'}" (click)="navigateTo('/profile/dados')">
+        <button class="dados botao-perfil" [ngClass]="{'ativo': selectedButton === 'dados'}" (click)="navigateTo('/profile/dados')">
           <a class="icone_perfil" *ngIf="selectedButton === 'dados'"><i class="material-icons">person</i></a>
           <h3 class="texto">Dados pessoais</h3>
         </button>
       </div>
 
       <div class="espaco">
-        <button class="endereco" [ngClass]="{'ativo': selectedButton === 'endereco'}" (click)="navigateTo('/profile/enderecos')">
+        <button class="endereco botao-perfil" [ngClass]="{'ativo': selectedButton === 'endereco'}" (click)="navigateTo('/profile/enderecos')">
           <a class="icone_endereco" *ngIf="selectedButton === 'endereco'"><i class="material-icons">map</i></a>
           <h3>Meus endereços</h3>
         </button>
       </div>
 
       <div class="espaco">
-        <button class="favoritos" [ngClass]="{'ativo': selectedButton === 'favoritos'}" (click)="navigateTo('/profile/favoritos')">
+        <button class="favoritos botao-perfil" [ngClass]="{'ativo': selectedButton === 'favoritos'}" (click)="navigateTo('/profile/favoritos')">
           <a class="icone_favoritos" *ngIf="selectedButton === 'favoritos'"><i class="material-icons">bookmark</i></a>
           <h3>Favoritos</h3>
         </button>
       </div>
 
       <div class="espaco">
-        <button class="autenticacao" [ngClass]="{'ativo': selectedButton === 'autenticacao'}" (click)="navigateTo('/profile/authsessions/autenticacao')">
+        <button class="autenticacao botao-perfil" [ngClass]="{'ativo': selectedButton === 'autenticacao'}" (click)="navigateTo('/profile/authsessions/autenticacao')">
           <a class="icone_autenticacao" *ngIf="selectedButton === 'autenticacao'"><i class="material-icons">lock</i></a>
           <h3>Autenticação</h3>
         </button>
       </div>
 
       <div class="espaco">
-        <button class="notificacoes" [ngClass]="{'ativo': selectedButton === 'notificacoes'}" (click)="navigateTo('/profile/notificacoes')">
+        <button class="notificacoes botao-perfil" [ngClass]="{'ativo': selectedButton === 'notificacoes'}" (click)="navigateTo('/profile/notificacoes')">
           <a class="icone_notificacoes" *ngIf="selectedButton === 'notificacoes'"><i class="material-icons">notifications</i></a>
           <h3>Notificações</h3>
         </button>

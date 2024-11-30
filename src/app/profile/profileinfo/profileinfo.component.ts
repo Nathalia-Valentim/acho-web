@@ -8,6 +8,7 @@ import { RouterModule, Router } from '@angular/router';
   templateUrl: './profileinfo.component.html',
   styleUrl: './profileinfo.component.css'
 })
+
 export class ProfileinfoComponent {
  
 }

@@ -145,9 +145,7 @@ p {
     }
 
     .informacoes_dois {
-        flex-direction: column;
-        align-items: center;
-        width: 84%;
+        width: 88%;
     }
 
     .esquerda, .direita {
@@ -167,11 +165,10 @@ p {
 
 @media screen and (max-width: 480px) {
     section {
-        padding: 32px 0 0 0;
+        padding: 24px 0 0 0;
     }
 
     .informacoes {
-        flex-direction: column;
         align-items: center;
         width: 84%;
         justify-content: start;
@@ -185,7 +182,8 @@ p {
 
     .infos_principais {
         padding-left: 0;
-        text-align: center;
+        text-align: start;
+        padding-left: 16px;
     }
 
     .nome {
@@ -196,6 +194,7 @@ p {
     .local {
         font-size: 16px;
         padding-bottom: 32px;
+        padding-left: 2px;
     }
 
     .informacoes_dois {
@@ -216,7 +215,7 @@ p {
     }
 
     h4 {
-        font-size: 13px;
+        font-size: 16px;
         padding-bottom: 6px;
     }
     
@@ -225,5 +224,171 @@ p {
         padding-bottom: 16px;
         color: #403939;
         font-size: 16px;
+    }
+
+    .socials {
+        padding-right: 10px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .informacoes {
+        align-items: center;
+        width: 84%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 104px;
+        height: 104px;
+        padding-right: 0;
+    }
+
+    .infos_principais {
+        text-align: start;
+        padding-left: 16px;
+    }
+
+    .nome {
+        font-size: 16px;
+        padding-bottom: 4px;
+    }
+
+    .local {
+        font-size: 14px;
+        padding-bottom: 32px;
+        padding-left: 2px;
+    }
+
+    .informacoes_dois {
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        padding-left: 0%;
+        padding-top: 24px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        padding: 0 16px;
+        text-align: start;
+    }
+
+    .socials {
+        padding-bottom: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+    
+    p {
+        margin: 0;
+        padding-bottom: 14px;
+        color: #403939;
+        font-size: 14px;
+    }
+
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+    
+    h3 {
+        height: 16px;
+        font-size: 14px;
+        padding-left: 6px;
+    }
+
+    .socials {
+        padding-right: 8px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .informacoes {
+        width: 90%;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+        padding-right: 0;
+    }
+
+    .infos_principais {
+        padding-left: 12px;
+    }
+
+    .nome {
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+
+    .local {
+        font-size: 12px;
+        padding-bottom: 24px;
+        padding-left: 2px;
+    }
+
+    .informacoes_dois {
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        padding-left: 0%;
+        padding-top: 20px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        padding: 0 16px;
+        text-align: start;
+    }
+
+    .socials {
+        padding-bottom: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+        padding-bottom: 2px;
+    }
+    
+    p {
+        margin: 0;
+        padding-bottom: 14px;
+        color: #403939;
+        font-size: 12px;
+    }
+
+    .material-icons {
+        font-size: 16px;
+    }
+    
+    .icone_edit {
+        width: 16px;
+        height: 16px;
+    }
+    
+    h3 {
+        height: 16px;
+        font-size: 12px;
+        padding-left: 6px;
+    }
+
+    .socials {
+        padding-right: 6px;
+        width: 20px;
+        height: 20px;
     }
 }
