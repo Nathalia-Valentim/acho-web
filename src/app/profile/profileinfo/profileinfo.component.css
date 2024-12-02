@@ -90,7 +90,7 @@ h3 {
 }
 
 h4 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.6px;
     margin: 0;
@@ -100,7 +100,7 @@ h4 {
 
 p {
     margin: 0;
-    padding-bottom: 16px;
+    padding-bottom: 26px;
     color: #403939;
     font-size: 16px;
 }
@@ -114,70 +114,19 @@ p {
 
 @media screen and (max-width: 768px) {
     section {
-        padding: 32px 0 0 48px;
+        padding: 32px 66px 0 20px;
     }
 
     .informacoes {
         align-items: center;
-        width: 84%;
-        justify-content: start;
-    }
-
-    .image {
-        width: 152px;
-        height: 152px;
-        padding-right: 24px;
-    }
-
-    .infos_principais {
-        padding-left: 0;
-        text-align: left;
-    }
-
-    .nome {
-        font-size: 22px;
-        padding-bottom: 4px;
-    }
-
-    .local {
-        font-size: 18px;
-        padding-bottom: 56px;
-    }
-
-    .informacoes_dois {
-        width: 88%;
-    }
-
-    .esquerda, .direita {
         width: 100%;
-        padding: 0 16px;
-        text-align: start;
-    }
-
-    .socials {
-        padding-bottom: 12px;
-    }
-
-    .social-icons {
-        padding-top: 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    section {
-        padding: 24px 0 0 0;
-    }
-
-    .informacoes {
-        align-items: center;
-        width: 84%;
         justify-content: start;
     }
 
     .image {
         width: 120px;
         height: 120px;
-        padding-right: 0;
+        padding-right: 20px;
     }
 
     .infos_principais {
@@ -197,46 +146,147 @@ p {
         padding-left: 2px;
     }
 
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+    
+    h3 {
+        height: 14px;
+        font-size: 14px;
+        padding-left: 6px;
+    }
+
     .informacoes_dois {
-        flex-direction: column;
-        align-items: center;
-        width: 84%;
-        padding-left: 8px;
+        width: 100%;
     }
 
     .esquerda, .direita {
         width: 100%;
-        padding: 0 16px;
         text-align: start;
     }
 
     .socials {
         padding-bottom: 12px;
+        padding-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
     }
 
     h4 {
-        font-size: 16px;
+        font-size: 14px;
         padding-bottom: 6px;
     }
     
     p {
+        font-size: 14px;
         margin: 0;
         padding-bottom: 16px;
         color: #403939;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 24px 44px 0 0;
+    }
+
+    .informacoes {
+        align-items: center;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+        padding-right: 20px;
+    }
+
+    .infos_principais {
+        padding-left: 0;
+        text-align: start;
+        padding-left: 16px;
+    }
+
+    .nome {
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+
+    .local {
         font-size: 16px;
+        padding-bottom: 32px;
+        padding-left: 2px;
+    }
+
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+    
+    h3 {
+        height: 14px;
+        font-size: 14px;
+        padding-left: 6px;
+    }
+
+    .informacoes_dois {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        text-align: start;
     }
 
     .socials {
+        padding-bottom: 12px;
         padding-right: 10px;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+    h4 {
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+    
+    p {
+        font-size: 14px;
+        margin: 0;
+        padding-bottom: 16px;
+        color: #403939;
     }
 }
 
 @media screen and (max-width: 380px) {
+    section {
+        padding: 24px 30px 0 0;
+    }
+
     .informacoes {
         align-items: center;
-        width: 84%;
+        width: 100%;
         justify-content: start;
     }
 
@@ -248,7 +298,7 @@ p {
 
     .infos_principais {
         text-align: start;
-        padding-left: 16px;
+        padding-left: 28px;
     }
 
     .nome {
@@ -263,9 +313,8 @@ p {
     }
 
     .informacoes_dois {
-        flex-direction: column;
-        align-items: center;
-        width: 84%;
+        gap: 0;
+        width: 100%;
         padding-left: 0%;
         padding-top: 24px;
     }
@@ -278,6 +327,9 @@ p {
 
     .socials {
         padding-bottom: 14px;
+        padding-right: 8px;
+        width: 24px;
+        height: 24px;
     }
 
     h4 {
@@ -306,12 +358,6 @@ p {
         height: 16px;
         font-size: 14px;
         padding-left: 6px;
-    }
-
-    .socials {
-        padding-right: 8px;
-        width: 24px;
-        height: 24px;
     }
 }
 
@@ -357,6 +403,9 @@ p {
 
     .socials {
         padding-bottom: 14px;
+        padding-right: 6px;
+        width: 20px;
+        height: 20px;
     }
 
     h4 {
@@ -384,11 +433,5 @@ p {
         height: 16px;
         font-size: 12px;
         padding-left: 6px;
-    }
-
-    .socials {
-        padding-right: 6px;
-        width: 20px;
-        height: 20px;
     }
 }

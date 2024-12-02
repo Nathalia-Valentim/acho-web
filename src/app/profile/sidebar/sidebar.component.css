@@ -110,13 +110,13 @@ h2 {
     }
 
     .retangulo {
-        width: 184px;
-        height: 336px;
+        width: 168px;
+        height: 304px;
         border-radius: 20px;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
         padding: 22px 0 10px 24px;
         margin: 0;
     }
@@ -127,16 +127,16 @@ h2 {
     }
 
     .material-icons {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     button {
-        width: 184px;
-        height: 38px;
+        width: 168px;
+        height: 34px;
     }
 
     button h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     button.ativo h3 {
@@ -145,6 +145,8 @@ h2 {
     
     button.ativo a {
         padding-left: 6px;
+        width: 19px;
+        height: 19px;
     
     }
 
@@ -157,14 +159,14 @@ h2 {
     }
     
     h2 {
-        font-size: 17px;
+        font-size: 15px;
         padding-left: 8px;
     }
 }
 
 @media screen and (max-width: 480px) {
     section {
-      padding: 28px 0 0 36px;   
+      padding: 28px 0 0 18px;   
     }
 
     .retangulo {
@@ -197,7 +199,7 @@ h2 {
         padding-left: 16px;
         display: inline-flex; 
         align-items: center; 
-        gap: 66px; 
+        gap: 73px; 
         border-radius: 5px; 
         font-size: 18px;
         width: 100%;
@@ -230,7 +232,7 @@ h2 {
 
 @media screen and (max-width: 380px) {
     section {
-      padding: 28px 0 0 32px;   
+      padding: 28px 0 0 8px;   
     }
 
     .retangulo {
@@ -246,7 +248,7 @@ h2 {
         top: 40px;
         left: 24px;
         padding-left: 16px;
-        gap: 52px; 
+        gap: 56px; 
         border-radius: 5px; 
         font-size: 16px;
         width: 100%;
@@ -287,7 +289,7 @@ h2 {
 
 @media screen and (max-width: 320px) {
     section {
-      padding: 28px 0 0 28px;   
+      padding: 28px 0 0 10px;   
     }
 
     .retangulo {

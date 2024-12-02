@@ -1,170 +1,126 @@
 .centraliza {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    width: 100%;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    justify-content: flex-start;
-  }
-  
-  .header span {
-    font-size: 16px;
-    font-weight: 500;
-    color: #403939;
-  }
-  
-  .header svg {
-    cursor: pointer;
-  }
-  
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-  }
-  
-  .linha {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .campo {
-    display: flex;
-    flex-direction: column;
-    min-width: 100px;
-  }
-  
-  .campo h4 {
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    color: #e15c31;
+  display: flex;
+  align-items: flex-start;
+}
 
-  }
-  
-  .campo-cep {
-    width: 150px;
-  }
-  
-  .campo-estado {
-    width: 150px;
-  }
-  
-  .campo-bairro {
-    width: 150px;
-  }
-  
-  .campo-cidade {
-    width: 150px;
-  }
-  
-  .campo-rua {
-    width: 320px;
-  }
-  
-  .campo-numero {
-    width: 100px;
-  }
-  
-  .campo-complemento {
-    width: 320px;
-  }
-  
-  input {
-    height: 40px;
-    padding: 0 10px;
-    border: 1px solid #40393966;
-    border-radius: 12px;
-    font-size: 15px;
-    font-family: dm sans;
-    background-color: none;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #e15c31;
-  }
-  
-  input::placeholder {
-    color: #403939;
-  }
-  
-  .botao-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
-  }
-  
-  .botao {
-    background-color: #043b64;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    padding: 15px 30px;
-    font-size: 14px;
-    font-family: dm sans;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .botao:hover {
-    background-color: #e15c31;
-  }
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
 
-  @media (max-width: 768px) {
-    .container {
-      padding: 15px;
-    }
-  
-    .campo-cep,
-    .campo-estado,
-    .campo-bairro,
-    .campo-cidade,
-    .campo-rua,
-    .campo-numero,
-    .campo-complemento {
-      width: 100%;
-    }
-  
-    .botao-container {
-      justify-content: center;
-    }
-  
-    .botao {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-    }
-  }
-  
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
 
-  @media (max-width: 480px) {
-    .header span {
-      font-size: 16px;
-    }
-  
-    .campo h4 {
-      font-size: 12px;
-    }
-  
-    .botao {
-      padding: 10px 30px;
-      font-size: 14px;
-    }
-  }
-  
+.header span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #403939;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.linha {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.campo h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #e15c31;
+
+}
+
+.campo-cep {
+  width: 150px;
+}
+
+.campo-estado {
+  width: 150px;
+}
+
+.campo-bairro {
+  width: 150px;
+}
+
+.campo-cidade {
+  width: 150px;
+}
+
+.campo-rua {
+  width: 320px;
+}
+
+.campo-numero {
+  width: 100px;
+}
+
+.campo-complemento {
+  width: 320px;
+}
+
+input {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #40393966;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: dm sans;
+  background-color: none;
+}
+
+input:focus {
+  outline: none;
+  border-color: #e15c31;
+}
+
+input::placeholder {
+  color: #403939;
+}
+
+.botao-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.botao {
+  background-color: #043b64;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-family: dm sans;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #e15c31;
+}

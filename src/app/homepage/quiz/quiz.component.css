@@ -126,7 +126,7 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   section {
-      padding: 1px 44px 24px 42px;
+    padding: 1px 44px 24px 42px;
   }
 
   img {

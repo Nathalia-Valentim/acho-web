@@ -1,39 +1,110 @@
-.container {
-  max-width: 600px;
-  max-height: 300px;
+section {
+  padding: 112px 164px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
 }
 
 .mensagem {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   color: #403939;
-  padding-bottom: 20px;
-}
-
-.botao-container {
-  position: absolute;
-  left: 50%; 
-  top: 420px;
+  padding-bottom: 72px;
 }
 
 .botao {
-  background-color: #043b64;
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  padding: 15px 25px;
-  font-size: 15px;
-  font-family: dm sans;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
-.botao:hover {
+.adicionar {
+  height: 40px;
+  width: 176px;
+  background-color: #043B64;
+  color: #ffffff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: dm sans;
+}
+
+.adicionar:hover {
   background-color: #E15C31;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 112px 108px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 112px 66px 0 0;
+  }
+
+  .mensagem {
+    width: 304px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 72px;
+  }
+
+  .adicionar {
+    height: 34px;
+    width: 164px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 112px 44px 0 0;
+  }
+
+  .mensagem {
+    width: 304px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 72px;
+  }
+
+  .adicionar {
+    height: 34px;
+    width: 164px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 112px 36px 0 0;
+  }
+
+  .adicionar {
+    height: 34px;
+    width: 164px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    padding: 112px 30px 0 0;
+  }
+
+  .adicionar {
+    height: 30px;
+    width: 144px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
 }

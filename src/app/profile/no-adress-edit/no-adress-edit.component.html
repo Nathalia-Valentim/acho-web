@@ -1,5 +1,5 @@
-
-<div class="container">
+<section>
+  <div class="container">
     <div class="header" (click)="voltarParaNoAdress()">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#E15C31" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
@@ -8,58 +8,56 @@
     </div>
   </div>
   
-
-<div class="centraliza">
-      <section class="informacoes">
-        <div class="formulario">
-          <!-- Linha 1 -->
-          <div class="linha">
-            <div class="campo campo-cep">
-              <h4>CEP</h4>
-              <input type="text" placeholder="04601-900" />
-            </div>
-            <div class="campo campo-estado">
-              <h4>Estado</h4>
-              <input type="text" placeholder="SP" />
-            </div>
+  <div class="centraliza">
+    <div class="informacoes">
+      <div class="formulario">
+        <!-- Linha 1 -->
+        <div class="linha">
+          <div class="campo campo-cep">
+            <h4>CEP</h4>
+            <input type="text" placeholder="04601-900" />
           </div>
-  
-          <!-- Linha 2 -->
-          <div class="linha">
-            <div class="campo campo-bairro">
-              <h4>Bairro</h4>
-              <input type="text" placeholder="Padroeira" />
-            </div>
-            <div class="campo campo-cidade">
-              <h4>Cidade</h4>
-              <input type="text" placeholder="São Paulo" />
-            </div>
-          </div>
-  
-          <!-- Linha 3 -->
-          <div class="linha">
-            <div class="campo campo-rua">
-              <h4>Rua</h4>
-              <input type="text" placeholder="Vera" />
-            </div>
-            <div class="campo campo-numero">
-              <h4>Número</h4>
-              <input type="text" placeholder="12" />
-            </div>
-          </div>
-  
-          <!-- Linha 4 -->
-          <div class="linha">
-            <div class="campo campo-complemento">
-              <h4>Complemento</h4>
-              <input type="text" placeholder="Casa" />
-            </div>
+          <div class="campo campo-estado">
+            <h4>Estado</h4>
+            <input type="text" placeholder="SP" />
           </div>
         </div>
-        <div class="botao-container">
-          <button class="botao" (click)="voltarParaNoAdress()">Salvar</button>
+  
+        <!-- Linha 2 -->
+        <div class="linha">
+          <div class="campo campo-bairro">
+            <h4>Bairro</h4>
+            <input type="text" placeholder="Padroeira" />
+          </div>
+          <div class="campo campo-cidade">
+            <h4>Cidade</h4>
+            <input type="text" placeholder="São Paulo" />
+          </div>
         </div>
-      </section>
-    
+  
+        <!-- Linha 3 -->
+        <div class="linha">
+          <div class="campo campo-rua">
+            <h4>Rua</h4>
+            <input type="text" placeholder="Vera" />
+          </div>
+          <div class="campo campo-numero">
+            <h4>Número</h4>
+            <input type="text" placeholder="12" />
+          </div>
+        </div>
+  
+        <!-- Linha 4 -->
+        <div class="linha">
+          <div class="campo campo-complemento">
+            <h4>Complemento</h4>
+            <input type="text" placeholder="Casa" />
+          </div>
+        </div>
+      </div>
+      <div class="botao-container">
+        <button class="botao" (click)="voltarParaNoAdress()">Salvar</button>
+      </div>
+    </div>
   </div>
-  
+</section>

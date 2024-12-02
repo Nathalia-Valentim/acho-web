@@ -8,6 +8,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './no-adress.component.html',
   styleUrl: './no-adress.component.css'
 })
+
 export class NoAdressComponent {
   constructor(private router: Router) {}
 
