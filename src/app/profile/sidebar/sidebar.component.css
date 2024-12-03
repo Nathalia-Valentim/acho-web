@@ -189,6 +189,8 @@ h2 {
     }
 
     .toggle-button {
+        display: flex;
+        justify-content: space-between;
         height: 32px;
         position: fixed;
         top: 40px;
@@ -199,7 +201,6 @@ h2 {
         padding-left: 16px;
         display: inline-flex; 
         align-items: center; 
-        gap: 73px; 
         border-radius: 5px; 
         font-size: 18px;
         width: 100%;
@@ -248,7 +249,6 @@ h2 {
         top: 40px;
         left: 24px;
         padding-left: 16px;
-        gap: 56px; 
         border-radius: 5px; 
         font-size: 16px;
         width: 100%;
@@ -304,8 +304,7 @@ h2 {
         height: 32px;
         top: 40px;
         left: 24px;
-        padding-left: 16px;
-        gap: 38px; 
+        padding-left: 16px; 
         border-radius: 5px; 
         font-size: 16px;
         width: 100%;

@@ -101,6 +101,13 @@ section {
     padding: 112px 30px 0 0;
   }
 
+  .mensagem {
+    width: 240px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 72px;
+  }
+
   .adicionar {
     height: 30px;
     width: 144px;

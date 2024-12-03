@@ -1,102 +1,321 @@
- .favtext {
-    color: #043B64;
- }
- 
- .card-container {
+section {
+  padding: 32px 0 0 0;
+}
+
+.favtext {
+  color: #043B64;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  height: 384px;
+  border: 2px solid #043a64be;
+  border-radius: 20px;
+  background-color: #fff;
+  padding-bottom: 16px;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 140px;
+  object-fit: fill;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #043a64be;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #043B64;
+  padding: 16px 0 12px 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-category {
+  display: flex;
+  color: #403939;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 6px 32px; 
+  text-align: left;
+  width: 100%;
+}
+
+.card-description {
+  color: #403939;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  margin: 0;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.favorite-icon {
+  font-size: 24px;
+  color: #b60101; 
+  transition: color 0.3s ease;
+}
+
+.favorite-button:hover .favorite-icon {
+  color: #df1b1b;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.ver {
+  height: 32px;
+  width: 120px;
+  background-color: #043B64;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: dm sans;
+}
+
+.ver:hover {
+  background-color: #E15C31;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.ver:not(:hover) {
+  transition: background-color 0.5s ease;
+}
+
+/* responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 0 0 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 66px 0 40px;
+  }
+
+  .card-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 10px 0 0 2px;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
   }
-  
+
   .card {
-    width: 230px;
-    height: 400px;
-    border: 1px solid #043B64;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    padding-bottom: 10px;
+    width: 188px;
+    height: 384px;
+    border-radius: 20px;
+    padding-bottom: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .card-image {
-    width: 85%;
-    height: 110px;
-    padding: 15px 15px 0 15px;
-    border-radius: 10px;
+    width: 100%;
+    height: 132px;
   }
   
   .card-title {
-    font-size: 15px;
-    color: #043B64;
-    padding-left: 16px;
-    padding-top: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 16px;
+    padding: 16px 0 12px 0;
   }
   
   .card-category {
-    color: #403939;
-    font-weight: 600;
-    padding-left: 16px;
     font-size: 15px;
+    padding: 0 0 6px 0;
+    width: 80%;
   }
   
   .card-description {
-    color: #403939;
-    padding: 0 14px;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: justify;
-    padding-bottom: 40px;
-  }
-  
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 18px 6px;
+    padding: 0 16px;
+    font-size: 13px;
   }
 
-
-  .favorite-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .favorite-icon {
-    font-size: 24px;
-    color: #b60101; 
-    transition: color 0.3s ease;
-  }
-  
-  .favorite-button:hover .favorite-icon {
-    color: #df1b1b;
-  }
-  
-  .card-button {
-    background-color: #043B64;
-    color: #ffffff;
-    border: 1px solid #043B64;
-    border-radius: 30px;
-    padding: 10px 40px;
-    font-family: dm sans;
+  .ver {
+    height: 34px;
+    width: 120px;
+    border-radius: 12px;
     font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 24px 0 0;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 164px;
+    height: 384px;
+    border-radius: 20px;
+    padding-bottom: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  .card-button:hover {
-    background-color: transparent;
-    color: #043B64;
-    font-weight: 500;
-    border: 1px solid #043B64;
+  .card-image {
+    width: 100%;
+    height: 124px;
   }
   
+  .card-title {
+    font-size: 14px;
+    padding: 16px 0 12px 0;
+  }
+  
+  .card-category {
+    font-size: 13px;
+    padding: 0 0 6px 0;
+    width: 80%;
+  }
+  
+  .card-description {
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  .botao {
+    gap: 8px;
+  }
+
+  .ver {
+    height: 30px;
+    width: 96px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 72%;
+    height: 384px;
+    border-radius: 20px;
+    padding-bottom: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 188px;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    padding: 16px 0 12px 0;
+  }
+  
+  .card-category {
+    font-size: 13px;
+    padding: 0 0 6px 0;
+    width: 80%;
+  }
+  
+  .card-description {
+    padding: 0 24px;
+    font-size: 12px;
+  }
+
+  .botao {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ver {
+    height: 30px;
+    width: 120px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 80%;
+    height: 384px;
+    border-radius: 20px;
+    padding-bottom: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    padding: 16px 0 12px 0;
+  }
+  
+  .card-category {
+    font-size: 13px;
+    padding: 0 0 6px 0;
+    width: 80%;
+  }
+  
+  .card-description {
+    padding: 0 24px;
+    font-size: 12px;
+  }
+
+  .botao {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ver {
+    height: 30px;
+    width: 120px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+}

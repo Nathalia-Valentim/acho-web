@@ -15,8 +15,8 @@ interface Hobby {
   templateUrl: './favorites.component.html',
   styleUrl: './favorites.component.css'
 })
-export class FavoritesComponent {
 
+export class FavoritesComponent {
   schools = [
     {
       image: 'images/remoschool1.png',
@@ -33,12 +33,9 @@ export class FavoritesComponent {
     },
   ];
 
-  
   constructor(private router: Router) {}
 
   goToDetails() {
     this.router.navigate(['/']);
-  } 
-
-
+  }
 }

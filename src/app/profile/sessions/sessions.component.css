@@ -1,51 +1,184 @@
+section {
+  padding: 32px 164px 0 0;
+}
+
 .session-management-container {
-    width: 300px;
-    color: #043b64;
+  width: 400px;
+  color: #043b64;
+}
+
+.back-arrow {
+  text-decoration: none;
+  color: #043b64;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #043b64;
+  padding-bottom: 24px;
+  padding-top: 32px;
+  margin: 0;
+}
+
+.session-info {
+  font-size: 16px;
+  color: #403939;
+  padding-bottom: 24px;
+}
+
+.session-current {
+  font-weight: bold;
+  font-size: 18px;
+  color: #043b64;
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.ip-address {
+  word-break: break-word;
+}
+
+.logout {
+  color: #043b64;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  text-align: right;
+  padding-top: 20px;
+  padding-left: 400px;
+  font-weight: 500;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 0 0 12px;
   }
-  
-  .back-arrow {
-    text-decoration: none;
-    color: #043b64;
-    font-size: 2.0em;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 66px 0 40px;
+  }
+
+  .session-management-container {
+    width: 400px;
   }
   
   h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #043b64;
-    padding-bottom: 15px;
+    font-size: 16px;
+    padding-bottom: 24px;
+    padding-top: 28px;
   }
   
   .session-info {
-    font-size: 0.9em;
-    color: #403939;
-    padding-bottom: 20px;
+    font-size: 14px;
+    padding-bottom: 24px;
   }
   
   .session-current {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #043b64;
-    padding-bottom: 3px;
+    font-size: 16px;
+    padding-bottom: 24px;
   }
   
-  .ip-address {
-    word-break: break-word;
+  p {
+    padding-bottom: 20px;
+    font-size: 14px;
   }
   
   .logout {
-    color: #043b64;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    text-align: right;
-    padding-top: 20px;
-    padding-left: 400px;
-    font-weight: 500;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-left: 100px;
   }
-  
-  .logout:hover {
-    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 24px 44px 0 0;
   }
 
+  .session-management-container {
+    width: 300px;
+  }
   
+  h3 {
+    font-size: 15px;
+    padding-bottom: 24px;
+    padding-top: 28px;
+  }
+  
+  .session-info {
+    font-size: 13px;
+    padding-bottom: 24px;
+  }
+  
+  .session-current {
+    font-size: 15px;
+    padding-bottom: 24px;
+  }
+  
+  p {
+    padding-bottom: 20px;
+    font-size: 13px;
+  }
+  
+  .logout {
+    width: 40px;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 260px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 24px 44px 0 0;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+
+  .session-management-container {
+    width: 280px;
+  }
+  
+  h3 {
+    font-size: 14px;
+    padding-bottom: 24px;
+    padding-top: 20px;
+  }
+  
+  .session-info {
+    font-size: 12px;
+    padding-bottom: 24px;
+  }
+  
+  .session-current {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    padding-bottom: 16px;
+    font-size: 12px;
+  }
+  
+  .logout {
+    width: 40px;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-left: 250px;
+  }
+}

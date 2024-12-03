@@ -1,12 +1,10 @@
-.centraliza {
-  display: flex;
-  align-items: flex-start;
+section {
+  padding: 32px 164px 0 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
   width: 100%;
 }
 
@@ -16,16 +14,26 @@
   gap: 8px;
   cursor: pointer;
   justify-content: flex-start;
+  padding-bottom: 16px;
 }
 
 .header span {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #403939;
 }
 
 .header svg {
   cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.centraliza {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 8px;
 }
 
 .formulario {
@@ -47,12 +55,38 @@
   min-width: 100px;
 }
 
-.campo h4 {
-  font-size: 14px;
-  margin-bottom: 10px;
+h4 {
+  font-size: 16px;
   font-weight: 500;
-  color: #e15c31;
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding-bottom: 6px;
+  color: #043B64;
+}
 
+input {
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #40393966;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: none;
+  font-family: dm sans;
+}
+
+input:focus {
+  outline: none;
+  caret-color: #403939CC;
+  color: #403939;
+  font-family: dm sans;
+}
+
+input:not(:focus) {
+  color: #403939;
+}
+
+::placeholder {
+  color: #a3a3a3;
 }
 
 .campo-cep {
@@ -76,51 +110,286 @@
 }
 
 .campo-numero {
-  width: 100px;
+  width: 80px;
 }
 
 .campo-complemento {
   width: 320px;
 }
 
-input {
-  height: 40px;
-  padding: 0 10px;
-  border: 1px solid #40393966;
-  border-radius: 12px;
-  font-size: 15px;
-  font-family: dm sans;
-  background-color: none;
-}
-
-input:focus {
-  outline: none;
-  border-color: #e15c31;
-}
-
-input::placeholder {
-  color: #403939;
-}
-
-.botao-container {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 30px;
-}
-
 .botao {
-  background-color: #043b64;
-  color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  padding: 15px 30px;
-  font-size: 14px;
-  font-family: dm sans;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  padding-top: 40px;
 }
 
-.botao:hover {
-  background-color: #e15c31;
+.salvar {
+  height: 40px;
+  width: 120px;
+  background-color: #043B64;
+  color: #ffffff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: dm sans;
+}
+
+.salvar:hover {
+  background-color: #E15C31;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.salvar:not(:hover) {
+  transition: background-color 0.5s ease;
+}
+
+/* responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 0 0 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 66px 0 40px;
+  }
+
+  .header span {
+    font-size: 16px;
+    color: #403939;
+  }
+  
+  .header svg {
+    height: 34px;
+    width: 34px;
+  }
+
+  .linha3 {
+    gap: 0;
+  }
+
+  .campo-numero {
+    padding-top: 8px;
+  }
+
+  h4 {
+    font-size: 14px;
+    padding-bottom: 6px;
+  }
+
+  input {
+    height: 26px;
+    padding-left: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+  }
+
+  .salvar {
+    height: 34px;
+    width: 120px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 24px 0 0;
+  }
+
+  .header span {
+    font-size: 16px;
+    color: #403939;
+  }
+  
+  .header svg {
+    height: 34px;
+    width: 34px;
+  }
+
+  h4 {
+    padding-bottom: 6px;
+    font-size: 14px;
+  }
+
+  input {
+    height: 26px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+    padding-right: 10px;
+  }
+
+  .salvar {
+    height: 34px;
+    width: 164px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding-right: 40px;
+  }
+
+  .formulario {
+    gap: 6px;
+  }
+
+  .linha {
+    gap: 8px;
+  }
+
+  .header span {
+    font-size: 15px;
+    color: #403939;
+  }
+  
+  .header svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  h4 {
+    padding-bottom: 4px;
+    font-size: 13px;
+  }
+
+  input {
+    height: 22px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .campo-cep {
+    width: 150px;
+  }
+  
+  .campo-estado {
+    width: 140px;
+  }
+  
+  .campo-bairro {
+    width: 150px;
+  }
+  
+  .campo-cidade {
+    width: 140px;
+  }
+  
+  .campo-rua {
+    width: 300px;
+  }
+  
+  .campo-numero {
+    width: 80px;
+    padding-top: 0px;
+  }
+  
+  .campo-complemento {
+    width: 300px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+    padding-right: 10px;
+    }
+
+  .salvar {
+    height: 30px;
+    width: 136px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    padding-right: 40px;
+  }
+
+  .formulario {
+    gap: 6px;
+  }
+
+  .linha {
+    gap: 8px;
+  }
+
+  .header span {
+    font-size: 14px;
+    color: #403939;
+  }
+  
+  .header svg {
+    height: 28px;
+    width: 28px;
+  }
+
+  h4 {
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+
+  input {
+    height: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .campo-cep {
+    width: 120px;
+  }
+  
+  .campo-estado {
+    width: 116px;
+  }
+  
+  .campo-bairro {
+    width: 120px;
+  }
+  
+  .campo-cidade {
+    width: 116px;
+  }
+  
+  .campo-rua {
+    width: 244px;
+  }
+  
+  .campo-numero {
+    width: 80px;
+    padding-top: 0px;
+  }
+  
+  .campo-complemento {
+    width: 244px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 28px;
+    padding-right: 0;
+  }
+
+  .salvar {
+    height: 28px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
 }

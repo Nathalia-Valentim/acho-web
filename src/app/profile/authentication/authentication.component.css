@@ -1,74 +1,246 @@
+section {
+  padding: 32px 164px 0 0;
+}
+
 .account-container {
-    width: 400px;
-    color: #043b64;
+  width: 400px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 32px;
+  color: #043b64;;
+}
+
+p {
+  color: #403939;
+  margin: 0;
+  padding-bottom: 40px;
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.email, .password {
+  margin: 0;
+  font-size: 16px;
+  color: #403939;
+  padding: 8px 0 32px;
+}
+
+a {
+  color: #043b64;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button.view-sessions {
+  height: 40px;
+  width: 160px;
+  background-color: #043B64;
+  color: #ffffff;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: dm sans;
+}
+
+button.view-sessions:hover {
+  background-color: #043b64;
+}
+
+.delete-account {
+  color: #E71901;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.delete-account:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 0 0 12px;
   }
-  
-  .section {
-    padding-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 66px 0 40px;
   }
 
+  h3 {
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+  
   p {
-    color: #403939;
+    padding-bottom: 48px;
+    font-size: 14px;
   }
   
   .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: 14px;
   }
-  
-  .email,
-  .password {
-    font-size: 0.9em;
-    color: #403939;
-    padding: 5px 0 15px;
+
+  .email, .password {
+    font-size: 14px;
+    padding: 8px 0 32px;
   }
-  
-  a {
-    color: #043b64;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+
   button.view-sessions {
-    height: 40px;
-    width: 120px;
-    background-color: #043b64;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-family: dm sans;
+    height: 32px;
+    width: 160px;
+    border-radius: 12px;
+    font-size: 14px;
   }
-  
-  button.view-sessions:hover {
-    background-color: #043b64;
-  }
-  
+
   .delete-account {
-    color: #E71901;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: block;
-    text-align: right;
+    font-size: 14px;
     padding-top: 10px;
   }
-  
-  .delete-account:hover {
-    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 24px 44px 0 0;
+  }
+
+  .account-container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding-bottom: 24px;
   }
   
+  p {
+    padding-bottom: 48px;
+    font-size: 14px;
+  }
+  
+  .info {
+    font-size: 14px;
+  }
+
+  .email, .password {
+    font-size: 14px;
+    padding: 8px 0 32px;
+  }
+
+  button.view-sessions {
+    height: 32px;
+    width: 160px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .delete-account {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 24px 36px 0 0;
+  }
+
+  .account-container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 15px;
+    padding-bottom: 24px;
+  }
+  
+  p {
+    padding-bottom: 48px;
+    font-size: 13px;
+  }
+  
+  .info {
+    font-size: 13px;
+  }
+
+  .email, .password {
+    font-size: 13px;
+    padding: 8px 0 28px;
+  }
+
+  button.view-sessions {
+    height: 30px;
+    width: 136px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .delete-account {
+    font-size: 13px;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    padding: 24px 30px 0 0;
+  }
+
+  .account-container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 14px;
+    padding-bottom: 24px;
+  }
+  
+  p {
+    padding-bottom: 48px;
+    font-size: 12px;
+  }
+  
+  .info {
+    font-size: 12px;
+  }
+
+  .email, .password {
+    font-size: 12px;
+    padding: 8px 0 28px;
+  }
+
+  button.view-sessions {
+    height: 30px;
+    width: 136px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  .delete-account {
+    font-size: 12px;
+    padding-top: 40px;
+  }
+}
