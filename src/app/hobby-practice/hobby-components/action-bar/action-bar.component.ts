@@ -9,6 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './action-bar.component.html',
   styleUrl: './action-bar.component.css'
 })
+
 export class ActionBarComponent {
   
   ativoBotao: string = 'practiceyourhobby';

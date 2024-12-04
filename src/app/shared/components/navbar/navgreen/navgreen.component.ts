@@ -11,10 +11,12 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './navgreen.component.html',
   styleUrl: './navgreen.component.css'
 })
-export class NavgreenComponent {
 
+export class NavgreenComponent {
   currentScreenSize: string = 'desktop';  // Estado inicial
   sidebarOpen: boolean = false;
+  searchActive: boolean = false;
+  searchQuery: string = '';
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.observeScreenSize();
@@ -45,4 +47,14 @@ export class NavgreenComponent {
     this.sidebarOpen = !this.sidebarOpen;
   }
 
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  toggleSearch(): void {
+    this.searchActive = !this.searchActive;
+  }
 }

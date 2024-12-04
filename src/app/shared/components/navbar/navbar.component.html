@@ -12,7 +12,6 @@
       <a [routerLink]="['/contate']" class="nav-link nav-link-contate">Contate-nos</a>
     </nav>
 
-
     <div class="overlay" *ngIf="sidebarOpen">
       <div class="sidebar-content" (click)="$event.stopPropagation()">
         <div class="sidebar_logo">
@@ -30,39 +29,22 @@
       </div>
     </div>
 
-
     <div class="user-actions">
-      <a href="#" class="icon-link search-link" (click)="openModal($event)">
-        <i class="material-icons">search</i>
-      </a>
-      
-      <div *ngIf="isModalOpen" class="modal-overlay">
-        <div class="search-container">
-          <div class="header">
-            <img src= "images/logo1.png" alt="Logo" class="logo-search">
-            <a href="#" class="close-btn" (click)="closeModal($event)">&times;</a>
-          </div>
-          <div class="search-box">
-            <i class="material-icons">search</i>
-            <input type="text" class="text1" [(ngModel)]="searchQuery" placeholder="Pesquise aqui..." />
-          </div>
-          <div class="suggestions">
-            <p>Mais pesquisados</p>
-            <ul>
-              <li *ngFor="let suggestion of suggestions">{{ suggestion }}</li>
-            </ul>
-          </div>
-        </div>
+      <div class="search-wrapper" [class.active]="searchActive">
+        <i class="material-icons search-icon" (click)="toggleSearch()">search</i>
+        <input
+          *ngIf="searchActive"
+          type="text"
+          class="search-input"
+          [(ngModel)]="searchQuery"
+          placeholder="Pesquise aqui..."
+        />
       </div>
-
       <a [routerLink]="['/profile']" class="icon-link person-link"><i class="material-icons">person</i></a>
     </div>
-
 
     <button class="menu-actions" *ngIf="currentScreenSize === 'mobile'" (click)="toggleSidebar()">
       <a class="menu-link"><i class="material-icons">menu</i></a>
     </button>
   </div>
 </header>
-
-

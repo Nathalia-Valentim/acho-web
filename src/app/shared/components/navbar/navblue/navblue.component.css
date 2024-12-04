@@ -5,90 +5,6 @@
   z-index: -1;
 }
 
-.dynamic-content {
-  display: flex; 
-  align-items: center;
-  padding: 20px; 
-}
-
-.category-info {
-  display: flex;
-  align-items: center; 
-}
-
-.category-info img {
-  padding-left: 104px;
-  max-width: 550px; 
-  height: auto;
-}
-
-.category-name {
-  padding-left: 40px;
-  padding-top: 144px;
-  color: #E4E2DD;
-  font-size: 128px;
-}
-
-.container-total {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.info-container {
-  display: flex; 
-  align-items: flex-start;
-  padding-left: 168px;
-  padding-right: 64px;
-}
-
-.description-text {
-  color: #403939;
-  font-weight: 500;
-  text-align: justify;
-  max-width: 680px;
-  font-size: 24px;
-}
-
-.investment-box {
-  background-color: white; 
-  border: 2px solid #043B64;
-  border-radius: 10px;
-  width: 224px;
-  height: 104px;
-  padding: 12px;
-}
-
-.investment-minimium {
-  color: #043B64;
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-.minimium {
-  color: #043B64;
-  font-size: 26px;
-  font-weight: bold;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-.investment-value {
-  color: #E15C31; 
-  font-size: 30px;
-  font-weight: bold;
-}
-
-
-.cost-note {
-  font-size: 14px;
-  color: #403939;
-  padding-top: 8px;
-  margin: 0;
-}
-
 header {
   background-color: #043B64;
   display: flex;
@@ -118,27 +34,11 @@ nav {
   font-size: 16px;
   font-weight: 600;
   padding: 0 16px 0 14px;
+  cursor: pointer;
 }
 
 .nav-link-contate {
   color: #E15C31;
-}
-
-.user-actions {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-}
-
-.user-actions a {
-  color: #E15C31;
-  display: flex;
-  text-decoration: none;
-}
-
-.serach-link {
-  padding: 0 12px 0 12px;
 }
 
 .person-link {
@@ -158,7 +58,7 @@ nav {
 }
 
 .menu-actions a {
-  color: #043B64;
+  color: #E15C31;
   display: flex;
   text-decoration: none;
 }
@@ -167,7 +67,7 @@ nav {
   font-size: 24px;
 }
 
-
+/* Barra lateral */
 .overlay {
   position: fixed;
   top: 0;
@@ -214,7 +114,157 @@ nav {
   padding: 0 0 10px 0;
 }
 
-/* responsividade */
+/* Pesquisa */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 36px;
+  background-color: transparent;
+}
+
+.search-wrapper.active {
+  width: 250px;
+  border: 1px solid #E15C31;
+  background-color: #043B64;
+}
+
+.search-wrapper .search-icon {
+  padding: 8px;
+  color: #E15C31;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-wrapper.active .search-icon {
+  transform: rotate(90deg);
+}
+
+.search-wrapper .search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "dm sans";
+  color: #E4E2DD;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.search-wrapper.active .search-input {
+  opacity: 1;
+  visibility: visible;
+  background-color: #043B64;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
+.user-actions a {
+  color: #E15C31;
+  display: flex;
+  text-decoration: none;
+}
+
+/* Nav Continuação */
+.section {
+  padding: 0 152px 0 118px;
+}
+
+.category-info {
+  display: flex;
+}
+
+.category-info img {
+  max-width: 550px; 
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 288px;
+  color: #E4E2DD;
+  font-size: 116px;
+}
+
+.container-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.info-container {
+  display: flex; 
+  padding-left: 52px;
+}
+
+p {
+  color: #403939;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 22px;
+  max-width: 648px;
+  margin: 0;
+}
+
+.investment-box {
+  background-color: white; 
+  border: 2px solid #043B64;
+  border-radius: 10px;
+  width: 224px;
+  height: 104px;
+  padding: 12px 24px;
+}
+
+.investment-minimium {
+  color: #043B64;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.minimium {
+  color: #043B64;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.investment-value {
+  color: #E15C31; 
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cost-note {
+  font-size: 16px;
+  color: #403939;
+  margin: 0;
+  padding-top: 6px;
+}
+
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   .logo img {
     max-width: 88px;
@@ -230,15 +280,139 @@ nav {
   .material-icons {
     font-size: 20px;
   }
+
+  /* Pesquisa */
+  .header {
+    align-items: center; 
+  }
+
+  .search-wrapper.active {
+    width: 200px; 
+  }
+
+  .search-wrapper .search-input {
+    font-size: 14px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 496px;
+  }
+
+  .section {
+    padding: 0 106px 0 70px;
+  }
+
+  .category-info img {
+    max-width: 472px;
+  }
+
+  h1 {
+    padding-left: 24px;
+    padding-top: 248px;
+    font-size: 80px;
+  }
+
+  .info-container {
+    padding-left: 42px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 496px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: 216px;
+    height: 104px;
+    padding: 12px 22px;
+  }
+
+  .investment-minimium {
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+
+  .minimium {
+    font-size: 24px;
+    padding-right: 8px;
+  }
+
+  .investment-value {
+    font-size: 26px;
+  }
+
+  .cost-note {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Nav Continuação */
+  .background-container {
+    height: 460px;
+  }
+
+  .section {
+    padding: 0 62px 0 26px;
+  }
+
+  .category-info img {
+    max-width: 408px;
+  }
+
+  h1 {
+    padding-left: 16px;
+    padding-top: 248px;
+    font-size: 58px;
+  }
+
+  .info-container {
+    padding-left: 36px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 408px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: 150px;
+    height: 88px;
+    padding: 12px 18px;
+  }
+
+  .investment-minimium {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+
+  .minimium {
+    font-size: 18px;
+    padding-right: 8px;
+  }
+
+  .investment-value {
+    font-size: 18px;
+  }
+
+  .cost-note {
+    font-size: 12px;
+    padding-top: 6px;
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 480px) {
   header {
-    padding: 40px 32px 24px;
+    padding: 40px 40px 24px;
   }
   
   .logo img {
-    max-width: 60px;
+    max-width: 72px;
     height: auto;
   }
 
@@ -253,15 +427,98 @@ nav {
   .material-icons {
     font-size: 22px;
   }
+
+  /* Pesquisa */
+  .search-wrapper {
+    width: 32px; 
+  }
+
+  .search-wrapper.active {
+    width: 160px;
+    height: 32px;
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px; 
+    font-size: 12px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 472px;
+  }
+
+  .section {
+    padding: 0 44px 0 42px;
+  }
+
+  .category-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-info img {
+    max-width: 304px;
+  }
+
+  h1 {
+    padding-left: 0;
+    padding-top: 8px;
+    font-size: 58px;
+  }
+
+  .container-total {
+    flex-direction: column;
+    display: flex;
+    align-items: end;
+  }
+
+  .info-container {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+
+  p {
+    font-size: 15px;
+    max-width: 408px;
+    padding-bottom: 24px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: 156px;
+    height: 72px;
+    padding: 12px 18px;
+  }
+
+  .investment-minimium {
+    font-size: 21px;
+    padding-bottom: 0;
+  }
+
+  .minimium {
+    font-size: 18px;
+    padding-right: 8px;
+  }
+
+  .investment-value {
+    font-size: 19px;
+  }
+
+  .cost-note {
+    font-size: 12px;
+    padding-top: 6px;
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 380px) {
   header {
-    padding: 40px 40px 24px;
+    padding: 40px 32px 24px;
   }
   
   .logo img {
-    max-width: 68px;
+    max-width: 60px;
     height: auto;
   }
 
@@ -271,6 +528,77 @@ nav {
 
   .material-icons {
     font-size: 20px;
+  }
+
+  /* Pesquisa */
+  .search-wrapper {
+    width: 30px;
+  }
+
+  .search-wrapper.active {
+    width: 140px;
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px;
+    font-size: 12px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 440px;
+  }
+
+  .section {
+    padding: 0 36px 0 34px;
+  }
+
+  .category-info img {
+    max-width: 288px;
+  }
+
+  h1 {
+    padding-left: 26px;
+    padding-top: 8px;
+    font-size: 52px;
+  }
+
+  .info-container {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+
+  p {
+    font-size: 15px;
+    max-width: 408px;
+    padding-bottom: 24px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: 140px;
+    height: 68px;
+    padding: 12px 18px;
+  }
+
+  .investment-minimium {
+    font-size: 19px;
+    padding-bottom: 0;
+  }
+
+  .minimium {
+    font-size: 16px;
+    padding-right: 8px;
+  }
+
+  .investment-value {
+    font-size: 17px;
+  }
+
+  .cost-note {
+    font-size: 11px;
+    padding-top: 4px;
+    text-align: start;
   }
 }
 
@@ -290,5 +618,25 @@ nav {
 
   .material-icons {
     font-size: 16px;
+  }
+
+  /* Pesquisa */
+  .search-wrapper {
+    width: 28px; 
+  }
+
+  .search-wrapper.active {
+    width: 110px;
+    height: 26px;
+  }
+
+  .search-wrapper .search-input {
+    padding: 4px;
+    font-size: 9px; 
+  }
+
+  /* Nav Continuação */
+  .section {
+    padding: 0 30px 0 30px;
   }
 }

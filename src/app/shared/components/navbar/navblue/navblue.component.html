@@ -5,14 +5,14 @@
         <img src="images/logobranca.png">
       </a>
     </div>
-  
+
     <div class="nav-container">
       <nav *ngIf="currentScreenSize !== 'mobile'">
-        <a [routerLink]="['/home']" class="nav-link">Hobbies</a>
+        <a class="nav-link" (click)="scrollToSection('explorar')">Hobbies</a>
         <a [routerLink]="['/quizdash']" class="nav-link">Quiz</a>
-        <a [routerLink]="['/home']" class="nav-link nav-link-contate">Contate-nos</a>
+        <a [routerLink]="['/contate']" class="nav-link nav-link-contate">Contate-nos</a>
       </nav>
-  
+
       <div class="overlay" *ngIf="sidebarOpen">
         <div class="sidebar-content" (click)="$event.stopPropagation()">
           <div class="sidebar_logo">
@@ -21,47 +21,55 @@
               <a class="button-link"><i class="material-icons">close</i></a>
             </button>
           </div>
-    
+
           <nav>
             <a [routerLink]="['/home']" class="sidebar-link">Hobbies</a>
             <a [routerLink]="['/quizdash']" class="sidebar-link">Quiz</a>
-            <a [routerLink]="['/home']" class="sidebar-link">Contate-nos</a>
+            <a [routerLink]="['/contate']" class="sidebar-link">Contate-nos</a>
           </nav>
         </div>
       </div>
-  
 
       <div class="user-actions">
-        <a href="#" class="icon-link serach-link"><i class="material-icons">search</i></a>
+        <div class="search-wrapper" [class.active]="searchActive">
+          <i class="material-icons search-icon" (click)="toggleSearch()">search</i>
+          <input
+            *ngIf="searchActive"
+            type="text"
+            class="search-input"
+            [(ngModel)]="searchQuery"
+            placeholder="Pesquise aqui..."
+          />
+        </div>
         <a [routerLink]="['/profile']" class="icon-link person-link"><i class="material-icons">person</i></a>
       </div>
-  
 
       <button class="menu-actions" *ngIf="currentScreenSize === 'mobile'" (click)="toggleSidebar()">
         <a class="menu-link"><i class="material-icons">menu</i></a>
       </button>
     </div>
   </header>
+
+  <div class="section">
+    <div class="dynamic-content">
+      <div class="category-info">
+        <img [src]="categoryImage" alt="{{ categoryName }} Image" />
+        <h1 class="category-name">{{ categoryName }}</h1>
+      </div>
+    </div>
   
-
-  <div class="dynamic-content">
-    <div class="category-info">
-      <img [src]="categoryImage" alt="{{ categoryName }} Image" />
-      <h1 class="category-name">{{ categoryName }}</h1>
-    </div>
-  </div>
-
-  <div class="container-total">
-    <div class="info-container">
-      <p class="description-text">
-        O futebol é um dos esportes mais populares e praticados do mundo, com milhões de fãs e atletas espalhados por todos os continentes. Jogado entre duas equipes de onze jogadores cada, o objetivo principal é marcar gols no adversário.
-      </p>
-    </div>
-    <div class="investment-box">
-      <h2 class="investment-minimium">INVESTIMENTO</h2>
-      <span class="minimium inline-text">mínimo</span>
-      <span class="investment-value inline-text">R$30,00</span>
-      <p class="cost-note">*custo de forma autônoma</p>
+    <div class="container-total">
+      <div class="info-container">
+        <p class="description-text">
+          O futebol é um dos esportes mais populares e praticados do mundo, com milhões de fãs e atletas espalhados por todos os continentes. Jogado entre duas equipes de onze jogadores cada, o objetivo principal é marcar gols no adversário.
+        </p>
+      </div>
+      <div class="investment-box">
+        <h2 class="investment-minimium">INVESTIMENTO</h2>
+        <span class="minimium inline-text">mínimo</span>
+        <span class="investment-value inline-text">R$30,00</span>
+        <p class="cost-note">*custo de forma autônoma</p>
+      </div>
     </div>
   </div>
 </div>

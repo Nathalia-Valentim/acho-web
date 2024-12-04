@@ -10,6 +10,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './category.component.html',
   styleUrl: './category.component.css'
 })
+
 export class CategoryComponent implements AfterViewInit{ 
   constructor(private breakpointObserver: BreakpointObserver,
     private router: Router,
@@ -74,9 +75,9 @@ export class CategoryComponent implements AfterViewInit{
 
       
       setTimeout(() => this.updateArrowsVisibility(container), 300);
+      }
     }
   }
-}
 
   updateArrowsVisibility(container: HTMLElement): void {
     const scrollLeft = container.scrollLeft;
@@ -96,7 +97,7 @@ export class CategoryComponent implements AfterViewInit{
     if (container) {
       this.updateArrowsVisibility(container);
       container.addEventListener('scroll', () => this.updateArrowsVisibility(container));
+      }
     }
   }
-}
 }
